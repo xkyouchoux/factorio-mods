@@ -1,6 +1,6 @@
 {
   "name": "sei-spoilage",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "title": "Space Exploration Integration: Spoilage",
   "author": "xkyouchoux",
   "description": "Adds spoilage and the heating tower into space exploration. Has support for Krastorio2.",

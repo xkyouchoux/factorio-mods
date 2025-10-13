@@ -22,29 +22,6 @@ data:extend({
     },
 })
 
-data_util.replace_or_add_ingredient("heating-tower", "boiler", "heat-exchanger", 2)
-data_util.replace_or_add_ingredient("heating-tower", nil, "se-heat-shielding", 4)
-
-if mods["Krastorio2"] then
-    data:extend({
-        {
-            type = "recipe",
-            name = "coke-from-spoilage",
-            icons = data_util.sub_icons(data.raw.item["kr-coke"].icon, data.raw.item["spoilage"]),
-            category = "kiln",
-            enabled = false,
-            energy_required = 16,
-            allow_productivity = true,
-            ingredients =
-            {
-                {type = "item", name = "wood", amount = 6},
-                {type = "item", name = "spoilage", amount = 6}
-            },
-            results = {{type="item", name="kr-coke", amount=6}},
-        },
-    })
-end
-
 data_util.make_recipe({
     name = data_util.mod_prefix .. "bio-sludge-from-spoilage",
     localised_description = {"recipe-description.se-bio-sludge-from-fish"},
@@ -68,3 +45,23 @@ data_util.make_recipe({
     always_show_made_in = true,
     hide_from_signal_gui = false,
 })
+
+if mods["Krastorio2"] then
+    data:extend({
+        {
+            type = "recipe",
+            name = "coke-from-spoilage",
+            icons = data_util.sub_icons(data.raw.item["kr-coke"].icon, data.raw.item["spoilage"]),
+            category = "kiln",
+            enabled = false,
+            energy_required = 16,
+            allow_productivity = true,
+            ingredients =
+            {
+                {type = "item", name = "wood", amount = 6},
+                {type = "item", name = "spoilage", amount = 6}
+            },
+            results = {{type="item", name="kr-coke", amount=6}},
+        },
+    })
+end

@@ -6,12 +6,12 @@ Date: 13 October 2025
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 10 October 2025
-  Fixes:
+  Bugfixes:
     - Fixed thermodynamics facility could not cast steel ingot
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 9 October 2025
-  Fixes:
+  Bugfixes:
     - Fixed not being able to load without empty-space tile
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0

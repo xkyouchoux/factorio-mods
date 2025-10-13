@@ -26,11 +26,3 @@ data:extend({
     },
 })
 
-data.raw.capsule["raw-fish"].spoil_ticks = 453000
-data.raw.capsule["raw-fish"].spoil_result = "spoilage"
-
-data.raw.item["se-vitamelange-nugget"].spoil_ticks = 0.5 * hour
-data.raw.item["se-vitamelange-nugget"].spoil_result = "spoilage"
-
-data.raw.item["se-vitamelange-bloom"].spoil_ticks = 2 * hour
-data.raw.item["se-vitamelange-bloom"].spoil_result = "spoilage"
