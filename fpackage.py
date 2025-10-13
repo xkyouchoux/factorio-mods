@@ -8,7 +8,7 @@ from glob import glob
 from pathlib import Path
 
 mods_folder = os.path.expandvars(sys.argv[1])
-cwd = os.getcwd()
+cwd = os.getcwd() + sys.argv[2]
 
 dbg = False
 
@@ -36,7 +36,7 @@ if os.path.exists(mod_output_path):
 
 with ZipFile(mod_output_path, 'w') as f:
     for root, dirs, files in os.walk(cwd):
-        zip_root = mod_full_name + "/" + Path(root).relative_to(cwd).as_posix()
+        zip_root = mod_name + "/" + Path(root).relative_to(cwd).as_posix()
         for file_name in files:
             if not (".git" in file_name or file_name.endswith(".zip") or ".git" in root or file_name.endswith(".bat") or ".vscode" in root or file_name.endswith(".py") or "factorio-images" in root):
                 f.write(root + "/" + file_name, zip_root + "/" + file_name)

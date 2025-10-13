@@ -1,4 +1,3 @@
-
 circuit_connector_definitions["foundry"] = circuit_connector_definitions.create_vector
 (
     universal_connector_template,
@@ -49,7 +48,7 @@ circuit_connector_definitions["heating-tower"] = circuit_connector_definitions.c
     { variation = 30, main_offset = util.by_pixel(-12, 17), shadow_offset = util.by_pixel(10, 30), show_shadow = false }
 )
 
-circuit_connector_definitions["tesla-turret"] = circuit_connector_definitions.create_vector -- 
+circuit_connector_definitions["tesla-turret"] = circuit_connector_definitions.create_vector
 (
     universal_connector_template,
     {
