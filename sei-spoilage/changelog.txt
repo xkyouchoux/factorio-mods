@@ -1,7 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 13 October 2025
-  Fixes:
+  Changes:
+    - Vehicle fuel can be used as a fuel source for heating tower when using Krastorio 2
+    - Any inserter that waits for a full hand, like stacking inserters, will drop contents if they spoil.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 12 October 2025
@@ -15,7 +17,7 @@ Date: 12 October 2025
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 11 October 2025
-  Fixes:
+  Changes:
     - Makes sure burner inventories that take a fuel_category that has a spoilage item has a output slot for spoilage
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1

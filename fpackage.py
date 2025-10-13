@@ -8,7 +8,7 @@ from glob import glob
 from pathlib import Path
 
 mods_folder = os.path.expandvars(sys.argv[1])
-cwd = os.getcwd() + sys.argv[2]
+cwd = os.getcwd() + "/" + sys.argv[2]
 
 dbg = False
 

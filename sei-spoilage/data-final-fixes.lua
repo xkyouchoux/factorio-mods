@@ -4,6 +4,7 @@ local fuel_categories = {
     "nutrients",
     "food",
     "processed-chemical",
+    "kr-vehicle-fuel",
 }
 
 for k,v in pairs(fuel_categories) do
@@ -20,6 +21,9 @@ data_util.recipe_require_tech("se-bio-sludge-from-spoilage", "se-space-growth-fa
 data.raw.recipe["se-vitamelange-bloom"].result_is_always_fresh = true
 data.raw.recipe["se-vitamelange-bloom"].reset_freshness_on_craft = true
 
+for _,inserter in pairs(data.raw.inserter) do
+    if inserter.wait_for_full_hand then inserter.enter_drop_mode_if_held_stack_spoiled = true end
+end
 
 if mods["Krastorio2"] then
     data_util.recipe_require_tech("coke-from-spoilage", "se-processing-vitamelange")
