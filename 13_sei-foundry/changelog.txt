@@ -1,0 +1,15 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 12 October 2025
+  Changes:
+    - Removed lattice pressure vessel from foundry with mod setting to add it back
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 9 October 2025
+  Changes:
+    - Allows iridium ingot and lattice pressure vessel to be made in foundry
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 8 October 2025
+  Features:
+    - Initial release

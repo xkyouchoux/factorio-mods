@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 12 October 2025
+  Changes:
+    - Removes space solar panels, space accumulators, superconductive cable, dynamic emitter, and quantum processors in electromagnetic plant
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 8 October 2025
+  Features:
+    - Initial release

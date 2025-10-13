@@ -1,0 +1,1 @@
+require("prototypes.phase-3.compat.um-standalone-space-age-lib")

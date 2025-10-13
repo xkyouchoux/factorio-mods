@@ -1,0 +1,29 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 13 October 2025
+  Fixes:
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 12 October 2025
+  Changes:
+    - Set default heating tower efficency to 1 to stay in line with space exploration, can still modify it if you want.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 12 October 2025
+  Changes:
+    - Moved heating tower to production science and tweaked recipe a bit to fit more in.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 11 October 2025
+  Fixes:
+    - Makes sure burner inventories that take a fuel_category that has a spoilage item has a output slot for spoilage
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 11 October 2025
+  Changes:
+    - Removed delivery cannon recipes that use spoilage items.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 11 October 2025
+  Features:
+    - Initial release

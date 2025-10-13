@@ -1,0 +1,24 @@
+{
+  "name": "se-ssa-i",
+  "version": "1.3.3",
+  "title": "Space Exploration Integration: Space Age",
+  "author": "xkyouchoux",
+  "description": "Currently adds stack inserters, belt stacking, cryogenic plant, electromagnetic plant, foundry, biochamber*, captive biter spawners*, spoilage* and heating tower*, and turbo belts* to space exploration. Has support for Krastorio 2. *optional",
+  "dependencies": [
+    "base >= 2.0.0",
+    "space-exploration >= 0.7.25",
+    "sei-stack-inserters",
+    "sei-miner-resource-drain",
+    "sei-cryogenic-plant",
+    "sei-electromagnetic-plant",
+    "sei-foundry",
+    "? sei-biochamber",
+    "? sei-captive-biters",
+    "? sei-spoilage",
+    "? sei-turbo-belts",
+    "? Krastorio2 >= 2.0.8",
+    "! space-age"],
+  "space_travel_required": true,
+  "freezing_required": true,
+  "factorio_version": "2.0"
+}

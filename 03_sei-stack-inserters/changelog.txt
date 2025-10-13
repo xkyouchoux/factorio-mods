@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 11 October 2025
+  Fixes:
+    - Fixed compatibility with k2 inserters and spoilage
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 11 October 2025
+  Fixes:
+    - Fixed crash when trying to load into game without Krastorio 2
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 11 October 2025
+  Fixes:
+    - Adding the mod into a game in progress should not unresearch superior inserters from krastorio 2... I think
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 8 October 2025
+  Features:
+    - Initial release

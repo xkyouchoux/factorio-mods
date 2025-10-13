@@ -1,0 +1,17 @@
+{
+  "name": "sei-stack-inserters",
+  "version": "1.0.3",
+  "title": "Space Exploration Integration: Stack Inserters and Belt Stacking",
+  "author": "xkyouchoux",
+  "description": "Adds stack inserters and belt stacking for space exploration. Has support for Krastorio2.",
+  "dependencies": [
+    "base >= 2.0.0",
+    "space-exploration >= 0.7",
+    "stack-inserters",
+    "? Krastorio2 >= 2.0",
+    "? aai-loaders",
+    "! space-age"],
+  "space_travel_required": true,
+  "freezing_required": true,
+  "factorio_version": "2.0"
+}

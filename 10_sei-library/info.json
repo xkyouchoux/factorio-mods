@@ -1,0 +1,15 @@
+{
+  "name": "sei-library",
+  "version": "1.0.2",
+  "title": "Space Exploration Integration: Library",
+  "author": "xkyouchoux",
+  "description": "Base library for my space exploration integration mods. Fixes some changes the standalone space age lib does with crafting categories.",
+  "dependencies": [
+    "base >= 2.0.0",
+    "space-exploration >= 0.7",
+    "? um-standalone-space-age-lib",
+    "? Krastorio2 >= 2.0",
+    "! space-age"],
+  "space_travel_required": true,
+  "factorio_version": "2.0"
+}
