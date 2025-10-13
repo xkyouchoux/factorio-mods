@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "title": "Space Exploration Integration: Miner Resource Drain",
   "author": "xkyouchoux",
-  "description": "Adds customizable resource drain to the mining drills in space exploration. Has support for Krastorio2.",
+  "description": "Adds customizable resource drain to the mining drills in space exploration.",
   "dependencies": [
     "base >= 2.0.0",
     "space-exploration >= 0.7",

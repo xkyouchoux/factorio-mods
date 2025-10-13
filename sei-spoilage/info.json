@@ -3,7 +3,7 @@
   "version": "0.1.6",
   "title": "Space Exploration Integration: Spoilage",
   "author": "xkyouchoux",
-  "description": "Adds spoilage and the heating tower into space exploration. Has support for Krastorio2.",
+  "description": "Adds spoilage and the heating tower into space exploration.",
   "dependencies": [
     "base >= 2.0.0",
     "space-exploration >= 0.7",

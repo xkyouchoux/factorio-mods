@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "title": "Space Exploration Integration: Library",
   "author": "xkyouchoux",
-  "description": "Base library for my space exploration integration mods. Fixes some changes the standalone space age lib does with crafting categories.",
+  "description": "Base library for my space exploration integration mods. Fixes some changes the standalone space age lib does with crafting categories if present.",
   "dependencies": [
     "base >= 2.0.0",
     "space-exploration >= 0.7",

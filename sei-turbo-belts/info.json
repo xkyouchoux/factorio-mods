@@ -8,9 +8,7 @@
     "base >= 2.0.0",
     "space-exploration >= 0.7",
     "TurboBelt",
-    "? um-standalone-space-age-lib",
     "! space-age"],
-  "space_travel_required": true,
   "freezing_required": true,
   "factorio_version": "2.0"
 }
