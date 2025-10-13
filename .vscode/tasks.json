@@ -6,7 +6,7 @@
         {
             "label": "Package Mod: se-ssa-i",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"01_se-ssa-i\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"se-ssa-i\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -15,7 +15,7 @@
         {
             "label": "Package Mod: k2se-misc-fixes",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"02_k2se-misc-fixes\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"k2se-misc-fixes\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -24,7 +24,7 @@
         {
             "label": "Package Mod: sei-stack-inserters",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"03_sei-stack-inserters\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-stack-inserters\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -33,7 +33,7 @@
         {
             "label": "Package Mod: sei-turbo-belts",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"04_sei-turbo-belts\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-turbo-belts\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -42,7 +42,7 @@
         {
             "label": "Package Mod: sei-miner-resource-drain",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"05_sei-miner-resource-drain\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-miner-resource-drain\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -51,7 +51,7 @@
         {
             "label": "Package Mod: sei-spoilage",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"06_sei-spoilage\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-spoilage\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -60,7 +60,7 @@
         {
             "label": "Package Mod: sei-library",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"10_sei-library\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-library\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -69,7 +69,7 @@
         {
             "label": "Package Mod: sei-cryogenic-plant",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"11_sei-cryogenic-plant\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-cryogenic-plant\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -78,7 +78,7 @@
         {
             "label": "Package Mod: sei-electromagnetic-plant",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"12_sei-electromagnetic-plant\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-electromagnetic-plant\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -87,7 +87,7 @@
         {
             "label": "Package Mod: sei-foundry",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"13_sei-foundry\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-foundry\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -96,7 +96,7 @@
         {
             "label": "Package Mod: sei-biochamber",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"14_sei-biochamber\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-biochamber\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -105,7 +105,7 @@
         {
             "label": "Package Mod: sei-captive-biters",
             "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"15_sei-captive-biters\"",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-captive-biters\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

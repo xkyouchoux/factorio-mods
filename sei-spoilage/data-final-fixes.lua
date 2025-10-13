@@ -1,4 +1,4 @@
-local data_util = require("__sei-library__.data_util")
+local data_util = require('__sei-library__.data_util')
 
 local fuel_categories = {
     "nutrients",
@@ -77,7 +77,7 @@ local function get_or_create_spoilage_capsule(resource)
             }
         })
         end
-        
+
         data:extend({
         {
             type = "item",
@@ -91,7 +91,7 @@ local function get_or_create_spoilage_capsule(resource)
             hidden = true,
             subgroup = base.subgroup.."-delivery-cannon-capsules",
             spoil_ticks = base.spoil_ticks,
-            spoil_result = base.spoil_result and get_or_create_spoilage_capsule({name = base.spoil_result, type = type, amount = capsule_recipe.ingredients[2].amount}),
+            spoil_result = base.spoil_result and get_or_create_spoilage_capsule({name = base.spoil_result, type = type, amount = amount}),
             spoil_to_trigger_result = base.spoil_to_trigger_result,
             stack_size = 1,
             localised_name = {"", {"item-name.se-delivery-cannon-capsule-packed", {type.."-name."..resource.name}}, {"item-name.sei-spoilage-capsule-ending", tostring(amount)}, }
@@ -161,7 +161,6 @@ else
     for _,recipe in pairs(data.raw.recipe) do
         for _,cannon in pairs({"se-delivery-cannon", "se-delivery-cannon-weapon"}) do
             for _,category in pairs(data.raw["assembling-machine"][cannon].crafting_categories) do
-                log("a:" .. tostring(k) .. ":b:" .. tostring(category))
                 if recipe.category == category then
                     for _,ingredient in pairs(recipe.ingredients) do
                         if not (ingredient.name == "se-delivery-cannon-capsule" or ingredient.name == "se-delivery-cannon-weapon-capsule") then
