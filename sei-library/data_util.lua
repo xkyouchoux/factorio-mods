@@ -8,6 +8,20 @@ function Util.remove_category_from_machines(category, machines)
     end
 end
 
+function Util.add_additional_category_to_recipes(category, recipes)
+    if not (category and data.raw["recipe-category"][category]) then return end
+    for _,name in pairs(recipes) do
+        local recipe = data.raw["recipe"][name]
+        if recipe then
+            local additional_categories = recipe.additional_categories or {}
+            if not Util.table_contains(additional_categories, category) then
+                table.insert(additional_categories, category)
+            end
+            recipe.additional_categories = additional_categories
+        end
+    end
+end
+
 function Util.add_categories_to_machines(categories, machines)
     for _,name in pairs(machines) do
         if data.raw["assembling-machine"][name] then
@@ -56,7 +70,7 @@ function Util.get_glass()
 end
 
 function Util.get_sand()
-    return mod["Krastorio2"] and "kr-sand" or "sand"
+    return mods["Krastorio2"] and "kr-sand" or "sand"
 end
 
 return Util

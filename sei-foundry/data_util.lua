@@ -11,30 +11,31 @@ function result.sub_sup_icons(icon_main, icon_left, icon_right)
 end
 
 function result.create_casting_recipe(params)
-    local name = "casting-"..params.name
-    local item = data.raw["item"][params.item or params.name]
-    local recipe = data.raw.["recipe"][params.recipe or params.name]
-    if not item or not recipe or not params.icons then return end
+    local name = params.name
+    local item = data.raw["item"][params.item or name]
+    local recipe = data.raw["recipe"][params.recipe or name]
+    if not (item or recipe or params.icons) then return end
+    local icon = params.icon or item.icon
     return {
         type = "recipe",
-        name = "casting-"..params.name,
+        name = "casting-"..name,
         icons = #params.icons == 1 and result.sub_icons(params.icon or item.icon, params.icons[1]) or 
             result.sub_icons(params.icon or item.icon, params.icons[1], {
                 icon = params.icons[2].icon or params.icons[2],
-                scale = params.icons[2].scale
+                scale = params.icons[2].scale,
                 shift = params.icons[2].shift or {10, -7},
                 icon_size = params.icons[2].icon_size,
                 draw_background = params.icons[2].draw_background,
             }),
         category = "metallurgy",
         enabled = false,
-        allow_productivity = params.allow_productivity or true,
+        allow_productivity = recipe.allow_productivity,
         order = params.order or (recipe.order and recipe.order.."-casting") or (item.order and item.order.."-casting"),
-        group = params.group or recipe.group,
-        subgroup = params.subgroup or recipe.subgroup,
-        energy_required = params.energy_required or recipe.energy_required,
+        group = params.group or recipe.group or item.group,
+        subgroup = params.subgroup or recipe.subgroup or item.subgroup,
+        energy_required = params.energy_required or (recipe.energy_required and recipe.energy_required * 2) or 1,
         ingredients = params.ingredients,
-        results = params.results or {type = item, name = item.name, amount = 1},
+        results = params.results or recipe.results,
     }
 end
 

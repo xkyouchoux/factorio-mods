@@ -1,0 +1,3 @@
+stage 1 = prototypes/**/*.lua
+stage 2 = prototypes/**/*-updates.lua
+stage 3 = prototypes/**/*-final-fixes.lua
