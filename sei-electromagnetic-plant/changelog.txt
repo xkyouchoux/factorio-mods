@@ -2,8 +2,7 @@
 Version: 1.0.2
 Date: 14 October 2025
   Changes:
-    - Removed dependency to and added incompatibility to Standalone Electromagnetic Plant
-    - Internal structure changes
+    - Removed dependency to Standalone Electromagnetic Plant mod and made it optional. Electromagnetic Plant is still included.
   Bugfixes:
     - Fixed circuit network connections on electromagnetic plant
 ---------------------------------------------------------------------------------------------------
@@ -11,6 +10,7 @@ Version: 1.0.1
 Date: 12 October 2025
   Changes:
     - Removes space solar panels, space accumulators, superconductive cable, dynamic emitter, and quantum processors in electromagnetic plant
+      Added mod setting to re-enable them.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 8 October 2025

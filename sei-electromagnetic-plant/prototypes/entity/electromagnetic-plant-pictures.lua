@@ -1,3 +1,5 @@
+local path_util = require("__sei-library__.path_util")
+
 local animation_speed = 0.4
 
 local warm_up_frames = 32
@@ -61,14 +63,14 @@ end
 local function base_layers()
   return
   {
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-base",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-base",
       {
         animation_speed = animation_speed,
         frame_count = 1,
         scale = 0.5
       }
     ),
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-base-shadow",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-base-shadow",
       {
         animation_speed = animation_speed,
         draw_as_shadow = true,
@@ -81,14 +83,14 @@ end
 
 local function warm_up_animation(frame_count)
   return {
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-main-warm-up",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-main-warm-up",
       {
         animation_speed = animation_speed,
         frame_count = frame_count or warm_up_frames,
         scale = 0.5
       }
     ),
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-shadow-warm-up",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-shadow-warm-up",
       {
         draw_as_shadow = true,
         animation_speed = animation_speed,
@@ -101,14 +103,14 @@ end
 
 local function rotate_animation()
   return {
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-main-rotate",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-main-rotate",
       {
         animation_speed = animation_speed,
         frame_count = rotate_frames,
         scale = 0.5
       }
     ),
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-shadow-rotate",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-shadow-rotate",
       {
         draw_as_shadow = true,
         animation_speed = animation_speed,
@@ -121,14 +123,14 @@ end
 
 local function rotate_continue_animation()
   return {
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-main-rotate-continue",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-main-rotate-continue",
       {
         animation_speed = animation_speed,
         frame_count = rotate_continue_frames,
         scale = 0.5
       }
     ),
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-shadow-rotate-continue",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-shadow-rotate-continue",
       {
         draw_as_shadow = true,
         animation_speed = animation_speed,
@@ -141,14 +143,14 @@ end
 
 local function cool_down_animation(frame_count)
   return {
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-main-cool-down",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-main-cool-down",
       {
         animation_speed = animation_speed,
         frame_count = frame_count or cool_down_frames,
         scale = 0.5
       }
     ),
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-shadow-cool-down",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-shadow-cool-down",
       {
         draw_as_shadow = true,
         animation_speed = animation_speed,
@@ -161,7 +163,7 @@ end
 
 local function lights_warm_up_animation()
   return {
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-lights-warm-up",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-lights-warm-up",
       {
         draw_as_glow = true,
         blend_mode = "additive",
@@ -175,7 +177,7 @@ end
 
 local function lights_rotate_animation()
   return {
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-lights-rotate",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-lights-rotate",
       {
         draw_as_glow = true,
         blend_mode = "additive",
@@ -189,7 +191,7 @@ end
 
 local function lights_rotate_continue_animation()
   return {
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-lights-rotate-continue",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-lights-rotate-continue",
       {
         draw_as_glow = true,
         blend_mode = "additive",
@@ -203,7 +205,7 @@ end
 
 local function lights_cool_down_animation(frame_count)
   return {
-    util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-lights-cool-down",
+    path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-lights-cool-down",
       {
         draw_as_glow = true,
         blend_mode = "additive",
@@ -279,12 +281,12 @@ local function pipe_connection(pipe_direction)
   return
   {
     layers = {
-      util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/pipe-connections/electromagnetic-plant-pipe-" .. pipe_direction,
+      path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/pipe-connections/electromagnetic-plant-pipe-" .. pipe_direction,
         {
           scale = 0.5,
         }
       ),
-      util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/pipe-connections/electromagnetic-plant-pipe-" .. pipe_direction_shadow,
+      path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/pipe-connections/electromagnetic-plant-pipe-" .. pipe_direction_shadow,
         {
           scale = 0.5,
           draw_as_shadow = true,
@@ -298,7 +300,7 @@ local function pipe_connection_frozen(pipe_direction)
   return
   {
     layers = {
-      util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/pipe-connections/electromagnetic-plant-pipe-" .. pipe_direction.."-frozen",
+      path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/pipe-connections/electromagnetic-plant-pipe-" .. pipe_direction.."-frozen",
         {
           scale = 0.5,
         }
@@ -315,13 +317,13 @@ return
     states = states(),
     idle_animation = { layers = base_layers() },
     working_visualisations = working_visualisations(),
-    frozen_patch = util.sprite_load("__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-frozen", {scale = 0.5}),
+    frozen_patch = path_util.sa_sprite_load("__sei-electromagnetic-plant__/graphics/entity/electromagnetic-plant/electromagnetic-plant-frozen", {scale = 0.5}),
     reset_animation_when_frozen = true
   },
   water_reflection = {
     pictures =
     {
-      filename = "__space-age__/graphics/entity/electromagnetic-plant/electromagnetic-plant-water-reflection.png",
+      filename = path_util.space_age_path.."graphics/entity/electromagnetic-plant/electromagnetic-plant-water-reflection.png",
       width = 26,
       height = 34,
       shift = util.by_pixel(5, 72.0),
