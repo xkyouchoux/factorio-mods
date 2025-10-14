@@ -1,13 +1,5 @@
 local Util = require("__space-exploration__.data_util")
 
-Util.space_age_path = "__base__/../space-age/"
-
-function Util.sa_sprite_load(path, table)
-    table = util.sprite_load(path, table)
-    table.filename = Util.space_age_path..table.filename
-    return table
-end
-
 function Util.remove_category_from_machines(category, machines)
     for _,machine in pairs(machines) do
         if data.raw["assembling-machine"][machine] then

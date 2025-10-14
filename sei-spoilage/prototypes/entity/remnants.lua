@@ -1,8 +1,10 @@
+local path_util = require("__sei-library__.path_util")
+
 data:extend({
     {
         type = "corpse",
         name = "heating-tower-remnants",
-        icon = SEI_SPACE_AGE_PATH.."graphics/icons/heating-tower.png",
+        icon = path_util.space_age_path.."graphics/icons/heating-tower.png",
         flags = {"placeable-neutral", "not-on-map"},
         hidden_in_factoriopedia = true,
         subgroup = "energy-remnants",
@@ -15,7 +17,7 @@ data:extend({
         expires = false,
         final_render_layer = "remnants",
         remove_on_tile_placement = false,
-        animation = SEI_SPRITE_LOAD("graphics/entity/heating-tower/heating-tower-remnants",{
+        animation = path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-remnants",{
         scale = 0.5,
         direction_count = 1
         })

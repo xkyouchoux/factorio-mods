@@ -1,3 +1,4 @@
+local path_util = require("__sei-library__.path_util")
 local item_sounds = require("__base__.prototypes.item_sounds")
 local item_tints = require("__base__.prototypes.item-tints")
 
@@ -5,13 +6,13 @@ data:extend({
     {
         type = "item",
         name = "spoilage",
-        icon = SEI_SPACE_AGE_PATH.."graphics/icons/spoilage.png",
+        icon = path_util.space_age_path.."graphics/icons/spoilage.png",
         pictures =
         {
-            { size = 64, filename = SEI_SPACE_AGE_PATH.."graphics/icons/spoilage.png", scale = 0.5, mipmap_count = 4 },
-            { size = 64, filename = SEI_SPACE_AGE_PATH.."graphics/icons/spoilage-1.png", scale = 0.5, mipmap_count = 4 },
-            { size = 64, filename = SEI_SPACE_AGE_PATH.."graphics/icons/spoilage-2.png", scale = 0.5, mipmap_count = 4 },
-            { size = 64, filename = SEI_SPACE_AGE_PATH.."graphics/icons/spoilage-3.png", scale = 0.5, mipmap_count = 4 },
+            { size = 64, filename = path_util.space_age_path.."graphics/icons/spoilage.png", scale = 0.5, mipmap_count = 4 },
+            { size = 64, filename = path_util.space_age_path.."graphics/icons/spoilage-1.png", scale = 0.5, mipmap_count = 4 },
+            { size = 64, filename = path_util.space_age_path.."graphics/icons/spoilage-2.png", scale = 0.5, mipmap_count = 4 },
+            { size = 64, filename = path_util.space_age_path.."graphics/icons/spoilage-3.png", scale = 0.5, mipmap_count = 4 },
         },
         fuel_value = "250kJ",
         fuel_category = "chemical",
@@ -27,7 +28,7 @@ data:extend({
     {
         type = "item",
         name = "heating-tower",
-        icon = SEI_SPACE_AGE_PATH.."graphics/icons/heating-tower.png",
+        icon = path_util.space_age_path.."graphics/icons/heating-tower.png",
         subgroup = "energy",
         order = "c[heating-tower]",
         inventory_move_sound = item_sounds.steam_inventory_move,

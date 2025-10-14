@@ -1,3 +1,4 @@
+local path_util = require("__sei-library__.path_util")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 
@@ -5,7 +6,7 @@ data:extend({
     {
         type = "reactor",
         name = "heating-tower",
-        icon  = SEI_SPACE_AGE_PATH.."graphics/icons/heating-tower.png",
+        icon  = path_util.space_age_path.."graphics/icons/heating-tower.png",
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = "heating-tower"},
         max_health = 500,
@@ -37,10 +38,10 @@ data:extend({
         {
             layers =
             {
-                SEI_SPRITE_LOAD("graphics/entity/heating-tower/heating-tower-main", {
+                path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-main", {
                 scale = 0.5
                 }),
-                SEI_SPRITE_LOAD("graphics/entity/heating-tower/heating-tower-shadow", {
+                path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-shadow", {
                 scale = 0.5,
                 draw_as_shadow = true
                 })
@@ -50,14 +51,14 @@ data:extend({
         working_light_picture =
         {
         layers = {
-            SEI_SPRITE_LOAD("graphics/entity/heating-tower/heating-tower-working-fire", {
+            path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-working-fire", {
             frame_count = 24,
             scale = 0.5,
             blend_mode = "additive",
             draw_as_glow = true,
             animation_speed = 0.333
             }),
-            SEI_SPRITE_LOAD("graphics/entity/heating-tower/heating-tower-working-light", {
+            path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-working-light", {
             frame_count = 1,
             repeat_count = 24,
             scale = 0.5,
@@ -94,7 +95,7 @@ data:extend({
         },
 
         heat_picture = apply_heat_pipe_glow(
-        SEI_SPRITE_LOAD("graphics/entity/heating-tower/heating-tower-glow", {
+        path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-glow", {
             scale = 0.5,
             blend_mode = "additive"
         }))
@@ -102,7 +103,7 @@ data:extend({
 
         connection_patches_connected =
         {
-        sheet = SEI_SPRITE_LOAD("graphics/entity/heating-tower/heating-tower-pipes", {
+        sheet = path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-pipes", {
             scale = 0.5,
             variation_count = 4
         })
@@ -110,7 +111,7 @@ data:extend({
 
         connection_patches_disconnected =
         {
-        sheet = SEI_SPRITE_LOAD("graphics/entity/heating-tower/heating-tower-pipes-disconnected", {
+        sheet = path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-pipes-disconnected", {
             scale = 0.5,
             variation_count = 4
         })
@@ -119,7 +120,7 @@ data:extend({
         heat_connection_patches_connected =
         {
         sheet = apply_heat_pipe_glow(
-            SEI_SPRITE_LOAD("graphics/entity/heating-tower/heating-tower-pipes-heat", {
+            path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-pipes-heat", {
             scale = 0.5,
             variation_count = 4
         }))
@@ -128,7 +129,7 @@ data:extend({
         heat_connection_patches_disconnected =
         {
         sheet = apply_heat_pipe_glow(
-            SEI_SPRITE_LOAD("graphics/entity/heating-tower/heating-tower-pipes-heat-disconnected", {
+            path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-pipes-heat-disconnected", {
             scale = 0.5,
             variation_count = 4
         }))
@@ -138,7 +139,7 @@ data:extend({
         close_sound = sounds.steam_close,
         working_sound =
         {
-        sound = {filename = SEI_SPACE_AGE_PATH.."sound/entity//heating-tower/heating-tower-loop.ogg", volume = 0.5},
+        sound = {filename = path_util.space_age_path.."sound/entity//heating-tower/heating-tower-loop.ogg", volume = 0.5},
         max_sounds_per_prototype = 2,
         fade_in_ticks = 4,
         fade_out_ticks = 20

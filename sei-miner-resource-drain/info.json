@@ -7,7 +7,6 @@
   "dependencies": [
     "base >= 2.0.0",
     "space-exploration >= 0.7",
-    "sei-library",
     "? Krastorio2 >= 2.0",
     "? um-standalone-big-mining-drill",
     "! space-age"],

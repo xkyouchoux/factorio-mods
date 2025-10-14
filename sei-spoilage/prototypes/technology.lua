@@ -1,8 +1,10 @@
+local path_util = require("__sei-library__.path_util")
+
 data:extend({
     {
         type = "technology",
         name = "heating-tower",
-        icon = SEI_SPACE_AGE_PATH.."graphics/technology/heating-tower.png",
+        icon = path_util.space_age_path.."graphics/technology/heating-tower.png",
         icon_size = 256,
         effects =
         {
@@ -24,9 +26,9 @@ data:extend({
             }
         },
         prerequisites = {
-            "chemical-science-pack", 
             "concrete",
             "advanced-material-processing",
+            "se-heat-shielding",
         },
         unit =
         {

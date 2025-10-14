@@ -9,7 +9,7 @@
     "space-exploration >= 0.7",
     "sei-library",
     "? Krastorio2 >= 2.0",
-    "! HeatingTower",
+    "? HeatingTower",
     "! space-age"],
   "spoiling_required": true,
   "factorio_version": "2.0"

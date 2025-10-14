@@ -1,3 +1,4 @@
+local path_util = require("__sei-library__.path_util")
 local explosion_animations = require("__base__.prototypes.entity.explosion-animations")
 local sounds = require("__base__.prototypes.entity.sounds")
 
@@ -5,7 +6,7 @@ data:extend({
     {
         type = "explosion",
         name = "heating-tower-explosion",
-        icon = SEI_SPACE_AGE_PATH.."graphics/icons/heating-tower.png",
+        icon = path_util.space_age_path.."graphics/icons/heating-tower.png",
         flags = {"not-on-map"},
         hidden = true,
         subgroup = "energy-explosions",

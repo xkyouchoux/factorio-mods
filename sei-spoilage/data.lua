@@ -1,8 +1,5 @@
 local data_util = require("__sei-library__.data_util")
 
-SEI_SPACE_AGE_PATH = data_util.space_age_path
-SEI_SPRITE_LOAD = data_util.sa_sprite_load
-
 --added from space exploration
 se_delivery_cannon_recipes["spoilage"] = {name = "spoilage"}
 
@@ -16,8 +13,6 @@ require("prototypes.entity.remnants")
 require("prototypes.item")
 require("prototypes.recipe")
 require("prototypes.technology")
-
-local data_util = require("__sei-library__.data_util")
 
 data.raw.capsule["raw-fish"].spoil_ticks = 453000
 data.raw.capsule["raw-fish"].spoil_result = "spoilage"

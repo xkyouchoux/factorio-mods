@@ -1,9 +1,5 @@
 local data_util = require("__sei-library__.data_util")
 
-SEI_SPACE_AGE_PATH = data_util.space_age_path
-SEI_SPRITE_LOAD = data_util.sa_sprite_load
-
-
 data.raw["assembling-machine"]["foundry"].effect_receiver.base_effect.productivity = settings.startup["sei-foundry-base-production-bonus"].value / 100
 
 data.raw.recipe["foundry"].category = "crafting-with-fluid"
