@@ -21,7 +21,6 @@ data:extend({
         emissions_per_minute = {pollution = 100},
         effectivity = settings.startup["sei-heating-tower-effectivity"].value,
         fuel_inventory_size = 2,
-        burnt_inventory_size = 2,
         light_flicker =
         {
             color = {0,0,0},
