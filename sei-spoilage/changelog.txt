@@ -2,8 +2,10 @@
 Version: 0.1.6
 Date: 14 October 2025
   Changes:
-    - Internal structure changes
-    - Removed dependency to HeatingTower and made it optional. Heating tower is still included.
+    - Removed dependency to HeatingTower and made it optional.
+      Heating tower is still included in the mod.
+      You can safely remove HeatingTower
+  Balancing:
     - Adjusted bioslude from spoilage recipe to be 10 spoilage + 1 cosmic water = 1 biosludge
     - Moved heating tower back to chemical science and adjusted recipe
   Bugfixes:

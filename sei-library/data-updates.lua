@@ -1,1 +1,1 @@
-require("prototypes.updates.um-standalone-space-age-lib")
+require("prototypes.um-standalone-space-age-lib-updates")

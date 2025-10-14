@@ -1,2 +1,2 @@
-require("prototypes.updates.aai-loaders")
-require("prototypes.updates.Krastorio2")
+require("prototypes.aai-loaders-updates")
+require("prototypes.Krastorio2-updates")
