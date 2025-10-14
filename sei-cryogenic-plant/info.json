@@ -1,6 +1,6 @@
 {
   "name": "sei-cryogenic-plant",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "title": "Space Exploration Integration: Cryogenic Plant",
   "author": "xkyouchoux",
   "description": "Adds the cryogenic plant into space exploration.",
@@ -8,8 +8,8 @@
     "base >= 2.0.0",
     "space-exploration >= 0.7",
     "sei-library",
-    "! um-standalone-cryogenic-plant",
     "? Krastorio2 >= 2.0",
+    "! um-standalone-cryogenic-plant",
     "! space-age"],
   "freezing_required": true,
   "factorio_version": "2.0"

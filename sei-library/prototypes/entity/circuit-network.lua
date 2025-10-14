@@ -42,6 +42,17 @@ circuit_connector_definitions["cryogenic-plant"] = circuit_connector_definitions
     }
 )
 
+circuit_connector_definitions["big-mining-drill"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 0, main_offset = util.by_pixel( 73, -58), shadow_offset = util.by_pixel(112, -23), show_shadow = true },
+    { variation = 6, main_offset = util.by_pixel( 50.5, 19.5), shadow_offset = util.by_pixel( 77.5, 52.5), show_shadow = false },
+    { variation = 4, main_offset = util.by_pixel(-72, 8), shadow_offset = util.by_pixel(-33, 52), show_shadow = false },
+    { variation = 2, main_offset = util.by_pixel(-50.5, 12), shadow_offset = util.by_pixel(-33.5, 42), show_shadow = false }
+  }
+)
+
 circuit_connector_definitions["heating-tower"] = circuit_connector_definitions.create_single
 (
     universal_connector_template,

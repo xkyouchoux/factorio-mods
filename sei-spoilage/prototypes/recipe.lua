@@ -8,6 +8,7 @@ data:extend({
         category = "chemistry",
         enabled = false,
         energy_required = 3,
+        allow_productivity = true,
         ingredients =
         {
             {type = "item", name = "spoilage", amount = 20},
@@ -20,48 +21,27 @@ data:extend({
             secondary = {r = 0, g = 0.5, b = 0, a = 1.000},
         }
     },
-})
-
-data_util.make_recipe({
-    name = data_util.mod_prefix .. "bio-sludge-from-spoilage",
-    localised_description = {"recipe-description.se-bio-sludge-from-fish"},
-    ingredients = {
-        { type = "item", name = "spoilage", amount = 10},
-        { type = "fluid", name = data_util.mod_prefix .. "space-water", amount = 10 },
-    },
-    results = {
-        { type = "fluid", name = data_util.mod_prefix .. "bio-sludge", amount = 1 },
-    },
-    icons = {
-        { icon = data.raw.fluid[data_util.mod_prefix .. "bio-sludge"].icon, scale = 0.5, icon_size = 64  },
-        { icon = data.raw.item["spoilage"].icon, scale = 0.375, icon_size = 64  },
-    },
-    crafting_machine_tint = require("__space-exploration__.prototypes.recipe-tints").bio_sludge_tint,
-    energy_required = 10,
-    category = "space-biochemical",
-    enabled = false,
-    subgroup = "sludge",
-    order = "a[sludge]-a[bio-sludge]-c[bio-slidge]",
-    always_show_made_in = true,
-    hide_from_signal_gui = false,
-})
-
-if mods["Krastorio2"] then
-    data:extend({
+    {
+        type = "recipe",
+        name = "heating-tower",
+        energy_required = 10,
+        ingredients =
         {
-            type = "recipe",
-            name = "coke-from-spoilage",
-            icons = data_util.sub_icons(data.raw.item["kr-coke"].icon, data.raw.item["spoilage"]),
-            category = "kiln",
-            enabled = false,
-            energy_required = 16,
-            allow_productivity = true,
-            ingredients =
-            {
-                {type = "item", name = "wood", amount = 6},
-                {type = "item", name = "spoilage", amount = 6}
-            },
-            results = {{type="item", name="kr-coke", amount=6}},
+            {type = "item", name = "steel-furnace", amount = 1},
+            {type = "item", name = "heat-pipe", amount = 5},
+            {type = "item", name = "concrete", amount = 20},
+            {type = "item", name = "se-heat-shielding", amount = 5},
         },
-    })
-end
+        results = {{type = "item", name = "heating-tower", amount = 1}},
+        enabled = false
+    }
+})
+
+local bio_sludge_from_spoilage_recipe = table.deepcopy(data.raw["recipe"]["se-bio-sludge-from-wood"])
+bio_sludge_from_spoilage_recipe.name = "se-bio-sludge-from-spoilage"
+bio_sludge_from_spoilage_recipe.localised_name = {"recipe-name.se-bio-sludge-from-spoilage"}
+bio_sludge_from_spoilage_recipe.localised_description = data.raw["recipe"]["se-bio-sludge-from-wood"].localised_description
+bio_sludge_from_spoilage_recipe.ingredients[1] = {type = "item", name = "spoilage", amount = 10}
+bio_sludge_from_spoilage_recipe.icons[2].icon = data.raw["item"]["spoilage"].icon
+
+data:extend({bio_sludge_from_spoilage_recipe})

@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 14 October 2025
+  Changes:
+    - Removed dependency to and added incompatibility to Standalone Foundry
+    - Internal structure changes
+  Bugfixes:
+    - Fixed circuit network connections on foundry
+    - Fixed casting pipe, casting pipe to ground, and casting concrete could take productivity modules
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 12 October 2025
   Changes:

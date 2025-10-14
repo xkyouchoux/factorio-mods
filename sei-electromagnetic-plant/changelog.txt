@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 14 October 2025
+  Changes:
+    - Removed dependency to and added incompatibility to Standalone Electromagnetic Plant
+    - Internal structure changes
+  Bugfixes:
+    - Fixed circuit network connections on electromagnetic plant
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 12 October 2025
   Changes:

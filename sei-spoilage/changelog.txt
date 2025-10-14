@@ -1,8 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.6
-Date: XX October 2025
+Date: 14 October 2025
+  Changes:
+    - Internal structure changes
+    - Removed dependency and added incompatibility to HeatingTower
+    - Adjusted bioslude from spoilage recipe to be 10 spoilage + cosmic water = 1 biosludge
+    - Moved heating tower back to chemical science and adjusted recipe
   Bugfixes:
-    - Heating tower has correct circuit network connections now
+    - Fixed circuit network connections on heating tower
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 13 October 2025
@@ -13,7 +18,7 @@ Date: 13 October 2025
 Version: 0.1.4
 Date: 12 October 2025
   Changes:
-    - Set default heating tower efficency to 1 to stay in line with space exploration, can still modify it if you want.
+    - Set default heating tower efficency to 1 to stay in line with space exploration, can be modified with mod setting.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 12 October 2025

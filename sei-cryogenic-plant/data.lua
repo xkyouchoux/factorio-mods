@@ -1,5 +1,29 @@
 local data_util = require("__sei-library__.data_util")
 
+local cryogenic_plant_entity = data.sap["assembling-machine"]["cryogenic-plant"]
+local cryogenic_plant_remnants = data.sap["corpse"]["cryogenic-plant-remnants"]
+local cryogenic_plant_explosion = data.sap["explosion"]["cryogenic-plant-explosion"]
+local cryogenic_plant_item = data.sap["item"]["cryogenic-plant"]
+local cryogenic_plant_recipe = data.sap["recipe"]["cryogenic-plant"]
+local cryogenic_plant_technology = data.sap["technology"]["cryogenic-plant"]
+
+
+data:extend({
+    cryogenic_plant_entity,
+    cryogenic_plant_remnants,
+    cryogenic_plant_explosion,
+    cryogenic_plant_item,
+    cryogenic_plant_recipe,
+    cryogenic_plant_technology,
+    data.sap["recipe-category"]["cryogenics"],
+    data.sap["recipe-category"]["chemistry-or-cryogenics"],
+    data.sap["recipe-category"]["organic-or-chemistry"],
+    {
+        type = "recipe-category",
+        name = "chemistry-or-electromagnetics",
+    }
+})
+
 data.raw.recipe["cryogenic-plant"].category = "crafting"
 data.raw.recipe["cryogenic-plant"].ingredients = {
     {type = "item", name = "refined-concrete", amount = 20},

@@ -1,5 +1,13 @@
 local Util = require("__space-exploration__.data_util")
 
+Util.space_age_path = "__base__/../space-age/"
+
+function Util.sa_sprite_load(path, table)
+    table = util.sprite_load(path, table)
+    table.filename = Util.space_age_path..table.filename
+    return table
+end
+
 function Util.remove_category_from_machines(category, machines)
     for _,machine in pairs(machines) do
         if data.raw["assembling-machine"][machine] then
@@ -49,6 +57,14 @@ function Util.set_category_for_recipes(category, recipes)
     for _,recipe in pairs(recipes) do
         if data.raw.recipe[recipe] then data.raw.recipe[recipe].category = category end
     end
+end
+
+function Util.get_glass()
+    return mods["Krastorio2"] and "kr-glass" or "glass"
+end
+
+function Util.get_sand()
+    return mod["Krastorio2"] and "kr-sand" or "sand"
 end
 
 return Util

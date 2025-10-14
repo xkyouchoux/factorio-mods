@@ -7,9 +7,9 @@
   "dependencies": [
     "base >= 2.0.0",
     "space-exploration >= 0.7",
-    "HeatingTower",
     "sei-library",
     "? Krastorio2 >= 2.0",
+    "! HeatingTower",
     "! space-age"],
   "spoiling_required": true,
   "factorio_version": "2.0"

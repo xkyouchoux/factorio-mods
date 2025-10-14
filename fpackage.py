@@ -28,6 +28,13 @@ mod_full_name = mod_name + "_" + mod_version
 
 mod_output_path = cwd + "/" + mod_full_name + ".zip"
 
+mod_output = os.listdir(cwd)
+for mod in mod_output:
+    if mod_name + "_" in mod:
+        if dbg:
+            print(cwd + "/" + mod)
+        os.remove(cwd + "/" + mod)
+
 if dbg:
     print("Output: " + mod_output_path)
 

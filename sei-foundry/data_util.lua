@@ -1,39 +1,41 @@
 local result = require("__sei-library__.data_util")
 
 function result.sub_sup_icons(icon_main, icon_left, icon_right)
-    local results = {{ icon = icon_main, shift = {2, 0}, icon_size = 64 }}
-    table.insert(results, { icon = icon_left.icon or icon_left,
-                                scale = icon_left.scale or 0.25,
-                                shift = icon_left.shift or {-7, -7},
-                                icon_size = icon_left.icon_size or 64,
-                                draw_background = icon_left.draw_background or true,
-                            })
-
-    table.insert(results, { icon = icon_right.icon or icon_right,
-                                scale = icon_right.scale or 0.25,
-                                shift = icon_right.shift or {10, -7},
-                                icon_size = icon_right.icon_size or 64,
-                                draw_background = icon_right.draw_background or true,
-                            })    
-    return results
+    return result.sub_icons(icon_main, icon_left, {
+        icon = icon_right.icon or icon_right,
+        scale = icon_right.scale,
+        shift = icon_right.shift or {10, -7}, 
+        icon_size = icon_right.icon_size,
+        draw_background = icon_right.draw_background,
+    })
 end
 
-function result.update_casting_recipe(recipe_name, icons, item)
-    local recipe = "casting-" .. recipe_name
-    if not data.raw.recipe[recipe] then return end
-    if item == nil then item = recipe_name end
-    data.raw.recipe[recipe].icon = nil
-    if #icons == 2 then
-        data.raw.recipe[recipe].icons = result.sub_sup_icons(data.raw.item[item].icon, icons[1], icons[2])
-    else
-        data.raw.recipe[recipe].icons = result.sub_icons(data.raw.item[item].icon, icons[1])
-    end
-
-    data.raw.recipe[recipe].order = data.raw.recipe[item].order and data.raw.recipe[item].order .. "-casting" 
-        or data.raw.item[data.raw.recipe[item].results[1].name].order .. "-casting"
-    data.raw.recipe[recipe].group = data.raw.recipe[item].group
-    data.raw.recipe[recipe].subgroup = data.raw.recipe[item].subgroup
-    data.raw.recipe[recipe].energy_required = data.raw.recipe[item].energy_required
+function result.create_casting_recipe(params)
+    local name = "casting-"..params.name
+    local item = data.raw["item"][params.item or params.name]
+    local recipe = data.raw.["recipe"][params.recipe or params.name]
+    if not item or not recipe or not params.icons then return end
+    return {
+        type = "recipe",
+        name = "casting-"..params.name,
+        icons = #params.icons == 1 and result.sub_icons(params.icon or item.icon, params.icons[1]) or 
+            result.sub_icons(params.icon or item.icon, params.icons[1], {
+                icon = params.icons[2].icon or params.icons[2],
+                scale = params.icons[2].scale
+                shift = params.icons[2].shift or {10, -7},
+                icon_size = params.icons[2].icon_size,
+                draw_background = params.icons[2].draw_background,
+            }),
+        category = "metallurgy",
+        enabled = false,
+        allow_productivity = params.allow_productivity or true,
+        order = params.order or (recipe.order and recipe.order.."-casting") or (item.order and item.order.."-casting"),
+        group = params.group or recipe.group,
+        subgroup = params.subgroup or recipe.subgroup,
+        energy_required = params.energy_required or recipe.energy_required,
+        ingredients = params.ingredients,
+        results = params.results or {type = item, name = item.name, amount = 1},
+    }
 end
 
 function result.get_iron_cost(plates)
