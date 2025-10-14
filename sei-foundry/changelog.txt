@@ -3,7 +3,8 @@ Version: 1.0.3
 Date: 14 October 2025
   Changes:
     - Removed dependency to Standalone Foundry and made it optional. Foundry is still included.
-    - Internal structure changes
+  Balancing:
+    - Casting intermediate recipe craft times are doubled, making them 2x instead of 4x
   Bugfixes:
     - Fixed circuit network connections on foundry
     - Fixed casting pipe, casting pipe to ground, and casting concrete could take productivity modules
