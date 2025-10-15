@@ -51,21 +51,15 @@ data_util.conditional_modify({
     type = "recipe",
     name = "bioplastic",
     icons = data_util.sub_icons(data.raw.item["plastic-bar"].icon, data.raw.item["bioflux"].icon),
-    ingredients = {
-        {type = "item", name = "se-vitamelange-bloom", amount = 5},
-        {type = "item", name = "bioflux", amount = 1},
-    },
 })
+data_util.replace_or_add_ingredient("bioplastic", "se-bio-sludge", "bioflux", 1)
     
 data_util.conditional_modify({
     type = "recipe",
     name = "biosulfur",
     icons = data_util.sub_icons(data.raw.item["sulfur"].icon, data.raw.item["bioflux"].icon),
-    ingredients = {
-        {type = "item", name = "se-vitamelange-nugget", amount = 3},
-        {type = "item", name = "bioflux", amount = 1},
-    },
 })
+data_util.replace_or_add_ingredient("biosulfur", "se-bio-sludge", "bioflux", 1)
 
 table.insert(data.raw.technology["biochamber"].effects, {
         type = "unlock-recipe",
