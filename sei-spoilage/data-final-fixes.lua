@@ -100,7 +100,7 @@ local function get_or_create_spoilage_capsule(resource)
     end
 end
 
-local DEBUG = true
+local DEBUG = false
 
 if DEBUG then 
     data.raw.item["se-vitamelange-nugget"].spoil_ticks = 0.5 * minute
