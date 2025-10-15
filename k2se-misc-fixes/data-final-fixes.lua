@@ -12,3 +12,8 @@ local crafting_categories = {
     ["character"] = data.raw.character.character.crafting_categories,
     ["god-controller"] = data.raw["god-controller"].default.crafting_categories
 }
+
+if mods["Krastorio2"] then
+    data.raw["autoplace-control"]["kr-imersite"].hidden = true
+    data.raw["autoplace-control"]["kr-imersite"].enabled = false
+end

@@ -3,7 +3,7 @@ local Util = {}
 Util.space_age_path = "__base__/../space-age/"
 
 local function fix_path(path)
-    local seperator_location = string.find(path, "/")
+    local seperator_location = string.find(path, "/") + 1
     return Util.space_age_path..string.sub(path, seperator_location)
 end
 
