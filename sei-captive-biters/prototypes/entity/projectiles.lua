@@ -1,4 +1,4 @@
-local explosion_animations = require("__base__.prototypes.entity.explosion-animations")
+local path_util = require("__sei-library__.path_util")
 
 data:extend(
 {
@@ -29,20 +29,20 @@ data:extend(
         {
         layers =
         {
-            util.sprite_load("__sei-captive-biters__/graphics/entity/capture-robot-rocket/capture-robot",
+            path_util.sa_sprite_load("__sei-captive-biters__/graphics/entity/capture-robot-rocket/capture-robot",
             {
             direction_count = 32,
             scale = 0.5,
             priority = "high"
             }),
-            util.sprite_load("__sei-captive-biters__/graphics/entity/capture-robot-rocket/capture-robot-mask",
+            path_util.sa_sprite_load("__sei-captive-biters__/graphics/entity/capture-robot-rocket/capture-robot-mask",
             {
             direction_count = 32,
             scale = 0.5,
             priority = "high",
             apply_runtime_tint = true
             }),
-            util.sprite_load("__sei-captive-biters__/graphics/entity/capture-robot-rocket/capture-robot-shadow",
+            path_util.sa_sprite_load("__sei-captive-biters__/graphics/entity/capture-robot-rocket/capture-robot-shadow",
             {
             direction_count = 32,
             scale = 0.5,

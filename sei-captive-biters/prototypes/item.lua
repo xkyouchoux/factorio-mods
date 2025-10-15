@@ -1,14 +1,19 @@
+local path_util = require("__sei-library__.path_util")
 local data_util = require("__sei-library__.data_util")
 
 local item_sounds = require("__base__.prototypes.item_sounds")
+local space_age_item_sounds = require("__sei-library__.prototypes.item_sounds")
 
 data:extend({
     {
         type = "item",
         name = "bioflux",
-        icon = "__sei-captive-biters__/graphics/icons/bioflux.png",
+        icon = path_util.space_age_path.."graphics/icons/bioflux.png",
         subgroup = "chemical",
         order = "a[chemical]-n[bioflux]",
+        inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+        pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+        drop_sound = space_age_item_sounds.agriculture_inventory_move,
         fuel_category = "food",
         fuel_value = "6MJ",
         stack_size = 100,
@@ -17,7 +22,7 @@ data:extend({
     {
         type = "item",
         name = "captive-biter-spawner",
-        icon = "__sei-captive-biters__/graphics/icons/captive-biter-spawner.png",
+        icon = path_util.space_age_path.."graphics/icons/captive-biter-spawner.png",
         subgroup = "chemistry",
         order = "z-c-biter-nest",
         inventory_move_sound = item_sounds.mechanical_inventory_move,
@@ -29,7 +34,7 @@ data:extend({
     {
         type = "ammo",
         name = "capture-robot-rocket",
-        icon = "__sei-captive-biters__/graphics/icons/capture-bot.png",
+        icon = path_util.space_age_path.."graphics/icons/capture-bot.png",
         ammo_category = "rocket",
         ammo_type =
         {
@@ -57,127 +62,22 @@ data:extend({
     {
         type = "item",
         name = "biter-egg",
-        icon = "__sei-captive-biters__/graphics/icons/biter-egg.png",
+        icon = path_util.space_age_path.."graphics/icons/biter-egg.png",
         pictures =
         {
-        { size = 64, filename = "__sei-captive-biters__/graphics/icons/biter-egg.png", scale = 0.5, mipmap_count = 4 },
-        { size = 64, filename = "__sei-captive-biters__/graphics/icons/biter-egg-1.png", scale = 0.5, mipmap_count = 4 },
-        { size = 64, filename = "__sei-captive-biters__/graphics/icons/biter-egg-2.png", scale = 0.5, mipmap_count = 4 },
-        { size = 64, filename = "__sei-captive-biters__/graphics/icons/biter-egg-3.png", scale = 0.5, mipmap_count = 4 },
+        { size = 64, filename = path_util.space_age_path.."graphics/icons/biter-egg.png", scale = 0.5, mipmap_count = 4 },
+        { size = 64, filename = path_util.space_age_path.."graphics/icons/biter-egg-1.png", scale = 0.5, mipmap_count = 4 },
+        { size = 64, filename = path_util.space_age_path.."graphics/icons/biter-egg-2.png", scale = 0.5, mipmap_count = 4 },
+        { size = 64, filename = path_util.space_age_path.."graphics/icons/biter-egg-3.png", scale = 0.5, mipmap_count = 4 },
         },
         fuel_category = "chemical",
         fuel_value = "6MJ",
         subgroup = "chemical",
         order = "a[chemical]-n[organic]-a[biter-egg]",
+        inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+        pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+        drop_sound = space_age_item_sounds.agriculture_inventory_move,
         stack_size = 100,
         weight = 2 * kg,
     },
 })
-
-if mods["sei-spoilage"] then
-    data_util.conditional_modify({
-        type = "item",
-        name = "bioflux",
-        spoil_ticks = 2 * hour,
-        spoil_result = "spoilage",
-    })
-
-    data_util.conditional_modify({
-        type = "item",
-        name = "captive-biter-spawner",
-        spoil_ticks = 1 * hour,
-        spoil_to_trigger_result =
-        {
-            items_per_trigger = 1,
-            trigger =
-            {
-                type = "direct",
-                action_delivery =
-                {
-                    type = "instant",
-                    source_effects =
-                    {
-                        {
-                            type = "create-entity",
-                            entity_name = "behemoth-biter",
-                            affects_target = true,
-                            show_in_tooltip = true,
-                            as_enemy = true,
-                            find_non_colliding_position = true,
-                            offset_deviation = {{-1, -1}, {1, 1}},
-                            non_colliding_fail_result =
-                            {
-                                type = "direct",
-                                action_delivery =
-                                {
-                                    type = "instant",
-                                    source_effects =
-                                    {
-                                        {
-                                            type = "create-entity",
-                                            entity_name = "behemoth-biter",
-                                            affects_target = true,
-                                            show_in_tooltip = false,
-                                            as_enemy = true,
-                                            offset_deviation = {{-1, -1}, {1, 1}},
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    })
-
-    data_util.conditional_modify({
-        type = "item",
-        name = "biter-egg",
-        spoil_ticks = 1 * hour,
-        spoil_to_trigger_result =
-        {
-            items_per_trigger = 10,
-            trigger =
-            {
-                type = "direct",
-                action_delivery =
-                {
-                    type = "instant",
-                    source_effects =
-                    {
-                        {
-                            type = "create-entity",
-                            entity_name = "big-biter",
-                            affects_target = true,
-                            show_in_tooltip = true,
-                            as_enemy = true,
-                            find_non_colliding_position = true,
-                            abort_if_over_space = true,
-                            offset_deviation = {{-1, -1}, {1, 1}},
-                            non_colliding_fail_result =
-                            {
-                                type = "direct",
-                                action_delivery =
-                                {
-                                    type = "instant",
-                                    source_effects =
-                                    {
-                                        {
-                                            type = "create-entity",
-                                            entity_name = "big-biter",
-                                            affects_target = true,
-                                            show_in_tooltip = false,
-                                            as_enemy = true,
-                                            offset_deviation = {{-1, -1}, {1, 1}},
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    })
-end

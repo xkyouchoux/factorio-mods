@@ -58,15 +58,15 @@ data:extend({
         fade_out_ticks = 30,
         sound_accents =
         {
-            {sound = {variations = path_util.sa_soundvariations("sound/entity/cryogenic-plant/cp-smoke-mask-puff", 2, 0.35), audible_distance_modifier = 0.8}, frame = 11},
-            {sound = {variations = path_util.sa_soundvariations("sound/entity/cryogenic-plant/cp-smoke-mask-puff", 2, 0.3), audible_distance_modifier = 0.8}, frame = 130},
+            {sound = {variations = path_util.sa_sound_variations("sound/entity/cryogenic-plant/cp-smoke-mask-puff", 2, 0.35), audible_distance_modifier = 0.8}, frame = 11},
+            {sound = {variations = path_util.sa_sound_variations("sound/entity/cryogenic-plant/cp-smoke-mask-puff", 2, 0.3), audible_distance_modifier = 0.8}, frame = 130},
             {sound = {filename = path_util.space_age_path.."sound/entity/cryogenic-plant/cp-anim3-bubbles-rise.ogg", volume = 0.9, audible_distance_modifier = 0.3}, frame = 14},
             {sound = {filename = path_util.space_age_path.."sound/entity/cryogenic-plant/cp-anim3-bubbles-fall.ogg", volume = 0.7, audible_distance_modifier = 0.3}, frame = 62},
             {sound = {filename = path_util.space_age_path.."sound/entity/cryogenic-plant/cp-anim3-bubbles-rise.ogg", volume = 0.9, audible_distance_modifier = 0.3}, frame = 110},
             {sound = {filename = path_util.space_age_path.."sound/entity/cryogenic-plant/cp-anim3-bubbles-fall.ogg", volume = 0.7, audible_distance_modifier = 0.3}, frame = 158},
             {sound = {filename = path_util.space_age_path.."sound/entity/cryogenic-plant/cp-anim5-gears.ogg", volume = 0.25, audible_distance_modifier = 0.4}, frame = 51},
             {sound = {filename = path_util.space_age_path.."sound/entity/cryogenic-plant/cp-anim5-gears.ogg", volume = 0.2, audible_distance_modifier = 0.4}, frame = 151},
-            {sound = {variations = path_util.sa_soundvariations("sound/entity/cryogenic-plant/cp-anim6-open", 2, 0.6), audible_distance_modifier = 0.4}, frame = 3},
+            {sound = {variations = path_util.sa_sound_variations("sound/entity/cryogenic-plant/cp-anim6-open", 2, 0.6), audible_distance_modifier = 0.4}, frame = 3},
             {sound = {filename = path_util.space_age_path.."sound/entity/cryogenic-plant/cp-anim6-close.ogg", volume = 0.7, audible_distance_modifier = 0.4}, frame = 33},
             {sound = {filename = path_util.space_age_path.."sound/entity/cryogenic-plant/cp-anim6-slide-down.ogg", volume = 0.55, audible_distance_modifier = 0.4}, frame = 42},
             {sound = {filename = path_util.space_age_path.."sound/entity/cryogenic-plant/cp-anim6-slide-up.ogg", volume = 0.6, audible_distance_modifier = 0.4}, frame = 126},

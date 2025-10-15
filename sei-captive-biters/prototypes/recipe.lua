@@ -1,3 +1,4 @@
+local path_util = require("__sei-library__.path_util")
 local data_util = require("__sei-library__.data_util")
 
 data:extend({
@@ -18,8 +19,8 @@ data:extend({
     {
         type = "recipe",
         name = "bioflux",
-        icon = "__sei-captive-biters__/graphics/icons/bioflux.png",
-        category = "organic-or-chemistry",
+        icon = path_util.space_age_path.."graphics/icons/bioflux.png",
+        category = "chemistry",
         enabled = false,
         allow_productivity = true,
         energy_required = 6,
@@ -53,7 +54,7 @@ data:extend({
     {
         type = "recipe",
         name = "biter-egg",
-        icon = "__sei-captive-biters__/graphics/icons/biter-egg.png",
+        icon = path_util.space_age_path.."graphics/icons/biter-egg.png",
         category = "captive-spawner-process",
         order = "c[eggs]-a[biter-egg]",
         hide_from_player_crafting = true,

@@ -1,4 +1,6 @@
-require ("util")
+local path_util = require("__sei-library__.path_util")
+
+require("util")
 
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
@@ -7,7 +9,7 @@ data:extend({
     {
         type = "assembling-machine",
         name = "captive-biter-spawner",
-        icon = "__sei-captive-biters__/graphics/icons/captive-biter-spawner.png",
+        icon = path_util.space_age_path.."graphics/icons/captive-biter-spawner.png",
         subgroup = "chemistry",
         flags = {"placeable-neutral", "placeable-player", "player-creation", "not-repairable", "not-deconstructable"},
         collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
@@ -58,12 +60,12 @@ data:extend({
         {
         animation = {
             layers = {
-            util.sprite_load("__sei-captive-biters__/graphics/entity/captive-spawner/captive-anim",{
+            path_util.sa_sprite_load("__sei-captive-biters__/graphics/entity/captive-spawner/captive-anim",{
                 frame_count = 32,
                 scale = 0.5,
                 animation_speed = 0.4,
             }),
-            util.sprite_load("__sei-captive-biters__/graphics/entity/captive-spawner/captive-shadow",{
+            path_util.sa_sprite_load("__sei-captive-biters__/graphics/entity/captive-spawner/captive-shadow",{
                 frame_count = 32,
                 scale = 0.5,
                 animation_speed = 0.4,
@@ -74,7 +76,7 @@ data:extend({
         working_visualisations = {
             {
             fadeout = true,
-            animation = util.sprite_load("__sei-captive-biters__/graphics/entity/captive-spawner/captive-fluids",{
+            animation = path_util.sa_sprite_load("__sei-captive-biters__/graphics/entity/captive-spawner/captive-fluids",{
                 frame_count = 32,
                 scale = 0.5,
                 tint = {0.25,0.44,0,1},
@@ -90,8 +92,8 @@ data:extend({
         sound = {category = "enemy", filename = "__base__/sound/creatures/spawner.ogg", volume = 0.6 },
         sound_accents =
         {
-            {sound = {variations = sound_variations("__sei-captive-biters__/sound/entity/spawner/spawner-respirator-push", 3, 0.3), audible_distance_modifier = 0.6}, frame = 1},
-            {sound = {variations = sound_variations("__sei-captive-biters__/sound/entity/spawner/spawner-respirator-pull", 3, 0.3), audible_distance_modifier = 0.6}, frame = 17},
+            {sound = {variations = path_util.sa_sound_variations("sound/entity/spawner/spawner-respirator-push", 3, 0.3), audible_distance_modifier = 0.6}, frame = 1},
+            {sound = {variations = path_util.sa_sound_variations("sound/entity/spawner/spawner-respirator-pull", 3, 0.3), audible_distance_modifier = 0.6}, frame = 17},
         },
         },
         crafting_categories = {"captive-spawner-process"},

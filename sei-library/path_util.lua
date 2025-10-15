@@ -24,7 +24,7 @@ function Util.sa_sprite_load(path, table)
     return sprite
 end
 
-function Util.sa_soundvariations(filename, variations, volume, modifiers)
+function Util.sa_sound_variations(filename, variations, volume, modifiers)
     sounds = sound_variations(filename, variations, volume, modifiers)
     for _,sound in pairs(sounds) do
         sound.filename = Util.space_age_path..sound.filename
@@ -32,7 +32,7 @@ function Util.sa_soundvariations(filename, variations, volume, modifiers)
     return sounds
 end
 
-function Util.sa_soundvariations_with_volume_variations(filename, variations, min_volume, max_volume, modifiers)
+function Util.sa_sound_variations_with_volume_variations(filename, variations, min_volume, max_volume, modifiers)
     sounds = sound_variations_with_volume_variations(filename, variations, min_volume, max_volume, modifiers)
     for _,sound in pairs(sounds) do
         sound.filename = Util.space_age_path..sound.filename
