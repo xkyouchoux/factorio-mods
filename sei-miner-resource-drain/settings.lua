@@ -26,6 +26,7 @@ data:extend({
         minimum_value = 1,
         maximum_value = 100,
         order = "c",
+        hidden = true,
     },
     {
         type = "int-setting",
