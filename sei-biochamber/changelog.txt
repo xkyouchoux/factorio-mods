@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 14 October 2025
+  Changes:
+    - Changed to use spage age graphics and sounds from the mod itself instead of packaging it with the mod
+  Bugfixes:
+    - Fixed circuit network connections on biochamber
+---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 12 October 2025
   Changes:

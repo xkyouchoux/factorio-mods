@@ -1,8 +1,10 @@
+local path_util = require("__sei-library__.path_util")
+
 data:extend({
     {
         type = "technology",
         name = "biochamber",
-        icon = "__sei-biochamber__/graphics/technology/biochamber.png",
+        icon = path_util.space_age_path.."graphics/technology/biochamber.png",
         icon_size = 256,
         effects =
         {
@@ -65,32 +67,3 @@ data:extend({
         }
     },
 })
-
-if mods["Krastorio2"] then
-    table.insert(data.raw.technology["biochamber"].effects, {
-            type = "unlock-recipe",
-            recipe = "fertilizer-with-nutrients"
-        }
-    )
-end
-
-if mods["sei-captive-biters"] then
-    table.insert(data.raw.technology["biochamber"].effects, {
-            type = "unlock-recipe",
-            recipe = "nutrients-from-bioflux"
-        }
-    )
-    table.insert(data.raw.technology["biochamber"].effects, {
-            type = "unlock-recipe",
-            recipe = "nutrients-from-biter-egg"
-        }
-    )
-end
-
-if mods["sei-spoilage"] then
-    table.insert(data.raw.technology["biochamber"].effects, {
-            type = "unlock-recipe",
-            recipe = "nutrients-from-spoilage"
-        }
-    )
-end

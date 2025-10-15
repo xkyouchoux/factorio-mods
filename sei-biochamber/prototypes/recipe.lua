@@ -1,3 +1,4 @@
+local path_util = require("__sei-library__.path_util")
 local data_util = require("__sei-library__.data_util")
 
 data:extend({
@@ -96,6 +97,7 @@ data:extend({
         type = "recipe",
         name = "bioplastic",
         category = "organic",
+        order = data.raw.item["plastic-bar"].order .. "-bio",
         energy_required = 2,
         icons = data_util.sub_icons(data.raw.item["plastic-bar"].icon, data.raw.fluid["se-bio-sludge"].icon),
         ingredients = {
@@ -111,6 +113,7 @@ data:extend({
         type = "recipe",
         name = "biosulfur",
         category = "organic",
+        order = data.raw.item["sulfur"].order .. "-bio",
         energy_required = 2,
         icons = data_util.sub_icons(data.raw.item["sulfur"].icon, data.raw.fluid["se-bio-sludge"].icon),
         ingredients = {
@@ -125,7 +128,7 @@ data:extend({
     {
         type = "recipe",
         name = "fish-breeding",
-        icon = "__sei-biochamber__/graphics/icons/fish-breeding.png",
+        icon = path_util.space_age_path.."graphics/icons/fish-breeding.png",
         category = "organic",
         subgroup = "organic",
         order = "a[organic]-c[fish-breeding]",
@@ -172,102 +175,3 @@ data:extend({
         }
     },
 })
-
-if mods["Krastorio2"] then
-    data:extend({
-        {
-            type = "recipe",
-            name = "fertilizer-with-nutrients",
-            category = "organic",
-            energy_required = 4,
-            icons = data_util.sub_icons(data.raw.item["kr-fertilizer"].icon, data.raw.item["nutrients"].icon),
-            ingredients = {
-                {type = "item", name = "kr-biomass", amount = 2},
-                {type = "item", name = "kr-sand", amount = 5},
-                {type = "item", name = "nutrients", amount = 40},
-                {type = "fluid", name = "kr-nitric-acid", amount = 10},
-                {type = "fluid", name = "kr-mineral-water", amount = 20},
-            },
-            results = {{type="item", name="kr-fertilizer", amount = 20}},
-            enabled = false,
-            allow_productivity = true,
-        },
-    })
-
-    data_util.replace_or_add_ingredient("biochamber", "steel-plate", "kr-imersium-beam", 10)
-end
-
-if mods["sei-captive-biters"] then
-    data:extend({
-        {
-            type = "recipe",
-            name = "nutrients-from-bioflux",
-            category = "organic",
-            order = "a[organic]-a[nutrients]-g[bioflux]",
-            energy_required = 2,
-            icons = data_util.sub_icons(data.raw.item["nutrients"].icon, data.raw.item["bioflux"].icon),
-            ingredients = {
-                {type = "item", name = "bioflux", amount = 5},
-            },
-            results = {{type="item", name="nutrients", amount = 40}},
-            enabled = false,
-            allow_productivity = true,
-        },
-        {
-            type = "recipe",
-            name = "nutrients-from-biter-egg",
-            category = "organic-or-hand-crafting",
-            order = "a[organic]-a[nutrients]-i[biter-egg]",
-            energy_required = 2,
-            icons = data_util.sub_icons(data.raw.item["nutrients"].icon, data.raw.item["biter-egg"].icon),
-            ingredients = {
-                {type = "item", name = "biter-egg", amount = 1},
-            },
-            results = {{type="item", name="nutrients", amount = 20}},
-            enabled = false,
-            allow_productivity = true,
-        },
-    })
-
-    data_util.conditional_modify({
-        type = "recipe",
-        name = "bioplastic",
-        icons = data_util.sub_icons(data.raw.item["plastic-bar"].icon, data.raw.item["bioflux"].icon),
-        ingredients = {
-            {type = "item", name = "se-vitamelange-bloom", amount = 5},
-            {type = "item", name = "bioflux", amount = 1},
-        },
-    })
-    
-    data_util.conditional_modify({
-        type = "recipe",
-        name = "biosulfur",
-        icons = data_util.sub_icons(data.raw.item["sulfur"].icon, data.raw.item["bioflux"].icon),
-        ingredients = {
-            {type = "item", name = "se-vitamelange-nugget", amount = 3},
-            {type = "item", name = "bioflux", amount = 1},
-        },
-    })
-end
-
-if mods["sei-spoilage"] then
-    data:extend({
-        {
-            type = "recipe",
-            name = "nutrients-from-spoilage",
-            category = "organic-or-hand-crafting",
-            order = "a[organic]-a[nutrients]-b[spoilage]",
-            energy_required = 2,
-            icons = data_util.sub_icons(data.raw.item["nutrients"].icon, data.raw.item["spoilage"].icon),
-            ingredients = {
-                {type = "item", name = "spoilage", amount = 10},
-            },
-            results = {{type="item", name="nutrients", amount=1}},
-            auto_recycle = false,
-            enabled = false,
-            allow_productivity = true,
-        },
-    })
-
-    data_util.replace_or_add_ingredient("biosulfur", "se-vitamelange-nugget", "spoilage", 5)
-end

@@ -1,5 +1,6 @@
 local path_util = require("__sei-library__.path_util")
 local item_sounds = require("__base__.prototypes.item_sounds")
+local space_age_item_sounds = require("__sei-library__.prototypes.item_sounds")
 local item_tints = require("__base__.prototypes.item-tints")
 
 data:extend({
@@ -20,6 +21,9 @@ data:extend({
         fuel_top_speed_multiplier = 0.5,
         subgroup = "chemical",
         order = "a[chemical]-s[spoilage]",
+        inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+        pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+        drop_sound = space_age_item_sounds.agriculture_inventory_move,
         stack_size = 200,
         weight = 0.5 * kg,
         random_tint_color = item_tints.organic_green,

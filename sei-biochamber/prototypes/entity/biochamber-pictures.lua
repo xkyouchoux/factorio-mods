@@ -1,3 +1,5 @@
+local path_util = require("__sei-library__.path_util")
+
 require ("__base__.prototypes.entity.pipecovers")
 local animation_speed = 0.75
 return
@@ -8,20 +10,20 @@ return
         {
         layers =
         {
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber",
             {
             animation_speed = animation_speed,
             frame_count = 1,
             repeat_count = 64,
             scale = 0.5,
             }),
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-animation",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-animation",
             {
             animation_speed = animation_speed,
             frame_count = 64,
             scale = 0.5,
             }),
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-shadow",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-shadow",
             {
             draw_as_shadow = true,
             animation_speed = animation_speed,
@@ -31,12 +33,12 @@ return
             })
         }
         },
-        frozen_patch = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-frozen", {scale = 0.5}),
+        frozen_patch = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-frozen", {scale = 0.5}),
         working_visualisations =
         {
         {
             fadeout = true,
-            animation = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-animation-dome",
+            animation = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-animation-dome",
             {
             animation_speed = animation_speed,
             frame_count = 64,
@@ -44,7 +46,7 @@ return
             }),
         },
         {
-            animation = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-status-lamp",
+            animation = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-status-lamp",
             {
                 priority = "extra-high",
                 frame_count = 1,
@@ -60,7 +62,7 @@ return
             fadeout = true,
             apply_recipe_tint = "primary",
             effect = "flicker",
-            animation = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-glow",
+            animation = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-glow",
             {
                 priority = "extra-high",
                 frame_count = 64,
@@ -75,7 +77,7 @@ return
             fadeout = true,
             apply_recipe_tint = "secondary",
             effect = "flicker",
-            animation = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-glow-2",
+            animation = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-glow-2",
             {
                 priority = "extra-high",
                 frame_count = 64,
@@ -99,12 +101,12 @@ return
         north =
         {
         layers = {
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-north-1",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-north-1",
             {
             scale = 0.5,
             shift = {1,2},
             }),
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-north-shadow",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-north-shadow",
             {
             draw_as_shadow = true,
             scale = 0.5,
@@ -114,12 +116,12 @@ return
         },
         east = {
         layers = {
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-east-1",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-east-1",
             {
             scale = 0.5,
             shift = {-2,1},
             }),
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-east-shadow",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-east-shadow",
             {
             draw_as_shadow = true,
             scale = 0.5,
@@ -129,12 +131,12 @@ return
         },
         south = {
         layers = {
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-south-1",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-south-1",
             {
             scale = 0.5,
             shift = {-1,-2},
             }),
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-south-shadow",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-south-shadow",
             {
             draw_as_shadow = true,
             scale = 0.5,
@@ -144,7 +146,7 @@ return
         },
         west = {
         layers = {
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-west-1",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-west-1",
             {
             scale = 0.5,
             shift = {2,-1},
@@ -154,22 +156,22 @@ return
     },
     pipe_pictures_1_frozen =
     {
-        north = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-north-1-frozen",
+        north = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-north-1-frozen",
         {
         scale = 0.5,
         shift = {1,2},
         }),
-        east = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-east-1-frozen",
+        east = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-east-1-frozen",
         {
         scale = 0.5,
         shift = {-2,1},
         }),
-        south = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-south-1-frozen",
+        south = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-south-1-frozen",
         {
         scale = 0.5,
         shift = {-1,-2},
         }),
-        west = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-west-1-frozen",
+        west = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-west-1-frozen",
         {
         scale = 0.5,
         shift = {2,-1},
@@ -180,7 +182,7 @@ return
         north =
         {
         layers = {
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-north-2",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-north-2",
             {
             scale = 0.5,
             shift = {-1,2},
@@ -189,7 +191,7 @@ return
         },
         east = {
         layers = {
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-east-2",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-east-2",
             {
             scale = 0.5,
             shift = {-2,-1},
@@ -198,7 +200,7 @@ return
         },
         south = {
         layers = {
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-south-2",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-south-2",
             {
             scale = 0.5,
             shift = {1,-2},
@@ -207,7 +209,7 @@ return
         },
         west = {
         layers = {
-            util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-west-2",
+            path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-west-2",
             {
             scale = 0.5,
             shift = {2,1},
@@ -217,22 +219,22 @@ return
     },
     pipe_pictures_2_frozen =
     {
-        north = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-north-2-frozen",
+        north = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-north-2-frozen",
         {
         scale = 0.5,
         shift = {-1,2},
         }),
-        east = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-east-2-frozen",
+        east = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-east-2-frozen",
         {
         scale = 0.5,
         shift = {-2,-1},
         }),
-        south = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-south-2-frozen",
+        south = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-south-2-frozen",
         {
         scale = 0.5,
         shift = {1,-2},
         }),
-        west = util.sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-west-2-frozen",
+        west = path_util.sa_sprite_load("__sei-biochamber__/graphics/entity/biochamber/biochamber-pipes-west-2-frozen",
         {
         scale = 0.5,
         shift = {2,1},

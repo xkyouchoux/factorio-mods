@@ -1,4 +1,4 @@
----@diagnostic disable: assign-type-mismatch
+local path_util = require("__sei-library__.path_util")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 
@@ -8,7 +8,7 @@ data:extend({
     {
         type = "assembling-machine",
         name = "biochamber",
-        icon = "__sei-biochamber__/graphics/icons/biochamber.png",
+        icon = path_util.space_age_path.."graphics/icons/biochamber.png",
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {mining_time = 0.1, result = "biochamber"},
         fast_replaceable_group = "biochamber",
@@ -32,7 +32,7 @@ data:extend({
         close_sound = {filename = "__base__/sound/open-close/fluid-close.ogg", volume = 0.54},
         working_sound =
         {
-        sound = {filename = "__sei-biochamber__/sound/entity/biochamber/biochamber-loop.ogg", volume = 0.4},
+        sound = {filename = path_util.space_age_path.."sound/entity/biochamber/biochamber-loop.ogg", volume = 0.4},
         max_sounds_per_prototype = 3,
         fade_in_ticks = 4,
         fade_out_ticks = 20
@@ -50,7 +50,12 @@ data:extend({
         },
         energy_usage = "200kW",
         heating_energy = "100kW",
-        crafting_categories = {"organic", "organic-or-hand-crafting", "organic-or-chemistry"},
+        crafting_categories = {
+            "organic", 
+            "organic-or-hand-crafting", 
+            "organic-or-chemistry",
+            "organic-or-assembling",
+        },
         fluid_boxes_off_when_no_fluid_recipe = true,
         fluid_boxes =
         {

@@ -3,6 +3,7 @@ Version: 1.0.3
 Date: 14 October 2025
   Changes:
     - Removed dependency to Standalone Foundry mod and made it optional. Foundry is still included.
+    - Changed to use spage age graphics and sounds from the mod itself instead of packaging it with the mod
   Balancing:
     - Casting intermediate recipe craft times are doubled, making them 2x instead of 4x
   Bugfixes:
