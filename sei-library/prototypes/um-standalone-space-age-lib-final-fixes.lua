@@ -31,13 +31,9 @@ data_util.add_categories_to_machines_with_category({
     "electronics-or-assembling",
     "electronics-with-fluid",
     "cryogenics-or-assembling",
-}, {
-    "crafting-with-fluid",
-})
+}, "crafting-with-fluid")
 
 data_util.add_categories_to_machines_with_category({
     "chemistry-or-cryogenics",
     "organic-or-chemistry"
-}, {
-    "chemistry",
-})
+}, "chemistry")

@@ -2,8 +2,7 @@
 Version: 1.0.2
 Date: 14 October 2025
   Changes:
-    - Removed dependency to and added incompatibility to Standalone Cryogenic Plant
-    - Internal structure changes
+    - Removed dependency to Standalone Cryogenic Plant mod and made it optional. Cryogenic Plant is still included.
   Bugfixes:
     - Fixed circuit network connections on cryogenic plant
 ---------------------------------------------------------------------------------------------------

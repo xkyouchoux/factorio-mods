@@ -1,0 +1,8 @@
+if not mods["Krastorio2"] then return end
+
+local data_util = require("__sei-library__.data_util")
+
+data.raw["assembling-machine"]["cryogenic-plant"].module_slots = 3
+
+data_util.replace_or_add_ingredient("cryogenic-plant", "steel-plate", "kr-steel-beam", 10)
+data_util.replace_or_add_ingredient("kr-advanced-chemical-plant", "chemical-plant", "cryogenic-plant", 2)

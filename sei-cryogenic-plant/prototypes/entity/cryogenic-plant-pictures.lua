@@ -1,3 +1,5 @@
+local path_util = require("__sei-library__.path_util")
+
 local total_frame_count = 192
 local anim1_frame_count = 64
 local anim2_frame_count = 24
@@ -48,7 +50,7 @@ local function cryogenic_plant_animation(name, frames, options)
   options['frame_count'] = frames
   options['repeat_count'] = total_frame_count / frames
   options['scale'] = 0.5
-  return util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-".. name, options)
+  return path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-".. name, options)
 end
 
 return {
@@ -159,7 +161,7 @@ return {
           animation = cryogenic_plant_animation("status-lamp", 1, {blend_mode = "additive", draw_as_glow = true})
         },
       },
-      frozen_patch = util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-frozen", {scale = 0.5}),
+      frozen_patch = path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-frozen", {scale = 0.5}),
       reset_animation_when_frozen = true
   },
   pipe_picture =
@@ -168,13 +170,13 @@ return {
     {
       layers =
       {
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v",
         {
           priority = "extra-high",
           scale = 0.5,
           shift = {0, 3}
         }),
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-v",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-v",
         {
           priority = "extra-high",
           draw_as_shadow = true,
@@ -187,13 +189,13 @@ return {
     {
       layers =
       {
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h",
         {
           priority = "extra-high",
           scale = 0.5,
           shift = {-3, 0}
         }),
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-h",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-h",
         {
           priority = "extra-high",
           draw_as_shadow = true,
@@ -206,13 +208,13 @@ return {
     {
       layers =
       {
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v",
         {
           priority = "extra-high",
           scale = 0.5,
           shift = {0, -3}
         }),
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-v",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-v",
         {
           priority = "extra-high",
           draw_as_shadow = true,
@@ -225,13 +227,13 @@ return {
     {
       layers =
       {
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h",
         {
           priority = "extra-high",
           scale = 0.5,
           shift = {3, 0}
         }),
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-h",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-h",
         {
           priority = "extra-high",
           draw_as_shadow = true,
@@ -246,7 +248,7 @@ return {
     {
       layers =
       {
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v-frozen",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v-frozen",
         {
           priority = "extra-high",
           scale = 0.5,
@@ -258,7 +260,7 @@ return {
     {
       layers =
       {
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h-frozen",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h-frozen",
         {
           priority = "extra-high",
           scale = 0.5,
@@ -270,7 +272,7 @@ return {
     {
       layers =
       {
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v-frozen",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v-frozen",
         {
           priority = "extra-high",
           scale = 0.5,
@@ -282,7 +284,7 @@ return {
     {
       layers =
       {
-        util.sprite_load("__space-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h-frozen",
+        path_util.sa_sprite_load("__sei-cryogenic-plant__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h-frozen",
         {
           priority = "extra-high",
           scale = 0.5,

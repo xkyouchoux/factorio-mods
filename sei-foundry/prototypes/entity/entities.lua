@@ -29,7 +29,13 @@ data:extend({
         {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
         },
         allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-        crafting_categories = {"metallurgy", "pressing", "crafting-with-fluid-or-metallurgy", "casting"},
+        crafting_categories = {
+            "metallurgy", 
+            "pressing", 
+            "crafting-with-fluid-or-metallurgy", 
+            "casting",
+            "metallurgy-or-assembling",
+        },
         crafting_speed = 4,
         energy_source =
         {

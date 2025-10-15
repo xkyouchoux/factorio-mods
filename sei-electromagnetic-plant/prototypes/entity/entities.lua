@@ -84,6 +84,7 @@ data:extend({
             "electronics-with-fluid",
             "crafting-or-electromagnetics",
             "chemistry-or-electromagnetics",
+            "electronics-or-assembling"
         },
         energy_source =
         {
