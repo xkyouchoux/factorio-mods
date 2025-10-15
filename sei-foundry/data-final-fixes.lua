@@ -1,5 +1,3 @@
-require("prototypes.um-standalone-foundry-final-fixes")
-
 local data_util = require("__sei-library__.data_util")
 
 data_util.set_category_for_recipes("carbon-casting", {

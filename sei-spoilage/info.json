@@ -1,6 +1,6 @@
 {
   "name": "sei-spoilage",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "title": "Space Exploration Integration: Spoilage",
   "author": "xkyouchoux",
   "description": "Adds spoilage and the heating tower into space exploration.",
@@ -9,7 +9,7 @@
     "space-exploration >= 0.7",
     "sei-library",
     "? Krastorio2 >= 2.0",
-    "? HeatingTower",
+    "! HeatingTower",
     "! space-age"],
   "spoiling_required": true,
   "factorio_version": "2.0"

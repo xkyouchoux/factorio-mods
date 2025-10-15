@@ -1,5 +1,3 @@
-require("prototypes.um-standalone-cryogenics-plant-final-fixes")
-
 local data_util = require("__sei-library__.data_util")
 
 local cryogenics_recipes = {

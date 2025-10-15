@@ -1,6 +1,6 @@
 {
   "name": "sei-foundry",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "title": "Space Exploration Integration: Foundry",
   "author": "xkyouchoux",
   "description": "Adds the foundry into space exploration.",
@@ -9,7 +9,7 @@
     "space-exploration >= 0.7",
     "sei-library",
     "? Krastorio2 >= 2.0",
-    "? um-standalone-foundry",
+    "! um-standalone-foundry",
     "! space-age"],
   "freezing_required": true,
   "factorio_version": "2.0"

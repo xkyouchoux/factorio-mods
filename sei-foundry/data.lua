@@ -8,7 +8,6 @@ require("prototypes.item")
 require("prototypes.recipe")
 require("prototypes.technology")
 
-require("prototypes.um-standalone-foundry")
 require("prototypes.Krastorio2")
 
 data.raw.recipe["se-heat-shielding-iridium"].order = data.raw.item["se-heat-shielding"].order .. "-z"

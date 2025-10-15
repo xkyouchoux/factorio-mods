@@ -1,5 +1,3 @@
-require("prototypes.um-standalone-electromagnetics-plant-final-fixes")
-
 local data_util = require("__sei-library__.data_util")
 
 local chemistry_or_electromagnetics_recipes = {
