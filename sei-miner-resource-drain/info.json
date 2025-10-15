@@ -1,14 +1,14 @@
 {
   "name": "sei-miner-resource-drain",
   "version": "1.0.2",
-  "title": "Space Exploration Integration: Miner Resource Drain",
+  "title": "Customizable Miner Resource Drain",
   "author": "xkyouchoux",
-  "description": "Adds customizable resource drain to the mining drills in space exploration.",
+  "description": "Adds mod settings to change resource drain for mining drills",
   "dependencies": [
     "base >= 2.0.0",
-    "space-exploration >= 0.7",
-    "? Krastorio2 >= 2.0",
+    "? aai-industry",
+    "? Krastorio2",
     "? um-standalone-big-mining-drill",
-    "! space-age"],
+    "? space-age"],
   "factorio_version": "2.0"
 }
