@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 16 October 2025
+  Features:
+    - Added agricultural-processes and agricultural-products item-subgroups
+    - Added multiple sa crafting categories and adds them to appropiate machines
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 15 October 2025
   Bugfixes:

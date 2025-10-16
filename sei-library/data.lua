@@ -1,6 +1,8 @@
 require("prototypes.particles")
 require("prototypes.smoke")
 require("prototypes.entity.circuit-network")
+require("prototypes.item-groups")
+require("prototypes.categories.recipe-category")
 
 -- Required to load space-travel feature flag without space age
 if not data.raw.tile["empty-space"] then
