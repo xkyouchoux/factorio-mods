@@ -14,11 +14,11 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "heat-pipe"
+                recipe = "heat-exchanger"
             },
             {
                 type = "unlock-recipe",
-                recipe = "heat-exchanger"
+                recipe = "heat-pipe"
             },
         },
         prerequisites = {
