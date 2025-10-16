@@ -1,6 +1,6 @@
 {
   "name": "sei-spoilage",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "title": "Space Exploration Integration: Spoilage",
   "author": "xkyouchoux",
   "description": "Adds spoilage and the heating tower into space exploration.",
@@ -8,6 +8,7 @@
     "base >= 2.0.0",
     "space-exploration >= 0.7",
     "sei-library",
+    "? sei-captive-biters",
     "? Krastorio2 >= 2.0",
     "! HeatingTower",
     "! space-age"],

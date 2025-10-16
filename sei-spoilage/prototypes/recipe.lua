@@ -5,7 +5,7 @@ data:extend({
         type = "recipe",
         name = "spoilage-reprocessing",
         icons = data_util.sub_icons(data.raw.item["se-vitamelange-nugget"].icon, data.raw.item["spoilage"]),
-        category = "chemistry",
+        category = "organic-or-chemistry",
         enabled = false,
         energy_required = 3,
         allow_productivity = true,

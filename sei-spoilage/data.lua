@@ -23,12 +23,14 @@ data.raw.item["se-vitamelange-nugget"].spoil_result = "spoilage"
 data.raw.item["se-vitamelange-bloom"].spoil_ticks = 2 * hour
 data.raw.item["se-vitamelange-bloom"].spoil_result = "spoilage"
 
-data_util.replace_or_add_result("se-space-water-decontamination", "se-contaminated-scrap", "spoilage", 1)
-data_util.replace_or_add_result("se-bio-sludge-decontamination", "se-contaminated-scrap", "spoilage", 1)
+data_util.replace_or_add_result("se-space-water-decontamination", "se-contaminated-scrap", "spoilage", nil, nil, 1, 1, .1)
+data_util.replace_or_add_result("se-bio-sludge-decontamination", "se-contaminated-scrap", "spoilage", nil, nil, 1, 1, .1)
 
 data.raw.recipe["se-vitamelange-bloom"].reset_freshness_on_craft = true
 
 data_util.recipe_require_tech("spoilage-reprocessing", "se-processing-vitamelange")
 data_util.recipe_require_tech("se-bio-sludge-from-spoilage", "se-space-growth-facility")
 
-require("prototypes.Krastorio2")
+require("prototypes.compat.Krastorio2")
+require("prototypes.compat.sei-captive-biters")
+require("prototypes.compat.sei-biochamber")

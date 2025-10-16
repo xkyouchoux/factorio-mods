@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 16 October 2025
+  Changes:
+    - space water and biosludge decontamination give spoilage instead of contaminated scrap
+---------------------------------------------------------------------------------------------------
 Version: 0.1.8
 Date: 16 October 2025
   Balancing:
