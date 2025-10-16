@@ -9,8 +9,7 @@ require("prototypes.item")
 require("prototypes.recipe")
 require("prototypes.technology")
 
-require("prototypes.sei-spoilage")
-require("prototypes.Krastorio2")
+require("prototypes.compat.Krastorio2")
 
 local data_util = require("__sei-library__.data_util")
 

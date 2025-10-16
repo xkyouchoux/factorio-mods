@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 16 October 2025
+  Changes:
+    - Moved spoilage related code to sei-spoilage.
+    - Requires sei-library version 1.0.5 or higher now.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 14 October 2025
   Changes:
