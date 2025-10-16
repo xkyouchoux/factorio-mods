@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 16 October 2025
+  Balancing:
+    - Moved heating tower to rocket science as an alternative to nuclear
+---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 15 October 2025
   Changes:

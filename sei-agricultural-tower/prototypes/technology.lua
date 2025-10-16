@@ -3,40 +3,35 @@ local path_util = require("__sei-library__.path_util")
 data:extend({
     {
         type = "technology",
-        name = "heating-tower",
-        icon = path_util.space_age_path.."graphics/technology/heating-tower.png",
+        name = "agriculture",
+        icon = path_util.space_age_path.."graphics/technology/agriculture.png",
         icon_size = 256,
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "heating-tower"
+                recipe = "agricultural-tower"
             },
             {
                 type = "unlock-recipe",
-                recipe = "heat-pipe"
+                recipe = "wood-processing"
             },
             {
                 type = "unlock-recipe",
-                recipe = "heat-exchanger"
-            },
+                recipe = "wood-processing-sand"
+            }
         },
-        prerequisites = {
-            "concrete",
-            "advanced-material-processing",
-            "steam-turbine",
-        },
+        prerequisites = {"chemical-science-pack"},
         unit =
         {
-            count = 200,
+            count = 100,
             ingredients =
             {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
-                {"se-rocket-science-pack", 1},
             },
             time = 60
         }
-    }
+    },
 })

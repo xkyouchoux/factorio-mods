@@ -111,5 +111,14 @@
                 "kind": "build",
             }
         },
+        {
+            "label": "Package Mod: sei-agricultural-tower",
+            "type": "shell",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-agricultural-tower\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
     ]
 }
