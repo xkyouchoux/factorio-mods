@@ -2,26 +2,12 @@ if not mods["sei-captive-biters"] then return end
 
 local data_util = require("__sei-library__.data_util")
 
-data_util.conditional_modify({
-    type = "item",
-    name = "bioflux",
-    subgroup = "organic",
-    order = "a[organic]-b[bioflux]"
-})
-
-data_util.conditional_modify({
-    type = "item",
-    name = "biter-egg",
-    subgroup = "organic",
-    order = "a[organic]-d[biter-egg]"
-})
-
 data:extend({
     {
         type = "recipe",
         name = "nutrients-from-bioflux",
         category = "organic",
-        order = "a[organic]-a[nutrients]-g[bioflux]",
+        order = "c[nutrients]-c[nutrients]-f[bioflux]",
         energy_required = 2,
         icons = data_util.sub_icons(data.raw.item["nutrients"].icon, data.raw.item["bioflux"].icon),
         ingredients = {
@@ -35,7 +21,7 @@ data:extend({
         type = "recipe",
         name = "nutrients-from-biter-egg",
         category = "organic-or-hand-crafting",
-        order = "a[organic]-a[nutrients]-i[biter-egg]",
+        order = "c[nutrients]-c[nutrients]-h[biter-egg]",
         energy_required = 2,
         icons = data_util.sub_icons(data.raw.item["nutrients"].icon, data.raw.item["biter-egg"].icon),
         ingredients = {
@@ -60,6 +46,11 @@ data_util.conditional_modify({
     icons = data_util.sub_icons(data.raw.item["sulfur"].icon, data.raw.item["bioflux"].icon),
 })
 data_util.replace_or_add_ingredient("biosulfur", "se-bio-sludge", "bioflux", 1)
+data_util.enable_recipe("nutrients-from-spice")
+data_util.disable_recipe("nutrients-from-spice")
+
+data_util.enable_recipe("nutrients-from-extract")
+data_util.disable_recipe("nutrients-from-extract")
 
 table.insert(data.raw.technology["biochamber"].effects, {
         type = "unlock-recipe",

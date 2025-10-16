@@ -7,8 +7,6 @@ local organic_or_chemistry_recipes = {
     "se-bioscrubber",
     "se-vitalic-acid",
     "se-vitalic-epoxy",
-    
-    "bioflux", -- sei-captive-biters
 }
 
 data_util.set_category_for_recipes("organic-or-chemistry", organic_or_chemistry_recipes)
