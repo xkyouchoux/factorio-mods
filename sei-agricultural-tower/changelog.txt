@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 16 October 2025
+  Changes:
+    - Moved tree seeds to agriculture-processes subgroup
+    - Moved agricultural tower to extraction-machine subgroup
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 16 October 2025
+  Bugfixes:
+    - Removed unused mod setting
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 16 October 2025
   Features:
