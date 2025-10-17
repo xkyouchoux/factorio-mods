@@ -143,7 +143,7 @@ data:extend({
                 recipe = "jellynut-processing-vita"
             },
         },
-        prerequisites = {"se-vitalic-acid"},
+        prerequisites = {"se-biological-science-pack-2"},
         unit =
         {
             count = 200,
@@ -175,7 +175,7 @@ data:extend({
                 recipe = "carbon-fiber-robot-frame"
             },
         },
-        prerequisites = {"carbon-fiber"},
+        prerequisites = {"se-biological-science-pack-2"},
         unit =
         {
             count = 200,
@@ -187,7 +187,7 @@ data:extend({
                 {"se-rocket-science-pack", 1},
                 {"space-science-pack", 1},
                 {"production-science-pack", 1},
-                {"se-biological-science-pack-1", 1},
+                {"se-biological-science-pack-2", 1},
             },
             time = 60
         }
