@@ -9,7 +9,7 @@
     "space-exploration >= 0.7",
     "sei-agricultural-tower",
     "sei-captive-biters",
-    "? sei-biochamber",
+    "sei-biochamber",
     "? sei-spoilage",
     "? sei-stack-inserters",
     "! space-age"],

@@ -3,6 +3,7 @@ require("prototypes.tile.tiles")
 require("prototypes.item")
 require("prototypes.recipe")
 require("prototypes.technology")
+require("prototypes.item-groups")
 
 se_delivery_cannon_recipes["yumako-seed"] = {name = "yumako-seed"}
 se_delivery_cannon_recipes["yumako"] = {name = "yumako", type = "capsule"}
@@ -14,6 +15,12 @@ se_delivery_cannon_recipes["bioflux"] = {name = "bioflux", type = "capsule"}
 se_delivery_cannon_recipes["carbon-fiber"] = {name = "carbon-fiber"}
 
 local data_util = require("__sei-library__.data_util")
+
+-- sei-agriculture-tower
+
+data.raw["item"]["tree-seed"].subgroup = "agriculture-seeds"
+data.raw["recipe"]["wood-processing"].subgroup = "agriculture-seeds"
+data.raw["recipe"]["wood-processing-sand"].subgroup = "agriculture-seeds"
 
 -- sei-captive-biters
 
@@ -28,6 +35,8 @@ data_util.remove_recipe_from_effects(data.raw["technology"]["captivity"].effects
 data_util.tech_add_prerequisites("captivity", {"fruits-processing"})
 
 -- sei-biochamber
+
+data.raw["recipe"]["fish-breeding"].order = "d[breeding]-a[fish-breeding]-a[fish-breeding]"
 
 data_util.remove_recipe_from_effects(data.raw["technology"]["biochamber"].effects, "bioplastic")
 data_util.remove_recipe_from_effects(data.raw["technology"]["biochamber"].effects, "biosulfur")
@@ -53,6 +62,12 @@ table.insert(data.raw["technology"]["biochamber"].effects, 2, {
 data_util.recipe_require_tech("fish-breeding", "biochamber")
 
 data_util.replace_or_add_ingredient("biochamber", "steel-plate", "carbon-fiber", 25)
+
+data_util.conditional_modify({
+    type = "recipe",
+    name = "biosulfur",
+    category = "organic-or-chemistry",
+})
 
 data_util.conditional_modify({
     type = "recipe",
