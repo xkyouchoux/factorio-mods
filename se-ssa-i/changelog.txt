@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.4
+Date: 17 October 2025
+  Features:
+    - Added optional dependency: sei-agricultural-tower
+    - Added optional dependency: sei-gleba-fruits
+---------------------------------------------------------------------------------------------------
 Version: 1.3.3
 Date: 12 October 2025
   Features:
