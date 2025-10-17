@@ -34,3 +34,4 @@ data_util.recipe_require_tech("se-bio-sludge-from-spoilage", "se-space-growth-fa
 require("prototypes.compat.Krastorio2")
 require("prototypes.compat.sei-captive-biters")
 require("prototypes.compat.sei-biochamber")
+require("prototypes.compat.sei-gleba-fruits")

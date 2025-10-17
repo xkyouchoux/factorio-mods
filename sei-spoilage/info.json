@@ -9,6 +9,8 @@
     "space-exploration >= 0.7",
     "sei-library",
     "? sei-captive-biters",
+    "? sei-biochamber",
+    "? sei-gleba-fruits",
     "? Krastorio2 >= 2.0",
     "! HeatingTower",
     "! space-age"],

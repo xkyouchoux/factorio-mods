@@ -35,7 +35,7 @@ data:extend({
 
 data_util.replace_or_add_ingredient("biosulfur", "se-vitamelange-nugget", "spoilage", 5)
 
-table.insert(data.raw.technology["biochamber"].effects, {
+table.insert(data.raw.technology["biochamber"].effects, 2, {
         type = "unlock-recipe",
         recipe = "nutrients-from-spoilage"
     }

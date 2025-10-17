@@ -139,6 +139,11 @@ else
                                 data.raw.recipe[recipe.name] = nil
                                 goto next_recipe
                             end
+                            local capsule = data.raw.capsule[ingredient.name]
+                            if capsule and capsule.spoil_ticks and capsule.spoil_ticks > 0 then
+                                data.raw.recipe[recipe.name] = nil
+                                goto next_recipe
+                            end
                         end
                     end
                 end
