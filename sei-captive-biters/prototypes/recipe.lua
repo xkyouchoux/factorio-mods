@@ -96,10 +96,10 @@ data_util.make_recipe({
     name = data_util.mod_prefix .. "nutrient-gel-biter-egg",
     localised_name = {"fluid-name."..data_util.mod_prefix.."nutrient-gel"},
     ingredients = {
-        { type = "item", name = "biter-egg", amount = 1},
+        { type = "item", name = "biter-egg", amount = 10},
         { type = "fluid", name = data_util.mod_prefix .. "chemical-gel", amount = 5},
         { type = "fluid", name = data_util.mod_prefix .. "bio-sludge", amount = 10},
-        { type = "fluid", name = data_util.mod_prefix .. "space-water", amount = 20},
+        { type = "fluid", name = data_util.mod_prefix .. "space-water", amount = 25},
     },
     results = {
         { type = "fluid", name = data_util.mod_prefix .. "nutrient-gel", amount = 50},
