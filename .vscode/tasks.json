@@ -129,5 +129,14 @@
                 "kind": "build",
             }
         },
+        {
+            "label": "Package Mod: sei-tesla-turret",
+            "type": "shell",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-tesla-turret\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
     ]
 }
