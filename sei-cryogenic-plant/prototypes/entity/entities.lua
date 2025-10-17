@@ -24,7 +24,7 @@ data:extend({
         module_slots = 6,
         icons_positioning =
         {
-        {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.95}, max_icons_per_row = 4}
+            {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.95}, max_icons_per_row = 6}
         },
         icon_draw_specification = {scale = 2, shift = {0, -0.3}},
         allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
