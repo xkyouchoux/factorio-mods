@@ -120,5 +120,14 @@
                 "kind": "build",
             }
         },
+        {
+            "label": "Package Mod: sei-gleba-fruits",
+            "type": "shell",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-gleba-fruits\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
     ]
 }

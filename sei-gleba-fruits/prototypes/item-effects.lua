@@ -5,9 +5,8 @@ local math3d = require "math3d"
 
 local yumako_duration = 12 * second
 local yumako_cooldown = 16 * second
-local yumako_instant_health = 80
-local yumako_regen_health = 4
-local yumako_regen_interval = 0.25 * second
+local yumako_regen_health = 1
+local yumako_regen_interval = 1 * second
 
 local jelly_duration = 12 * second
 local jelly_cooldown = 16 * second
@@ -67,7 +66,7 @@ local make_sticker_data = function()
         use_damage_substitute = false,
         duration_in_ticks = yumako_duration,
         damage_interval = yumako_regen_interval,
-        damage_per_tick = { amount = -yumako_regen_health, type = "physical" },
+        damage_per_tick = { amount = -yumako_regen_health, type = "poison" },
         animation =
             path_util.sa_sprite_load("__sei-library__/graphics/sticker/yumako-regen/regen-front",
             {
@@ -117,7 +116,7 @@ local make_sticker_data = function()
         use_damage_substitute = false,
         duration_in_ticks = bioflux_duration,
         damage_interval = yumako_regen_interval,
-        damage_per_tick = { amount = -yumako_regen_health, type = "physical" },
+        damage_per_tick = { amount = -yumako_regen_health, type = "poison" },
         target_movement_modifier = jelly_speed_modifier,
         animation =
         {
@@ -204,11 +203,6 @@ local make_heal_capsule_effect = function()
                 target_effects =
                 {
                 {
-                    type = "damage",
-                    damage = {type = "physical", amount = -yumako_instant_health},
-                    use_substitute = false
-                },
-                {
                     type = "create-sticker",
                     sticker = "yumako-regen-sticker",
                     show_in_tooltip = true
@@ -294,11 +288,6 @@ local make_speed_regen_capsule_effect = function()
                 type = "instant",
                 target_effects =
                 {
-                {
-                    type = "damage",
-                    damage = {type = "physical", amount = -yumako_instant_health},
-                    use_substitute = false
-                },
                 {
                     type = "create-sticker",
                     sticker = "bioflux-speed-regen-sticker",
