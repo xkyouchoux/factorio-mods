@@ -90,8 +90,6 @@ data:extend({
         fuel_value = "2MJ",
         stack_size = 50,
         weight = 1 * kg,
-        --spoil_ticks = 60 * minute,
-        --spoil_result = "spoilage",
         capsule_action = item_effects.yumako_regen
     },
     {
@@ -114,8 +112,6 @@ data:extend({
         drop_sound = space_age_item_sounds.agriculture_inventory_move,
         stack_size = 50,
         weight = 1 * kg,
-        --spoil_ticks = 60 * minute,
-        --spoil_result = "spoilage",
         fuel_category = "chemical",
         fuel_value = "10MJ",
         capsule_action = item_effects.jellynut_speed
@@ -134,8 +130,6 @@ data:extend({
         fuel_category = "chemical",
         fuel_value = "1MJ",
         stack_size = 100,
-        --spoil_ticks = 3 * minute,
-        --spoil_result = "spoilage",
         weight = 0.5 * kg,
         capsule_action = item_effects.yumako_regen
     },
@@ -153,8 +147,6 @@ data:extend({
         fuel_category = "chemical",
         fuel_value = "1MJ",
         stack_size = 100,
-        --spoil_ticks = 4 * minute,
-        --spoil_result = "spoilage",
         weight = 0.5 * kg,
         capsule_action = item_effects.jellynut_speed
     },
@@ -172,8 +164,6 @@ data:extend({
         fuel_category = "food",
         fuel_value = "6MJ",
         stack_size = 100,
-        --spoil_ticks = 2 * hour,
-        --spoil_result = "spoilage",
         weight = 1 * kg,
         capsule_action = item_effects.bioflux_speed_and_regen
     },
