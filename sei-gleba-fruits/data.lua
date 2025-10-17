@@ -4,6 +4,15 @@ require("prototypes.item")
 require("prototypes.recipe")
 require("prototypes.technology")
 
+se_delivery_cannon_recipes["yumako-seed"] = {name = "yumako-seed"}
+se_delivery_cannon_recipes["yumako"] = {name = "yumako", type = "capsule"}
+se_delivery_cannon_recipes["yumako-mash"] = {name = "yumako-mash", type = "capsule"}
+se_delivery_cannon_recipes["jellynut-seed"] = {name = "jellynut-seed"}
+se_delivery_cannon_recipes["jellynut"] = {name = "jellynut", type = "capsule"}
+se_delivery_cannon_recipes["jelly"] = {name = "jelly", type = "capsule"}
+se_delivery_cannon_recipes["bioflux"] = {name = "bioflux", type = "capsule"}
+se_delivery_cannon_recipes["carbon-fiber"] = {name = "carbon-fiber"}
+
 local data_util = require("__sei-library__.data_util")
 
 -- sei-captive-biters
@@ -15,9 +24,8 @@ data_util.remove_recipe_from_effects(data.raw["technology"]["biochamber"].effect
 data.raw["recipe"]["nutrients-from-extract"] = nil
 
 data_util.remove_recipe_from_effects(data.raw["technology"]["captivity"].effects, "bioflux")
-data_util.recipe_require_tech("crude-bioflux", "captivity")
 
-data_util.tech_add_prerequisites("captivity", {"se-space-growth-facility"})
+data_util.tech_add_prerequisites("captivity", {"fruits-processing"})
 
 -- sei-biochamber
 
@@ -68,10 +76,6 @@ data_util.conditional_modify({
 
 -- bio 1
 
-data_util.tech_add_prerequisites("se-vitalic-acid", {"fruits-processing"})
-data_util.recipe_require_tech("yumako-processing-vita", "se-vitalic-acid")
-data_util.recipe_require_tech("jellynut-processing-vita", "se-vitalic-acid")
-
 data_util.replace_or_add_ingredient("se-experimental-genetic-data", nil, "yumako-seed", 1)
 data_util.replace_or_add_ingredient("se-experimental-genetic-data", nil, "jellynut-seed", 1)
 
@@ -87,6 +91,8 @@ data_util.replace_or_add_ingredient("se-medpack-3", "se-chemical-gel", "yumako-m
 
 
 -- bio 2
+
+-- bio 3
 
 -- bio 4
 

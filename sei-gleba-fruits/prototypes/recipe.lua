@@ -4,28 +4,6 @@ local data_util = require("__sei-library__.data_util")
 data:extend({
     {
         type = "recipe",
-        name = "crude-bioflux",
-        icon = "__sei-gleba-fruits__/graphics/icons/crude-bioflux.png",
-        category = "space-growth",
-        subgroup = "space-biochemical",
-        enabled = false,
-        allow_productivity = true,
-        energy_required = 6,
-        ingredients =
-        {
-            {type = "item", name = "se-vitamelange-nugget", amount = 12},
-            {type = "item", name = "se-vitamelange-bloom", amount = 7},
-            {type = "fluid", name = "se-bio-sludge", amount = 5}
-        },
-        results = {{type="item", name="bioflux", amount=2}},
-        crafting_machine_tint =
-        {
-            primary = {r = 0.3, g = 0.9, b = 0.8, a = 1.000},
-            secondary = {r = 0.8, g = 0.5, b = 0.3, a = 1.000},
-        }
-    },
-    {
-        type = "recipe",
         name = "bioflux",
         category = "organic-or-chemistry",
         subgroup = "agriculture-products",
@@ -124,7 +102,7 @@ data:extend({
         type = "recipe",
         name = "jellynut-processing",
         icon = path_util.space_age_path.."graphics/icons/jellynut-processing.png",
-        category = "organic-or-hand-crafting",
+        category = "organic-or-assembling",
         subgroup = "agriculture-processes",
         order = "a[seeds]-e[jellynut-processing]",
         enabled = false,
@@ -147,9 +125,31 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "carbon-fiber-robot-frame",
+        localised_name = {"item-name.flying-robot-frame"},
+        icons = data_util.sub_icons(data.raw["item"]["flying-robot-frame"].icon, data.raw["item"]["carbon-fiber"].icon),
+        subgroup = data.raw["item"]["flying-robot-frame"].subgroup,
+        order = data.raw["item"]["flying-robot-frame"].order,
+        enabled = false,
+        energy_required = 10,
+        ingredients =
+        {
+            {type = "item", name = "electric-engine-unit", amount = 1},
+            {type = "item", name = "battery", amount = 1},
+            {type = "item", name = "advanced-circuit", amount = 1},
+            {type = "item", name = "carbon-fiber", amount = 1},
+
+        },
+        results =
+        {
+            {type = "item", name = "flying-robot-frame", amount = 1}
+        },
+    },
+    {
+        type = "recipe",
         name = "yumako-processing-vita",
         icons = data_util.sub_icons(path_util.space_age_path.."graphics/icons/yumako-processing.png", data.raw["fluid"]["se-vitalic-acid"]),
-        category = "organic-or-hand-crafting",
+        category = "organic-or-assembling",
         subgroup = "agriculture-processes",
         order = "a[seeds]-d[yumako-processing]-vita",
         enabled = false,
@@ -161,7 +161,7 @@ data:extend({
         },
         results =
         {
-            {type = "item", name = "yumako-seed", amount = 4, probability = 0.05},
+            {type = "item", name = "yumako-seed", amount = 4, probability = 0.10},
             {type = "item", name = "yumako-mash", amount = 10},
         },
         crafting_machine_tint =
@@ -187,7 +187,7 @@ data:extend({
         },
         results =
         {
-            {type = "item", name = "jellynut-seed", amount = 4, probability = 0.05 },
+            {type = "item", name = "jellynut-seed", amount = 4, probability = 0.10},
             {type = "item", name = "jelly", amount = 20},
         },
         crafting_machine_tint =
