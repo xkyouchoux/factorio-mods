@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 17 October 2025
+  Balancing:
+    - Adjusted operating power consumption of the cryogenic plant. 1500kW -> 550kW for SE and 1500kW -> 250kW for K2SE
+---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 17 October 2025
   Changes:

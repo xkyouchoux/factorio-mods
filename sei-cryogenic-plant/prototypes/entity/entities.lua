@@ -43,7 +43,7 @@ data:extend({
         usage_priority = "secondary-input",
         emissions_per_minute = { pollution = 6 }
         },
-        energy_usage = "1500kW",
+        energy_usage = "550kW",
         graphics_set = require("__sei-cryogenic-plant__.prototypes.entity.cryogenic-plant-pictures").graphics_set,
         open_sound = sounds.metal_large_open,
         close_sound = sounds.metal_large_close,
