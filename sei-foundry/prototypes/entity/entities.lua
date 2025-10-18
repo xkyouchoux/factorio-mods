@@ -43,7 +43,7 @@ data:extend({
         usage_priority = "secondary-input",
         emissions_per_minute = { pollution = 6 }
         },
-        energy_usage = "550kW",
+        energy_usage = "1350kW",
         perceived_performance = {minimum = 0.25, maximum = 20},
         graphics_set = require("__sei-foundry__.prototypes.entity.foundry-pictures").graphics_set,
         open_sound = sounds.steam_open,

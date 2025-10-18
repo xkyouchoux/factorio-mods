@@ -2,7 +2,7 @@
 Version: 0.1.5
 Date: 17 October 2025
   Changes:
-    - Adjusted operationg power consumption of the foundry from 2500kW -> 550kW.
+    - Adjusted operationg power consumption of the foundry from 2500kW -> 1350kW.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 15 October 2025
