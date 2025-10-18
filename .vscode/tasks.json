@@ -147,5 +147,14 @@
                 "kind": "build",
             }
         },
+        {
+            "label": "Package Mod: sei-rocket-turret",
+            "type": "shell",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-rocket-turret\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
     ]
 }
