@@ -1,14 +1,20 @@
 data:extend({
     {
         type = "item-subgroup",
+        name = "agriculture-seeds",
+        group = "resources",
+        order = "a-ca"
+    },
+    {
+        type = "item-subgroup",
         name = "agriculture-processes",
         group = "resources",
-        order = "a-c-a"
+        order = "a-cb"
     },
     {
         type = "item-subgroup",
         name = "agriculture-products",
         group = "resources",
-        order = "a-c-b"
+        order = "a-cc"
     },
 })

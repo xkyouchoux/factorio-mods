@@ -13,6 +13,13 @@ data:extend({
         name = "sei-biochamber-allow-space-recipes",
         setting_type = "startup",
         default_value = false,
-        order = "a",
+        order = "b",
+    },
+    {
+        type = "bool-setting",
+        name = "sei-biochamber-enable-spoilage",
+        setting_type = "startup",
+        default_value = false,
+        order = "c",
     },
 })

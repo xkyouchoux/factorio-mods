@@ -8,6 +8,7 @@ require("prototypes.burner-usage")
 require("prototypes.item")
 require("prototypes.recipe")
 require("prototypes.technology")
+require("prototypes.spoilage")
 
 require("prototypes.compat.Krastorio2")
 

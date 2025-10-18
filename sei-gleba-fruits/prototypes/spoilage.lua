@@ -1,20 +1,6 @@
-if not mods["sei-gleba-fruits"] then return end
+if not (settings.startup["sei-gleba-fruits-enable-spoilage"].value or SEI_FORCE_SPOILAGE) then return end
 
 local data_util = require("__sei-library__.data_util")
-
-data_util.conditional_modify({
-    type = "item",
-    name = "se-vitamelange-nugget",
-    spoil_ticks = 0,
-    spoil_result = nil,
-})
-
-data_util.conditional_modify({
-    type = "item",
-    name = "se-vitamelange-bloom",
-    spoil_ticks = 0,
-    spoil_result = nil,
-})
 
 data_util.conditional_modify{
     type = "capsule",

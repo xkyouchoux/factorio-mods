@@ -138,5 +138,14 @@
                 "kind": "build",
             }
         },
+        {
+            "label": "Package Mod: sei-heating-tower",
+            "type": "shell",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-heating-tower\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
     ]
 }

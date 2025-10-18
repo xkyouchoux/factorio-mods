@@ -3,7 +3,7 @@ require("prototypes.tile.tiles")
 require("prototypes.item")
 require("prototypes.recipe")
 require("prototypes.technology")
-require("prototypes.item-groups")
+require("prototypes.spoilage")
 
 se_delivery_cannon_recipes["yumako-seed"] = {name = "yumako-seed"}
 se_delivery_cannon_recipes["yumako"] = {name = "yumako", type = "capsule"}

@@ -17,7 +17,7 @@ data:extend({
         expires = false,
         final_render_layer = "remnants",
         remove_on_tile_placement = false,
-        animation = path_util.sa_sprite_load("__sei-spoilage__/graphics/entity/heating-tower/heating-tower-remnants",{
+        animation = path_util.sa_sprite_load("__sei-heating-tower__/graphics/entity/heating-tower/heating-tower-remnants",{
         scale = 0.5,
         direction_count = 1
         })

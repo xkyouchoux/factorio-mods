@@ -29,7 +29,7 @@ data:extend({
             { size = 64, filename = path_util.space_age_path.."graphics/icons/tree-seed-3.png", scale = 0.5, mipmap_count = 4 },
             { size = 64, filename = path_util.space_age_path.."graphics/icons/tree-seed-4.png", scale = 0.5, mipmap_count = 4 },
         },
-        subgroup = "agriculture-processes",
+        subgroup = "agriculture-seeds",
         order = "a[seeds]-a[tree-seed]",
         plant_result = "tree-plant",
         place_result = "tree-plant",

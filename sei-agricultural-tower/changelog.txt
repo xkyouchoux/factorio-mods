@@ -3,6 +3,7 @@ Version: 1.0.4
 Date: 17 October 2025
   Features:
     - Tree seeds can be sent with delivery cannon now
+    - Tree seeds are assigned to the agriculture-seeds category now
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 16 October 2025
