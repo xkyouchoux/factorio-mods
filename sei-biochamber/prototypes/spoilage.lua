@@ -23,7 +23,6 @@ data:extend({
             {type = "item", name = "spoilage", amount = 10},
         },
         results = {{type="item", name="nutrients", amount=1, percent_spoiled=0.5}},
-        auto_recycle = false,
         enabled = false,
         allow_productivity = true,
         crafting_machine_tint = {

@@ -16,6 +16,11 @@ se_delivery_cannon_recipes["carbon-fiber"] = {name = "carbon-fiber"}
 
 local data_util = require("__sei-library__.data_util")
 
+-- sei-library
+
+-- data.raw["recipe"]["spoilage-reprocessing"] = nil
+-- data_util.remove_recipe_from_effects(data.raw["technology"]["se-processing-vitamelange"], "spoilage-reprocessing")
+
 -- sei-agriculture-tower
 
 data.raw["item"]["tree-seed"].subgroup = "agriculture-seeds"

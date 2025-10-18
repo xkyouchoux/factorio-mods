@@ -7,10 +7,10 @@ data:extend({
         name = "bioflux",
         category = "organic-or-chemistry",
         subgroup = "agriculture-products",
-        auto_recycle = false,
         enabled = false,
         allow_productivity = true,
         energy_required = 6,
+        auto_recycle = false,
         ingredients =
         {
             {type = "item", name = "yumako-mash", amount = 15},
@@ -32,6 +32,7 @@ data:extend({
         order = "a[seeds]-b[yumako-seed]-b[breeding]",
         enabled = false,
         energy_required = 60,
+        auto_recycle = false,
         ingredients = {
             {type = "item", name = "tree-seed", amount = 10},
             {type = "item", name = "se-vitamelange-extract", amount = 1},
@@ -58,6 +59,7 @@ data:extend({
         order = "a[seeds]-c[jellynut-seed]-b[breeding]",
         enabled = false,
         energy_required = 60,
+        auto_recycle = false,
         ingredients = {
             {type = "item", name = "tree-seed", amount = 10},
             {type = "item", name = "se-vitamelange-extract", amount = 1},
@@ -132,6 +134,7 @@ data:extend({
         order = data.raw["item"]["flying-robot-frame"].order,
         enabled = false,
         energy_required = 10,
+        auto_recycle = false,
         ingredients =
         {
             {type = "item", name = "electric-engine-unit", amount = 1},
@@ -155,6 +158,7 @@ data:extend({
         enabled = false,
         allow_productivity = true,
         energy_required = 4,
+        auto_recycle = false,
         ingredients = {
             {type = "item", name = "yumako", amount = 4},
             {type = "fluid", name = "se-vitalic-acid", amount = 1},
@@ -180,6 +184,7 @@ data:extend({
         enabled = false,
         allow_productivity = true,
         energy_required = 4,
+        auto_recycle = false,
         ingredients =
         {
             {type = "item", name = "jellynut", amount = 4},
@@ -269,6 +274,7 @@ data:extend({
         allow_productivity = true,
         order = "c[nutrients]-c[nutrients]-e[yumako-mash]",
         energy_required = 4,
+        auto_recycle = false,
         icons = data_util.sub_icons(data.raw.item["nutrients"].icon, data.raw.capsule["yumako-mash"].icon),
         ingredients = {{type = "item", name = "yumako-mash", amount = 4}},
         results = {{type="item", name="nutrients", amount=6}},
@@ -311,6 +317,7 @@ data:extend({
         enabled = false,
         allow_productivity = true,
         energy_required = 10,
+        auto_recycle = false,
         ingredients =
         {
             {type = "fluid", name = "water", amount = 30},

@@ -7,6 +7,7 @@ data:extend({
         name = "captive-biter-spawner",
         category = "space-growth",
         energy_required = 10,
+        reset_freshness_on_craft = true,
         ingredients = {
             {type = "item", name = "biter-egg", amount = 10},
             {type = "item", name = "capture-robot-rocket", amount = 1},
@@ -24,6 +25,7 @@ data:extend({
         enabled = false,
         allow_productivity = true,
         energy_required = 6,
+        auto_recycle = false,
         ingredients =
         {
             {type = "item", name = "se-vitamelange-bloom", amount = 7},

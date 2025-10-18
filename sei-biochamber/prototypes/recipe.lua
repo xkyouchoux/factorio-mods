@@ -161,6 +161,7 @@ data:extend({
         order = "a[oil]-f[lube]-c[biolubricant]",
         auto_recycle = false,
         energy_required = 3,
+        auto_recycle = false,
         enabled = false,
         ingredients = {
             {type = "item", name = "se-vitamelange-nugget", amount = 50},

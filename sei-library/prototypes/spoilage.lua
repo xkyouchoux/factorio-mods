@@ -44,6 +44,7 @@ data:extend({
         category = "organic-or-chemistry",
         enabled = false,
         energy_required = 3,
+        auto_recycle = false,
         allow_productivity = true,
         ingredients =
         {
@@ -84,6 +85,7 @@ if mods["Krastorio2"] then
             order = data.raw.item["kr-coke"].order .. "-spoilage",
             enabled = false,
             energy_required = 16,
+            auto_recycle = false,
             allow_productivity = true,
             ingredients =
             {

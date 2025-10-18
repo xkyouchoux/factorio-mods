@@ -34,6 +34,7 @@ function result.create_casting_recipe(params)
         group = params.group or recipe.group or item.group,
         subgroup = params.subgroup or recipe.subgroup or item.subgroup,
         energy_required = params.energy_required or (recipe.energy_required and recipe.energy_required * 2) or 1,
+        auto_recycle = false,
         ingredients = params.ingredients,
         results = params.results or recipe.results,
     }

@@ -18,6 +18,7 @@ data:extend({
             {type = "fluid", name = "kr-mineral-water", amount = 20},
         },
         results = {{type="item", name="kr-fertilizer", amount = 20}},
+        auto_recycle = false,
         enabled = false,
         allow_productivity = true,
     },
