@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.6
+Date: 18 October 2025
+  Features:
+    - Added optional dependency: sei-tesla-turret.
+    - Added optional dependency: sei-rocket-turret.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.5
 Date: 18 October 2025
   Changes:
