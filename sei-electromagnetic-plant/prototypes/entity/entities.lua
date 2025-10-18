@@ -92,7 +92,7 @@ data:extend({
         usage_priority = "secondary-input",
         emissions_per_minute = { pollution = 4 }
         },
-        energy_usage = "650kW",
+        energy_usage = "1250kW",
         module_slots = 5,
         icons_positioning =
         {

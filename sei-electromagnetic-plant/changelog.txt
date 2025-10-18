@@ -2,7 +2,7 @@
 Version: 0.1.4
 Date: 17 October 2025
   Changes:
-    - Adjusted operation power consumption of the electromagnetic plant from 2000kW -> 650kW.
+    - Adjusted operation power consumption of the electromagnetic plant from 2000kW -> 1250kW.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 15 October 2025
