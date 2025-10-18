@@ -1,6 +1,6 @@
 {
   "name": "se-ssa-i",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "title": "Space Exploration Integration: Space Age",
   "author": "xkyouchoux",
   "description": "Currently adds stack inserters, belt stacking, cryogenic plant, electromagnetic plant, foundry, agricultural tower*, biochamber*, captive biter spawners*, gleba fruits*, spoilage* and heating tower*, and turbo belts* to space exploration. Has support for Krastorio 2. *optional",
@@ -16,7 +16,6 @@
     "? sei-agricultural-tower",
     "? sei-biochamber",
     "? sei-captive-biters",
-    "? sei-spoilage",
     "? sei-turbo-belts",
     "? Krastorio2 >= 2.0.8",
     "! space-age"],
