@@ -30,6 +30,50 @@ data:extend({
         drop_sound = item_sounds.mechanical_inventory_move,
         place_result = "captive-biter-spawner",
         stack_size = 1,
+        spoil_ticks = 1 * hour,
+        spoil_to_trigger_result =
+        {
+            items_per_trigger = 1,
+            trigger =
+            {
+                type = "direct",
+                action_delivery =
+                {
+                    type = "instant",
+                    source_effects =
+                    {
+                        {
+                            type = "create-entity",
+                            entity_name = "behemoth-biter",
+                            affects_target = true,
+                            show_in_tooltip = true,
+                            as_enemy = true,
+                            find_non_colliding_position = true,
+                            offset_deviation = {{-1, -1}, {1, 1}},
+                            non_colliding_fail_result =
+                            {
+                                type = "direct",
+                                action_delivery =
+                                {
+                                    type = "instant",
+                                    source_effects =
+                                    {
+                                        {
+                                            type = "create-entity",
+                                            entity_name = "behemoth-biter",
+                                            affects_target = true,
+                                            show_in_tooltip = false,
+                                            as_enemy = true,
+                                            offset_deviation = {{-1, -1}, {1, 1}},
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     },
     {
         type = "ammo",
@@ -79,5 +123,50 @@ data:extend({
         drop_sound = space_age_item_sounds.agriculture_inventory_move,
         stack_size = 100,
         weight = 2 * kg,
+        spoil_ticks = 1 * hour,
+        spoil_to_trigger_result =
+        {
+            items_per_trigger = 10,
+            trigger =
+            {
+                type = "direct",
+                action_delivery =
+                {
+                    type = "instant",
+                    source_effects =
+                    {
+                        {
+                            type = "create-entity",
+                            entity_name = "big-biter",
+                            affects_target = true,
+                            show_in_tooltip = true,
+                            as_enemy = true,
+                            find_non_colliding_position = true,
+                            abort_if_over_space = true,
+                            offset_deviation = {{-1, -1}, {1, 1}},
+                            non_colliding_fail_result =
+                            {
+                                type = "direct",
+                                action_delivery =
+                                {
+                                    type = "instant",
+                                    source_effects =
+                                    {
+                                        {
+                                            type = "create-entity",
+                                            entity_name = "big-biter",
+                                            affects_target = true,
+                                            show_in_tooltip = false,
+                                            as_enemy = true,
+                                            offset_deviation = {{-1, -1}, {1, 1}},
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     },
 })

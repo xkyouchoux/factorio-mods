@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 18 October 2025
+  Changes:
+    - Biter eggs and captive biter spawners spoilage can be changed seperately from spoilage items
+      Can be disabled in mod settings.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 17 October 2025
   Features:

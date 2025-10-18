@@ -1,6 +1,6 @@
 {
   "name": "sei-captive-biters",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "title": "Space Exploration Integration: Captive Biters and Biter Eggs",
   "author": "xkyouchoux",
   "description": "Adds captive biters, biter eggs, and bioflux into space exploration.",
@@ -11,6 +11,7 @@
     "sei-heating-tower",
     "? Krastorio2 >= 2.0",
     "! space-age"],
+  "spoiling_required": true,
   "space_travel_required": true,
   "factorio_version": "2.0"
 }

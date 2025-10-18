@@ -6,4 +6,11 @@ data:extend({
         default_value = false,
         order = "a",
     },
+    {
+        type = "bool-setting",
+        name = "sei-captive-biters-enable-biter-egg-spoil",
+        setting_type = "startup",
+        default_value = true,
+        order = "b",
+    },
 })
