@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 18 October 2025
+  Bugfixes:
+    - Fixed vitalic acid fruits processing giving more seeds than intended.
+    - Fixed fruits processing tech not having processing vitamelange requirement.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 18 October 2025
   Bugfixes:

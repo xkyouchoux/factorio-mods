@@ -21,12 +21,6 @@ local data_util = require("__sei-library__.data_util")
 -- data.raw["recipe"]["spoilage-reprocessing"] = nil
 -- data_util.remove_recipe_from_effects(data.raw["technology"]["se-processing-vitamelange"], "spoilage-reprocessing")
 
--- sei-agriculture-tower
-
-data.raw["item"]["tree-seed"].subgroup = "agriculture-seeds"
-data.raw["recipe"]["wood-processing"].subgroup = "agriculture-seeds"
-data.raw["recipe"]["wood-processing-sand"].subgroup = "agriculture-seeds"
-
 -- sei-captive-biters
 
 data_util.remove_recipe_from_effects(data.raw["technology"]["biochamber"].effects, "nutrients-from-spice")
@@ -54,12 +48,12 @@ data_util.remove_recipe_from_effects(data.raw["technology"]["biochamber"].effect
 data.raw["recipe"]["nutrients-from-bloom"] = nil
 
 data_util.remove_recipe_from_effects(data.raw["technology"]["biochamber"].effects, "nutrients-from-bioflux")
-table.insert(data.raw["technology"]["biochamber"].effects, 2, {
+table.insert(data.raw["technology"]["biochamber"].effects, 3, {
     type = "unlock-recipe",
     recipe = "nutrients-from-bioflux"
 })
 
-table.insert(data.raw["technology"]["biochamber"].effects, 2, {
+table.insert(data.raw["technology"]["biochamber"].effects, 3, {
     type = "unlock-recipe",
     recipe = "nutrients-from-yumako-mash"
 })

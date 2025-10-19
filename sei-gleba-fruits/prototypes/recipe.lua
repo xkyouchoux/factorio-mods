@@ -157,16 +157,16 @@ data:extend({
         order = "a[organic-processing]-b[yumako-mash]-c[processing-vita]",
         enabled = false,
         allow_productivity = true,
-        energy_required = 4,
+        energy_required = 16,
         auto_recycle = false,
         ingredients = {
-            {type = "item", name = "yumako", amount = 4},
+            {type = "item", name = "yumako", amount = 16},
             {type = "fluid", name = "se-vitalic-acid", amount = 1},
         },
         results =
         {
-            {type = "item", name = "yumako-seed", amount = 4, probability = 0.10},
-            {type = "item", name = "yumako-mash", amount = 10},
+            {type = "item", name = "yumako-seed", amount = 1, probability = 0.20},
+            {type = "item", name = "yumako-mash", amount = 40},
         },
         crafting_machine_tint =
         {
@@ -178,22 +178,22 @@ data:extend({
         type = "recipe",
         name = "jellynut-processing-vita",
         icons = data_util.sub_icons(path_util.space_age_path.."graphics/icons/jelly.png", data.raw["fluid"]["se-vitalic-acid"]),
-        category = "organic-or-hand-crafting",
+        category = "organic-or-assembling",
         subgroup = "agriculture-products",
         order = "a[organic-processing]-c[jelly]-c[processing-vita]",
         enabled = false,
         allow_productivity = true,
-        energy_required = 4,
+        energy_required = 16,
         auto_recycle = false,
         ingredients =
         {
-            {type = "item", name = "jellynut", amount = 4},
+            {type = "item", name = "jellynut", amount = 16},
             {type = "fluid", name = "se-vitalic-acid", amount = 1},
         },
         results =
         {
-            {type = "item", name = "jellynut-seed", amount = 4, probability = 0.10},
-            {type = "item", name = "jelly", amount = 20},
+            {type = "item", name = "jellynut-seed", amount = 1, probability = 0.20},
+            {type = "item", name = "jelly", amount = 80},
         },
         crafting_machine_tint =
         {

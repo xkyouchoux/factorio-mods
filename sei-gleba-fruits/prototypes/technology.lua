@@ -38,7 +38,7 @@ data:extend({
                 recipe = "bioflux"
             },
         },
-        prerequisites = {"se-space-genetics-laboratory", "agriculture"},
+        prerequisites = {"se-space-genetics-laboratory", "agriculture", "se-processing-vitamelange"},
         unit =
         {
             count = 100,
