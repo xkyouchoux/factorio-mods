@@ -40,8 +40,8 @@ data:extend({
     {
         type = "recipe",
         name = "spoilage-reprocessing",
-        icons = data_util.sub_icons(data.raw.item["se-vitamelange-nugget"].icon, data.raw.item["spoilage"]),
-        category = "organic-or-chemistry",
+        icons = data_util.sub_icons(data.raw.item["se-vitamelange-nugget"].icon, path_util.space_age_path.."graphics/icons/spoilage.png"),
+        category = "space-biochemical",
         enabled = false,
         energy_required = 3,
         auto_recycle = false,

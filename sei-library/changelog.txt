@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 18 October 2025
+  Changes:
+    - Changed spoilage reprocessing so it can only be made in biochemical facility.
+  Bugfixes:
+    - Fixed spoilage reprocessing recipe icon.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 18 October 2025
   Bugfixes:
