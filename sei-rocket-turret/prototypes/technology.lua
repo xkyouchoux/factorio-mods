@@ -12,7 +12,7 @@ data:extend({
                 recipe = "rocket-turret"
             },
         },
-        prerequisites = {"se-heavy-girder", "rocketry", "stronger-explosives-2"},
+        prerequisites = {"se-heavy-girder", "rocketry"},
         unit = {
             ingredients =
             {
