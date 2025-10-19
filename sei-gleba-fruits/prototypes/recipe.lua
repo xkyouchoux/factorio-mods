@@ -31,7 +31,7 @@ data:extend({
         subgroup = "agriculture-seeds",
         order = "a[seeds]-b[yumako-seed]-b[breeding]",
         enabled = false,
-        energy_required = 60,
+        energy_required = 30,
         auto_recycle = false,
         ingredients = {
             {type = "item", name = "tree-seed", amount = 10},
@@ -40,7 +40,7 @@ data:extend({
             {type = "fluid", name = "se-nutrient-gel", amount = 10},
         },
         results = {
-            {type = "item", name = "yumako-seed", amount_min = 0, amount_max = 10, probability = 0.10},
+            {type = "item", name = "yumako-seed", amount_min = 0, amount_max = 2},
             {type = "item", name = "se-genetic-data", amount = 9},
             {type = "item", name = "se-junk-data", amount = 1},
         },
@@ -58,7 +58,7 @@ data:extend({
         subgroup = "agriculture-seeds",
         order = "a[seeds]-c[jellynut-seed]-b[breeding]",
         enabled = false,
-        energy_required = 60,
+        energy_required = 30,
         auto_recycle = false,
         ingredients = {
             {type = "item", name = "tree-seed", amount = 10},
@@ -68,7 +68,7 @@ data:extend({
         },
         results =
         {
-            {type = "item", name = "jellynut-seed", amount_min = 0, amount_max = 10, probability = 0.10},
+            {type = "item", name = "jellynut-seed", amount_min = 0, amount_max = 2},
             {type = "item", name = "se-genetic-data", amount = 9},
             {type = "item", name = "se-junk-data", amount = 1},
         },
@@ -165,7 +165,7 @@ data:extend({
         },
         results =
         {
-            {type = "item", name = "yumako-seed", amount = 1, probability = 0.20},
+            {type = "item", name = "yumako-seed", amount = 1, probability = 0.50},
             {type = "item", name = "yumako-mash", amount = 40},
         },
         crafting_machine_tint =
@@ -192,7 +192,7 @@ data:extend({
         },
         results =
         {
-            {type = "item", name = "jellynut-seed", amount = 1, probability = 0.20},
+            {type = "item", name = "jellynut-seed", amount = 1, probability = 0.50},
             {type = "item", name = "jelly", amount = 80},
         },
         crafting_machine_tint =
