@@ -90,6 +90,8 @@ data_util.conditional_modify({
 
 -- bio 1
 
+data_util.replace_or_add_ingredient("se-vitalic-acid", nil, "jelly", 1)
+
 data_util.replace_or_add_ingredient("se-experimental-genetic-data", nil, "yumako-seed", 1)
 data_util.replace_or_add_ingredient("se-experimental-genetic-data", nil, "jellynut-seed", 1)
 
