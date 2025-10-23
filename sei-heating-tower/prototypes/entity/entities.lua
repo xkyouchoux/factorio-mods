@@ -13,7 +13,6 @@ data:extend({
         corpse = "heating-tower-remnants",
         dying_explosion = "heating-tower-explosion",
         consumption = "40MW",
-        se_allow_in_space = false,
         neighbour_bonus = 0,
         energy_source =
         {
