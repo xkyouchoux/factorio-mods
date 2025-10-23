@@ -69,9 +69,6 @@ bio_sludge_from_spoilage_recipe.icons[2].icon = data.raw["item"]["spoilage"].ico
 
 data:extend({bio_sludge_from_spoilage_recipe})
 
-data_util.replace_or_add_result("se-space-water-decontamination", "se-contaminated-scrap", "spoilage", nil, nil, 1, 1, .1)
-data_util.replace_or_add_result("se-bio-sludge-decontamination", "se-contaminated-scrap", "spoilage", nil, nil, 1, 1, .1)
-
 data_util.recipe_require_tech("spoilage-reprocessing", "se-processing-vitamelange")
 data_util.recipe_require_tech("se-bio-sludge-from-spoilage", "se-space-growth-facility")
 
