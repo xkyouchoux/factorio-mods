@@ -13,20 +13,21 @@ data:extend({
         corpse = "heating-tower-remnants",
         dying_explosion = "heating-tower-explosion",
         consumption = "40MW",
+        se_allow_in_space = false,
         neighbour_bonus = 0,
         energy_source =
         {
-        type = "burner",
-        fuel_categories = {"chemical"},
-        emissions_per_minute = {pollution = 100},
-        effectivity = settings.startup["sei-heating-tower-effectivity"].value,
-        fuel_inventory_size = 2,
-        light_flicker =
-        {
-            color = {0,0,0},
-            minimum_intensity = 0.7,
-            maximum_intensity = 0.95
-        }
+            type = "burner",
+            fuel_categories = {"chemical"},
+            emissions_per_minute = {pollution = 100},
+            effectivity = settings.startup["sei-heating-tower-effectivity"].value,
+            fuel_inventory_size = 2,
+            light_flicker =
+            {
+                color = {0,0,0},
+                minimum_intensity = 0.7,
+                maximum_intensity = 0.95
+            }
         },
         collision_box = {{-1.25, -1.25}, {1.25, 1.25}},
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
