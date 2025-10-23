@@ -156,5 +156,14 @@
                 "kind": "build",
             }
         },
+        {
+            "label": "Package Mod: sei-fusion-reactor",
+            "type": "shell",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-fusion-reactor\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
     ]
 }
