@@ -1,6 +1,6 @@
 {
   "name": "sei-library",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "title": "Space Exploration Integration: Library",
   "author": "xkyouchoux",
   "description": "Base library for my space exploration integration mods. Fixes some changes the standalone space age lib does with crafting categories if present.",
@@ -9,6 +9,7 @@
     "space-exploration >= 0.7",
     "? um-standalone-space-age-lib",
     "? Krastorio2 >= 2.0",
+    "? BrimStuff-Updated",
     "! sei-spoilage",
     "! space-age"],
   "space_travel_required": true,

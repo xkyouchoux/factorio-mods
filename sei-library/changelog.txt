@@ -1,17 +1,22 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.9
+Version: 1.0.10
+Date: 24 October 2025
+  Bugfixes:
+    - Added optional dependency to BrimStuff-Updated to prevent a crash for now.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.9
 Date: 23 October 2025
   Bugfixes:
     - Fixed spoilage replacing contaminated scrap in decontamination recipes.
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.8
+Version: 1.0.8
 Date: 18 October 2025
   Changes:
     - Changed spoilage reprocessing so it can only be made in biochemical facility.
   Bugfixes:
     - Fixed spoilage reprocessing recipe icon.
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.7
+Version: 1.0.7
 Date: 18 October 2025
   Bugfixes:
     - Fixed certain recipes affecting recycling.
