@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Date: 24 October 2025
+  Changes:
+    - Removed all crafting category changes
+  Bugfixes:
+    - Fixed agricultural tower circuit connectors
+    - Fixed rocket turret circuit connectors
+---------------------------------------------------------------------------------------------------
 Version: 1.0.10
 Date: 24 October 2025
   Bugfixes:
