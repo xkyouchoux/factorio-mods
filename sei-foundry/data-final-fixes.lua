@@ -4,16 +4,6 @@ data_util.set_category_for_recipes("carbon-casting", {
 	"se-steel-ingot"
 })
 
-local metallurgy_recipes = {
-    "se-iridium-ingot",
-}
-
-if settings.startup["sei-foundry-allow-space-recipes"].value then
-    table.insert(metallurgy_recipes, "se-lattice-pressure-vessel")
-end
-
-data_util.add_additional_category_to_recipes("metallurgy", metallurgy_recipes)
-
 local foundry_recipes = {
     "transport-belt",
     "fast-transport-belt",
@@ -39,6 +29,8 @@ local foundry_recipes = {
     "steel-furnace",
     "electric-furnace",
     "industrial-furnace",
+    
+    "se-iridium-ingot",
     
     "stone-tablet",
     "se-heat-shielding-iridium",
@@ -99,13 +91,8 @@ local foundry_recipes = {
     "aai-kr-superior-loader", -- aai-loaders
 }
 
-for _,name in pairs(foundry_recipes) do
-    local recipe = data.raw["recipe"][name]
-    if recipe then
-    local fluid = false
-        for _,ingredient in pairs(recipe.ingredients) do
-            if ingredient.type == "fluid" then fluid = true break end
-        end
-        recipe.category = fluid and "crafting-with-fluid-or-metallurgy" or "pressing"
-    end
+if settings.startup["sei-foundry-allow-space-recipes"].value then
+    table.insert(foundry_recipes, "se-lattice-pressure-vessel")
 end
+
+data_util.add_additional_category_to_recipes("metallurgy", foundry_recipes)

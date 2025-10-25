@@ -19,14 +19,14 @@ function result.create_casting_recipe(params)
     return {
         type = "recipe",
         name = "casting-"..name,
-        icons = #params.icons == 1 and result.sub_icons(params.icon or item.icon, params.icons[1]) or 
-            result.sub_icons(params.icon or item.icon, params.icons[1], {
+        icons = (params.icons and #params.icons == 1 and result.sub_icons(params.icon or item.icon, params.icons[1])) or 
+            (params.icons and result.sub_icons(params.icon or item.icon, params.icons[1], {
                 icon = params.icons[2].icon or params.icons[2],
                 scale = params.icons[2].scale,
                 shift = params.icons[2].shift or {10, -7},
                 icon_size = params.icons[2].icon_size,
                 draw_background = params.icons[2].draw_background,
-            }),
+            })) or nil,
         category = "metallurgy",
         enabled = false,
         allow_productivity = recipe.allow_productivity,
