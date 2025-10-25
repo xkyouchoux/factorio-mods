@@ -8,7 +8,7 @@
     "base >= 2.0.0",
     "space-exploration >= 0.7",
     "sei-library >= 1.0.10",
-    "sei-heating-tower",
+    "sei-heating-tower >= 1.0.2",
     "? sei-captive-biters >= 0.1.7",
     "? Krastorio2 >= 2.0",
     "! space-age"],
