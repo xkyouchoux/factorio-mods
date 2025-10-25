@@ -2,7 +2,7 @@
 Version: 1.0.9
 Date: 24 October 2025
   Changes:
-    - Bumped required version of sei-library to 1.0.10
+    - Bumped required version of sei-library to 1.0.11
     - Removed pressing, crafting-with-fluid-or-mettalurgy, and metallurgy-or-assembling recipe categories
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.8

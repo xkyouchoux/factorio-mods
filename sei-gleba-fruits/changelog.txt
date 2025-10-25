@@ -5,7 +5,7 @@ Date: 24 October 2025
     - Moved bioflux processing from biological science 2 to biological science 1
     - Bumped required version of sei-library to 1.0.10
     - Bumped required version of sei-biochamber to 0.1.8
-    - Bumped required version of sei-captive-biters to 0.1.10
+    - Bumped required version of sei-captive-biters to 0.1.11
     - Bumped required version of sei-agricultural-tower to 1.0.5
     - Bumped required version of sei-heating-tower to 1.0.2
 ---------------------------------------------------------------------------------------------------

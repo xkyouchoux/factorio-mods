@@ -2,7 +2,7 @@
 Version: 1.0.6
 Date: 24 October 2025
   Changes:
-    - Bumped required version of sei-library to 1.0.10
+    - Bumped required version of sei-library to 1.0.11
     - Removed electronics, electronics-with-fluid, electronics-or-assembling, and chemistry-or-electromagnetics recipe categories
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.5
