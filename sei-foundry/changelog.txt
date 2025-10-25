@@ -2,6 +2,7 @@
 Version: 1.0.9
 Date: 24 October 2025
   Changes:
+    - Bumped required version of sei-library to 1.0.10
     - Switched to using recipe prototypes 'additional_categories' instead of changing 'category'
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.8
