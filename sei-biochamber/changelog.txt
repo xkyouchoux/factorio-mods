@@ -3,6 +3,7 @@ Version: 0.1.8
 Date: 24 October 2025
   Changes:
     - Bumped required version of sei-library to 1.0.10
+    - Bumped required version of sei-heating-tower to 1.0.2
     - Removed organic-or-assembling, organic-or-hand-crafting, and organic-or-chemistry recipe categories
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
