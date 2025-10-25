@@ -16,3 +16,5 @@ for _, connection in pairs(data.raw["infinity-pipe"]["infinity-pipe"].fluid_box.
         table.insert(connection.connection_category, "fusion-plasma") 
     end
 end
+
+data_util.add_categories_to_machines({"cryogenic-cooling"}, {"cryogenic-plant"})

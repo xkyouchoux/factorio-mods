@@ -40,7 +40,7 @@ data:extend({
             {type = "fluid", name = "se-cryonite-slush", amount = 1},
         },
         results = {
-            {type = "fluid", name="se-space-coolant-cold", amount = 35},
+            {type = "fluid", name="se-space-coolant-cold", amount = 32},
         },
         enabled = false,
         main_product = "se-space-coolant-cold",

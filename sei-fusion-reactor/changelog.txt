@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 24 October 2025
+  Balancing:
+    - Adjusted Flash thermofluid cooling recipe from 40 -> 35 to 40 -> 32 for a total of 20% loss
+  Changes:
+    - Bumped required version of sei-cryogenic-plant to 1.0.7
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 23 October 2025
   Changes:
