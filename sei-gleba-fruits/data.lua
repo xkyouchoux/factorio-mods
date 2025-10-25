@@ -17,6 +17,8 @@ se_delivery_cannon_recipes["carbon-fiber"] = {name = "carbon-fiber"}
 local data_util = require("__sei-library__.data_util")
 local item_effects = require("__sei-gleba-fruits__.prototypes.item-effects")
 
+data.raw["recipe"]["flying-robot-frame"].auto_recycle = false
+
 -- sei-library
 
 -- data.raw["recipe"]["spoilage-reprocessing"] = nil
