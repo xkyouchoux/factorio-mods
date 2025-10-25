@@ -4,6 +4,9 @@ local data_util = require("__sei-library__.data_util")
 
 data.raw["assembling-machine"]["biochamber"].energy_source.burnt_inventory_size = 1
 
+data.raw.capsule["raw-fish"].spoil_ticks = 453000
+data.raw.capsule["raw-fish"].spoil_result = "spoilage"
+
 data_util.conditional_modify({
     type = "item",
     name = "nutrients",

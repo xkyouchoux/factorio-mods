@@ -9,7 +9,7 @@ data:extend({
         category = "organic",
         order = "c[nutrients]-c[nutrients]-f[bioflux]",
         energy_required = 2,
-        icons = data_util.sub_icons(data.raw.item["nutrients"].icon, data.raw.item["bioflux"].icon),
+        icons = data_util.sub_icons(data.raw.item["nutrients"].icon, data.raw["capsule"]["bioflux"].icon),
         ingredients = {
             {type = "item", name = "bioflux", amount = 5},
         },
@@ -38,14 +38,14 @@ data:extend({
 data_util.conditional_modify({
     type = "recipe",
     name = "bioplastic",
-    icons = data_util.sub_icons(data.raw.item["plastic-bar"].icon, data.raw.item["bioflux"].icon),
+    icons = data_util.sub_icons(data.raw.item["plastic-bar"].icon, data.raw["capsule"]["bioflux"].icon),
 })
 data_util.replace_or_add_ingredient("bioplastic", "se-bio-sludge", "bioflux", 1)
     
 data_util.conditional_modify({
     type = "recipe",
     name = "biosulfur",
-    icons = data_util.sub_icons(data.raw.item["sulfur"].icon, data.raw.item["bioflux"].icon),
+    icons = data_util.sub_icons(data.raw.item["sulfur"].icon, data.raw["capsule"]["bioflux"].icon),
 })
 data_util.replace_or_add_ingredient("biosulfur", "se-bio-sludge", "bioflux", 1)
 data_util.enable_recipe("nutrients-from-spice")
