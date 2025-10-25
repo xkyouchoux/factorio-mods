@@ -22,7 +22,7 @@ data:extend({
         name = "bioflux",
         icon = path_util.space_age_path.."graphics/icons/bioflux.png",
         category = "chemistry",
-        additional_categories = {"organic"},
+        additional_categories = data.raw["recipe-category"]["organic"] and {"organic"} or nil,
         enabled = false,
         allow_productivity = true,
         energy_required = 6,
