@@ -1,14 +1,14 @@
 {
   "name": "sei-captive-biters",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "title": "Space Exploration Integration: Captive Biters and Biter Eggs",
   "author": "xkyouchoux",
   "description": "Adds captive biters, biter eggs, and bioflux into space exploration.",
   "dependencies": [
     "base >= 2.0.0",
     "space-exploration >= 0.7",
-    "sei-library >= 1.0.6",
-    "sei-heating-tower",
+    "sei-library >= 1.0.10",
+    "sei-heating-tower >= 1.0.2",
     "? Krastorio2 >= 2.0",
     "! space-age"],
   "spoiling_required": true,

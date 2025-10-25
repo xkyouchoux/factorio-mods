@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.10
+Date: 24 October 2025
+  Changes:
+    - Bumped required version of sei-library to 1.0.10
+    - Bumped required version of sei-heating-tower to 1.0.2
+---------------------------------------------------------------------------------------------------
 Version: 0.1.9
 Date: 18 October 2025
   Bugfixes:
