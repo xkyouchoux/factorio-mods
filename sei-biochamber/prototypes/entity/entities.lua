@@ -51,10 +51,7 @@ data:extend({
         energy_usage = "200kW",
         heating_energy = "100kW",
         crafting_categories = {
-            "organic", 
-            "organic-or-hand-crafting", 
-            "organic-or-chemistry",
-            "organic-or-assembling",
+            "organic",
         },
         fluid_boxes_off_when_no_fluid_recipe = true,
         fluid_boxes =

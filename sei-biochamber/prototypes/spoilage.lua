@@ -15,7 +15,7 @@ data:extend({
     {
         type = "recipe",
         name = "nutrients-from-spoilage",
-        category = "organic-or-hand-crafting",
+        additional_categories = {"organic"},
         order = "c[nutrients]-c[nutrients]-a[spoilage]",
         energy_required = 2,
         icons = data_util.sub_icons(data.raw.item["nutrients"].icon, data.raw.item["spoilage"].icon),

@@ -1,13 +1,13 @@
 {
   "name": "sei-biochamber",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "title": "Space Exploration Integration: Biochamber",
   "author": "xkyouchoux",
   "description": "Adds the biochamber and nutrients into space exploration.",
   "dependencies": [
     "base >= 2.0.0",
     "space-exploration >= 0.7",
-    "sei-library >= 1.0.6",
+    "sei-library >= 1.0.10",
     "sei-heating-tower",
     "? sei-captive-biters >= 0.1.7",
     "? Krastorio2 >= 2.0",
