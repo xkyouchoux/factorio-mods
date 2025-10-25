@@ -3,13 +3,14 @@ Version: 1.0.11
 Date: 24 October 2025
   Changes:
     - Removed all crafting category changes
+    - Removed optional dependency to BrimStuff-Updated.
   Bugfixes:
     - Fixed agricultural tower circuit connectors
     - Fixed rocket turret circuit connectors
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.10
 Date: 24 October 2025
-  Bugfixes:
+  Changes:
     - Added optional dependency to BrimStuff-Updated to prevent a crash for now.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.9
