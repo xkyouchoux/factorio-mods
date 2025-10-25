@@ -19,8 +19,8 @@ se_delivery_cannon_recipes["biter-egg"] = {name = "biter-egg"}
 data_util.replace_or_add_ingredient("se-biochemical-data", "se-vitamelange-spice", "biter-egg", 1)
 data_util.replace_or_add_ingredient("se-biological-science-pack-4", "se-core-fragment-se-vitamelange", "biter-egg", 5)
 
-data_util.replace_or_add_ingredient("se-capsule-small-biter", nil, "biter-egg", 1)
-data_util.replace_or_add_ingredient("se-capsule-small-spitter", nil, "biter-egg", 1)
+data_util.replace_or_add_ingredient("se-capsule-small-biter", "biter-egg", "biter-egg", 1)
+data_util.replace_or_add_ingredient("se-capsule-small-spitter", "biter-egg", "biter-egg", 1)
 
 data_util.tech_add_prerequisites("se-space-catalogue-biological-1", {"captivity"})
 

@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.12
+Date: 25 October 2025
+  Bugfixes:
+    - Fixed tier 1 biter and spitter capsules didnt have biter egg ingredient
+---------------------------------------------------------------------------------------------------
 Version: 0.1.11
 Date: 25 October 2025
   Changes:
