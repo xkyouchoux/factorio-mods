@@ -80,11 +80,7 @@ data:extend({
         crafting_speed = 2,
         crafting_categories = {
             "electromagnetics", 
-            "electronics", 
-            "electronics-with-fluid",
             "crafting-or-electromagnetics",
-            "chemistry-or-electromagnetics",
-            "electronics-or-assembling"
         },
         energy_source =
         {
