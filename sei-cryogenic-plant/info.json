@@ -1,13 +1,13 @@
 {
   "name": "sei-cryogenic-plant",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "title": "Space Exploration Integration: Cryogenic Plant",
   "author": "xkyouchoux",
   "description": "Adds the cryogenic plant into space exploration.",
   "dependencies": [
     "base >= 2.0.0",
     "space-exploration >= 0.7",
-    "sei-library >= 1.0.9",
+    "sei-library >= 1.0.10",
     "? Krastorio2 >= 2.0",
     "! um-standalone-cryogenic-plant",
     "! space-age"],

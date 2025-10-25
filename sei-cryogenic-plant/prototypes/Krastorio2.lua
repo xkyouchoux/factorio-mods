@@ -7,7 +7,6 @@ data_util.conditional_modify({
     name = "cryogenic-plant",
     module_slots = 3,
     energy_usage = "250kW",
-
 })
 
 data_util.replace_or_add_ingredient("cryogenic-plant", "steel-plate", "kr-steel-beam", 10)

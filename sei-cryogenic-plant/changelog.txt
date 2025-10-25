@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 24 October 2025
+  Changes:
+    - Bumped required version of sei-library to 1.0.10
+    - Removed chemistry-or-cryogenics and cryogenics-or-assembling recipe categories
+---------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: 23 October 2025
   Changes:
