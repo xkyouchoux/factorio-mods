@@ -15,6 +15,7 @@ se_delivery_cannon_recipes["bioflux"] = {name = "bioflux", type = "capsule"}
 se_delivery_cannon_recipes["carbon-fiber"] = {name = "carbon-fiber"}
 
 local data_util = require("__sei-library__.data_util")
+local item_effects = require("__sei-gleba-fruits__.prototypes.item-effects")
 
 -- sei-library
 
@@ -32,6 +33,14 @@ data.raw["recipe"]["nutrients-from-extract"] = nil
 data_util.remove_recipe_from_effects(data.raw["technology"]["captivity"].effects, "bioflux")
 
 data_util.tech_add_prerequisites("captivity", {"fruits-processing"})
+
+data_util.conditional_modify({
+    type = "capsule",
+    name = "bioflux",
+    subgroup = "agriculture-products",
+    order = "a[organic-processing]-d[bioflux]-a[bioflux]",
+    capsule_action = item_effects.bioflux_speed_and_regen
+})
 
 -- sei-biochamber
 

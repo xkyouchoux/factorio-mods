@@ -6,8 +6,6 @@ local space_age_item_sounds = require("__sei-library__.prototypes.item_sounds")
 local item_tints = require("__base__.prototypes.item-tints")
 local item_effects = require("__sei-gleba-fruits__.prototypes.item-effects")
 
-data.raw["item"]["bioflux"] = nil
-
 local overgrowth_tiles = {}
 
 for _,tile in pairs(data.raw["tile"]) do
@@ -149,23 +147,6 @@ data:extend({
         stack_size = 100,
         weight = 0.5 * kg,
         capsule_action = item_effects.jellynut_speed
-    },
-    {
-        type = "capsule",
-        name = "bioflux",
-        localised_name = {"item-name.bioflux"},
-        localised_description = {"item-description.bioflux"},
-        icon = path_util.space_age_path.."graphics/icons/bioflux.png",
-        subgroup = "agriculture-products",
-        order = "a[organic-processing]-d[bioflux]-a[bioflux]",
-        inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
-        pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
-        drop_sound = space_age_item_sounds.agriculture_inventory_move,
-        fuel_category = "food",
-        fuel_value = "6MJ",
-        stack_size = 100,
-        weight = 1 * kg,
-        capsule_action = item_effects.bioflux_speed_and_regen
     },
     {
         type = "item",
