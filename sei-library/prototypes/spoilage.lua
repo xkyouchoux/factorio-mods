@@ -8,9 +8,6 @@ local item_tints = require("__base__.prototypes.item-tints")
 --added from space exploration
 se_delivery_cannon_recipes["spoilage"] = {name = "spoilage"}
 
-data.raw.capsule["raw-fish"].spoil_ticks = 453000
-data.raw.capsule["raw-fish"].spoil_result = "spoilage"
-
 data:extend({
     {
         type = "item",
