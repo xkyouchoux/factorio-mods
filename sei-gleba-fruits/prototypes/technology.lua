@@ -107,7 +107,7 @@ data:extend({
             recipe = "biolubricant"
         }
         },
-        prerequisites = {"fruits-processing", "se-biological-science-pack-2"},
+        prerequisites = {"fruits-processing", "se-biological-science-pack-1"},
         unit =
         {
             count = 250,
@@ -119,7 +119,7 @@ data:extend({
                 {"se-rocket-science-pack", 1},
                 {"space-science-pack", 1},
                 {"production-science-pack", 1},
-                {"se-biological-science-pack-2", 1},
+                {"se-biological-science-pack-1", 1},
             },
             time = 60
         }
