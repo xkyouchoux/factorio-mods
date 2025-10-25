@@ -6,8 +6,10 @@ local space_age_item_sounds = require("__sei-library__.prototypes.item_sounds")
 
 data:extend({
     {
-        type = "item",
+        type = "capsule",
         name = "bioflux",
+        localised_name = {"item-name.bioflux"},
+        localised_description = {"item-description.bioflux"},
         icon = path_util.space_age_path.."graphics/icons/bioflux.png",
         subgroup = "chemical",
         order = "a[organic-processing]-a[bioflux]",
@@ -18,6 +20,32 @@ data:extend({
         fuel_value = "6MJ",
         stack_size = 100,
         weight = 1 * kg,
+        capsule_action = {
+            attack_parameters = {
+                ammo_category = "capsule",
+                ammo_type = {
+                action = {
+                    action_delivery = {
+                    target_effects = {
+                        damage = {
+                        amount = 5,
+                        type = "poison"
+                        },
+                        type = "damage"
+                    },
+                    type = "instant"
+                    },
+                    type = "direct"
+                },
+                category = "capsule",
+                target_type = "position"
+                },
+                cooldown = 1,
+                range = 0,
+                type = "projectile"
+            },
+        type = "use-on-self"
+        },
     },
     {
         type = "item",
@@ -30,50 +58,6 @@ data:extend({
         drop_sound = item_sounds.mechanical_inventory_move,
         place_result = "captive-biter-spawner",
         stack_size = 1,
-        spoil_ticks = 1 * hour,
-        spoil_to_trigger_result =
-        {
-            items_per_trigger = 1,
-            trigger =
-            {
-                type = "direct",
-                action_delivery =
-                {
-                    type = "instant",
-                    source_effects =
-                    {
-                        {
-                            type = "create-entity",
-                            entity_name = "behemoth-biter",
-                            affects_target = true,
-                            show_in_tooltip = true,
-                            as_enemy = true,
-                            find_non_colliding_position = true,
-                            offset_deviation = {{-1, -1}, {1, 1}},
-                            non_colliding_fail_result =
-                            {
-                                type = "direct",
-                                action_delivery =
-                                {
-                                    type = "instant",
-                                    source_effects =
-                                    {
-                                        {
-                                            type = "create-entity",
-                                            entity_name = "behemoth-biter",
-                                            affects_target = true,
-                                            show_in_tooltip = false,
-                                            as_enemy = true,
-                                            offset_deviation = {{-1, -1}, {1, 1}},
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     },
     {
         type = "ammo",
@@ -123,50 +107,5 @@ data:extend({
         drop_sound = space_age_item_sounds.agriculture_inventory_move,
         stack_size = 100,
         weight = 2 * kg,
-        spoil_ticks = 1 * hour,
-        spoil_to_trigger_result =
-        {
-            items_per_trigger = 10,
-            trigger =
-            {
-                type = "direct",
-                action_delivery =
-                {
-                    type = "instant",
-                    source_effects =
-                    {
-                        {
-                            type = "create-entity",
-                            entity_name = "big-biter",
-                            affects_target = true,
-                            show_in_tooltip = true,
-                            as_enemy = true,
-                            find_non_colliding_position = true,
-                            abort_if_over_space = true,
-                            offset_deviation = {{-1, -1}, {1, 1}},
-                            non_colliding_fail_result =
-                            {
-                                type = "direct",
-                                action_delivery =
-                                {
-                                    type = "instant",
-                                    source_effects =
-                                    {
-                                        {
-                                            type = "create-entity",
-                                            entity_name = "big-biter",
-                                            affects_target = true,
-                                            show_in_tooltip = false,
-                                            as_enemy = true,
-                                            offset_deviation = {{-1, -1}, {1, 1}},
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     },
 })

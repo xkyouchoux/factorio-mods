@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.11
+Date: 25 October 2025
+  Changes:
+    - Changed default value of enable biter egg spoilage to off
+    - Changed internal type of bioflux from 'item' to 'capsule'
+    - Added description to enable spoilage to show what it changes
+    - Bumped required version of sei-library to 1.0.12
+---------------------------------------------------------------------------------------------------
 Version: 0.1.10
 Date: 24 October 2025
   Changes:

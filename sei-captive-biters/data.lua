@@ -26,21 +26,3 @@ data_util.tech_add_prerequisites("se-space-catalogue-biological-1", {"captivity"
 
 data.raw["unit-spawner"]["biter-spawner"].captured_spawner_entity = "captive-biter-spawner"
 data.raw["unit-spawner"]["spitter-spawner"].captured_spawner_entity = "captive-biter-spawner"
-
-local spoilage_enabled = settings.startup["sei-captive-biters-enable-biter-egg-spoil"].value or SEI_FORCE_SPOILAGE
-
-if not spoilage_enabled then
-    data_util.conditional_modify({
-        type = "item",
-        name = "captive-biter-spawner",
-        spoil_ticks = 0,
-        spoil_to_trigger_result = nil,
-    })
-
-    data_util.conditional_modify({
-        type = "item",
-        name = "biter-egg",
-        spoil_ticks = 0,
-        spoil_to_trigger_result = nil,
-    })
-end
