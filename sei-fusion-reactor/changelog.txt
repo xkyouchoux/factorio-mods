@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 26 October 2025
+  Balancing:
+    - Adjusted thermofluid usage of fusion reactors from 1/s back to 4/s (fluid cost being .999999/s and not 1/s really irked me)
+    - Adjusted power output of fusion generators from 40MW back to 50MW
+    - Adjusted position of fusion reactor tech to require material and energy science 3
+    - Adjusted fusion reactor, fusion generator, and fusion fuel cell recipes
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 24 October 2025
   Balancing:

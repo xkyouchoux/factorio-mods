@@ -54,9 +54,9 @@ data:extend({
         {
             type = "electric",
             usage_priority = "secondary-output",
-            output_flow_limit = "40MW", -- This is used to define max power output. 50MW at normal quality
+            output_flow_limit = "50MW", -- This is used to define max power output. 50MW at normal quality
         },
-        max_fluid_usage = .5/second, -- at normal quality
+        max_fluid_usage = 2/second, -- at normal quality
 
         input_fluid_box =
         {
@@ -150,7 +150,7 @@ data:extend({
             usage_priority = "primary-input",
         },
         power_input = "10MW", -- at normal quality
-        max_fluid_usage = 1/second, -- at normal quality
+        max_fluid_usage = 4/second, -- at normal quality
 
         burner =
         {

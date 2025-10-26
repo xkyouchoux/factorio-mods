@@ -9,7 +9,7 @@ data:extend({
         order = "p-a",
         default_temperature = 1000000,
         max_temperature = 10000000,
-        heat_capacity = "80J",
+        heat_capacity = "25J",
         base_color = {0.0, 0.1, 0.53},
         flow_color = {0.2, 0.68, 0.93},
         auto_barrel = false
