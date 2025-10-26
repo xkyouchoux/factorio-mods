@@ -30,7 +30,6 @@ data:extend({
         },
         collision_box = {{-1.25, -1.25}, {1.25, 1.25}},
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-        collision_mask = require("__core__.lualib.collision-mask-util").get_default_mask("reactor"),
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 1,
 

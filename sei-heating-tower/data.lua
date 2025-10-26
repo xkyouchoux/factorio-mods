@@ -12,7 +12,3 @@ require("prototypes.recipe")
 require("prototypes.technology")
 
 local data_util = require("__sei-library__.data_util")
-
-data.raw["reactor"]["heating-tower"].collision_mask.layers[space_collision_layer] = true
-
-data_util.collision_description(data.raw["reactor"]["heating-tower"])
