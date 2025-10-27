@@ -7,7 +7,7 @@ require("prototypes.recipe")
 require("prototypes.technology")
 
 require("prototypes.compat.Krastorio2")
---require("prototypes.compat.se-sa-prod-tech")
+require("prototypes.compat.se-sa-prod-tech")
 
 data.raw.recipe["se-heat-shielding-iridium"].order = data.raw.item["se-heat-shielding"].order .. "-z"
 data.raw.recipe["se-low-density-structure-beryllium"].order = data.raw.item["low-density-structure"].order .. "-z"
