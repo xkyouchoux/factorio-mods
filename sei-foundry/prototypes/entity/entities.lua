@@ -1,3 +1,4 @@
+local data_util = require("__sei-foundry__.data_util")
 local path_util = require("__sei-library__.path_util")
 
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
@@ -6,14 +7,16 @@ local sounds = require("__base__.prototypes.entity.sounds")
 data:extend({
     {
         type = "assembling-machine",
-        name = "foundry",
+        name = data_util.prefix.."foundry",
+        localised_name = data_util.prefix == "sei-" and {"technology-name.sei-foundry-bzfoundry"} or {"technology-name.sei-foundry"},
+        localised_description = {"entity-description.sei-foundry"},
         icon = path_util.space_age_path.."graphics/icons/foundry.png",
         flags = {"placeable-neutral","player-creation"},
-        minable = {mining_time = 0.2, result = "foundry"},
-        fast_replaceable_group = "foundry",
+        minable = {mining_time = 0.2, result = data_util.prefix.."foundry"},
+        fast_replaceable_group = data_util.prefix.."foundry",
         max_health = 350,
-        corpse = "foundry-remnants",
-        dying_explosion = "foundry-explosion",
+        corpse = data_util.prefix.."foundry-remnants",
+        dying_explosion = data_util.prefix.."foundry-explosion",
         circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
         circuit_connector = circuit_connector_definitions["foundry"],
         collision_box = {{-2.2, -2.2}, {2.2, 2.2}},

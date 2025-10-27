@@ -52,4 +52,6 @@ function result.get_iron_cost_for_steel(plates)
     return plates * 35
 end
 
+result.prefix = (mods["bzfoundry"] or mods["bzfoundry2"]) and "sei-" or ""
+
 return result

@@ -90,5 +90,5 @@ local casting_recipes = {
 }
 
 for _,recipe in pairs(casting_recipes) do
-    data_util.recipe_require_tech("casting-" .. recipe, "foundry")
+    data_util.recipe_require_tech("casting-" .. recipe, data_util.prefix.."foundry")
 end

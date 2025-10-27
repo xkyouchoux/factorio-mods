@@ -1,7 +1,9 @@
+local data_util = require("__sei-foundry__.data_util")
+
 data:extend({
     {
         type = "recipe",
-        name = "foundry",
+        name = data_util.prefix.."foundry",
         category = "crafting-with-fluid",
         enabled = false,
         ingredients =
@@ -13,6 +15,6 @@ data:extend({
             {type = "fluid", name = "lubricant", amount = 80}
         },
         energy_required = 10,
-        results = {{type="item", name="foundry", amount=1}}
+        results = {{type="item", name=data_util.prefix.."foundry", amount=1}}
     },
 })
