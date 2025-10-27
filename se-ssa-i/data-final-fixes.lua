@@ -11,8 +11,9 @@ if settings.startup["sessai-legacy-mode"].value then
         {"se-energy-science-pack-3", 1},
     }
 
-    data.raw.technology["foundry"].prerequisites = {"se-heavy-composite", "se-aeroframe-bulkhead"}
-    data.raw.technology["foundry"].unit.ingredients = {
+    local foundry_name = (require("__sei-foundry__.data_util").prefix or "").."foundry"
+    data.raw.technology[foundry_name].prerequisites = {"se-heavy-composite", "se-aeroframe-bulkhead"}
+    data.raw.technology[foundry_name].unit.ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
