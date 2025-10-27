@@ -11,6 +11,7 @@ require("prototypes.spoilage")
 
 require("prototypes.compat.Krastorio2")
 require("prototypes.compat.sei-captive-biters")
+require("prototypes.compat.se-sa-prod-tech")
 
 --added from space exploration
 se_delivery_cannon_recipes["nutrients"] = {name = "nutrients"}

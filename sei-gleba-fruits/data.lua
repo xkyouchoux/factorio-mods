@@ -5,6 +5,9 @@ require("prototypes.recipe")
 require("prototypes.technology")
 require("prototypes.spoilage")
 
+require("prototypes.compat.sei-stack-inserters")
+require("prototypes.compat.se-sa-prod-tech")
+
 se_delivery_cannon_recipes["yumako-seed"] = {name = "yumako-seed"}
 se_delivery_cannon_recipes["yumako"] = {name = "yumako", type = "capsule"}
 se_delivery_cannon_recipes["yumako-mash"] = {name = "yumako-mash", type = "capsule"}
@@ -127,5 +130,3 @@ data_util.replace_or_add_ingredient("se-medpack-3", "se-chemical-gel", "yumako-m
 -- bio 4
 
 data_util.replace_or_add_ingredient("se-self-sealing-gel", nil, "jelly", 20)
-
-require("prototypes.compat.sei-stack-inserters")

@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.10
+Date: 26 October 2025
+  Features:
+    - Added optional support for se-sa-prod-tech productivity technologies
+  Balancing:
+    - Adjusted rocket fuel from jelly recipe
+  Changes:
+    - Adjusted rocket fuel from jelly recipe icon
+---------------------------------------------------------------------------------------------------
 Version: 0.1.9
 Date: 25 October 2025
   Changes:

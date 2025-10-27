@@ -314,7 +314,16 @@ data:extend({
     {
         type = "recipe",
         name = "rocket-fuel-from-jelly",
-        icons = data_util.sub_icons(data.raw["item"]["rocket-fuel"].icon, data.raw["capsule"]["bioflux"].icon),
+        icons = data_util.transition_icons(
+            {
+                icon = data.raw["capsule"]["jelly"].icon,
+                icon_size = data.raw["capsule"]["jelly"].icon_size, scale = 0.5
+            },
+            {
+                icon = data.raw["item"]["rocket-fuel"].icon,
+                icon_size = data.raw["item"]["rocket-fuel"].icon_size, scale = 0.5
+            }
+        ),
         category = "fuel-refining",
         subgroup = "fuel",
         order = "a[fuel]-c[rocket-fuel]-d[rocket-fuel]",
@@ -325,8 +334,8 @@ data:extend({
         ingredients =
         {
             {type = "fluid", name = "water", amount = 30},
-            {type = "item", name =  "jelly", amount = 30},
-            {type = "item", name = "bioflux", amount = 2}
+            {type = "item", name =  "jelly", amount = 90},
+            {type = "item", name = "bioflux", amount = 5}
         },
         results = {{type="item", name="rocket-fuel", amount=1}},
         crafting_machine_tint =

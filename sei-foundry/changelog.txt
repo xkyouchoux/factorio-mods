@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 26 October 2025
+  Features:
+    - Added optional support for se-sa-prod-tech productivity technologies
+---------------------------------------------------------------------------------------------------
 Version: 1.0.9
 Date: 24 October 2025
   Changes:

@@ -1,7 +1,7 @@
 local data_util = require("__sei-library__.data_util")
 
 require("prototypes.recipe-updates")
-require("prototypes.Krastorio2-updates")
+require("prototypes.compat.Krastorio2-updates")
 
 data_util.add_categories_to_machines_with_category({
     "carbon-casting",

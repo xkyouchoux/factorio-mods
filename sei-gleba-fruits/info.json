@@ -1,6 +1,6 @@
 {
   "name": "sei-gleba-fruits",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "title": "Space Exploration Integration: Gleba Fruits",
   "author": "xkyouchoux",
   "description": "Adds jellynut and yumako into space exploration.",
@@ -11,6 +11,7 @@
     "sei-captive-biters >= 0.1.11",
     "sei-biochamber >= 0.1.9",
     "sei-heating-tower >= 1.0.2",
+    "? se-sa-prod-tech",
     "? sei-stack-inserters",
     "! space-age"],
   "space_travel_required": true,
