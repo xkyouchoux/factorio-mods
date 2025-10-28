@@ -6,7 +6,6 @@ require("prototypes.technology")
 require("prototypes.spoilage")
 
 require("prototypes.compat.sei-stack-inserters")
-require("prototypes.compat.se-sa-prod-tech")
 
 se_delivery_cannon_recipes["yumako-seed"] = {name = "yumako-seed"}
 se_delivery_cannon_recipes["yumako"] = {name = "yumako", type = "capsule"}
