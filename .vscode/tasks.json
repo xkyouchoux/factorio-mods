@@ -165,5 +165,14 @@
                 "kind": "build",
             }
         },
+        {
+            "label": "Package Mod: sa-planets-pack",
+            "type": "shell",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sa-planets-pack\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
     ]
 }

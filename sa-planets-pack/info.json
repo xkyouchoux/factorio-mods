@@ -1,0 +1,48 @@
+{
+  "name": "sa-planets-pack",
+  "version": "0.0.1",
+  "title": "SA planets pack",
+  "author": "xkyouchoux",
+  "description": "",
+    "dependencies": [
+    "base >= 2.0.0",
+    "kry-planet-mods-lite",
+    "planet-muluna",
+    "tenebris-prime",
+
+    "AsteroidBelt",
+    "redrawn-space-compat-fixes",
+
+    "aai-containers",
+    "aai-loaders",
+    "Planet-Hopper",
+    "quality-condenser",
+    "RPGsystem",
+    "Age-of-Production",
+    "crushing-industry-productivity-research",
+    "atan-nuclear-science",
+
+    "barreling-group2",
+    "science-tab",
+    "aai-loaders-sane",
+
+    "black-rubber-belts-remastered",
+    "bullet-trails",
+    "InserterFuelLeech",
+    "ChangeInserterDropLane",
+    "BottleneckLite",
+    "CursorEnhancements",
+    "factoryplanner",
+    "RateCalculator",
+    "newly-constructed-machines-wait-for-their-modules",
+    "quality-upgrade-planner",
+    "show-missing-bottles-for-current-research",
+    "Diversitree",
+
+    "stellar-horizons-enhanced-graphics",
+    "stellar-horizons-enhanced-sounds"
+  ],
+  "space_travel_required": true,
+  "freezing_required": true,
+  "factorio_version": "2.0"
+}
