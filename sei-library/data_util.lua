@@ -73,4 +73,23 @@ function Util.get_sand()
     return mods["Krastorio2"] and "kr-sand" or "sand"
 end
 
+function Util.add_recipes_to_recipe_productivity(recipe_to_match, recipes)
+    for _,tech in pairs(data.raw["technology"]) do
+        if tech.effects then
+            for _,effect in pairs(tech.effects) do
+                if effect.type == "change-recipe-productivity" and effect.recipe == recipe_to_match then
+                    for _,recipe in pairs(recipes) do
+                        table.insert(tech.effects, {
+                            type = "change-recipe-productivity",
+                            recipe = recipe,
+                            change = effect.change,
+                        })
+                    end
+                    break
+                end
+            end
+        end
+    end
+end
+
 return Util
