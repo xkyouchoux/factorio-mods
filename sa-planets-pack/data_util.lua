@@ -23,39 +23,50 @@ function util.conditional_modify(params)
     end
 end
 
-function util.tech_add_ingredients_with_prerequisites(tech_name, ingredients)
-    local tech = data.raw["technology"][tech_name]
-    if not tech then return end
-    if not ingredients then return end
-    for _,name in pairs(ingredients) do
-        if not util.table_contains(tech.prerequisites, name) then 
+function util.tech_add_prerequisites_sub(tech, prerequisites)
+    tech.prerequisites = table.prerequisites or {}
+    for _,name in pairs(prerequisites) do
+        if not util.table_contains(tech.prerequisites, name) then
             table.insert(tech.prerequisites, name)
         end
+    end
+end
+
+function util.tech_add_ingredients_sub(tech, ingredients)
+    tech.unit = tech.unit or {}
+    tech.unit.ingredients = tech.unit.ingredients or {}
+    for _,name in pairs(ingredients) do
         if not util.table_contains(tech.unit.ingredients, {name, 1}) then
             table.insert(tech.unit.ingredients, {name, 1})
         end
+    end
+end
+
+function util.tech_add_ingredients_with_prerequisites(tech_name, ingredients, transform)
+    local tech = data.raw["technology"][tech_name]
+    if tech then
+        util.tech_add_ingredients_sub(tech, ingredients)
+        local prerequisites = ingredients
+        if transform then
+            for k,v in pairs(prerequisites) do
+                if transform[v] then prerequisites[k] = transform[v] end
+            end
+        end
+        util.tech_add_prerequisites_sub(tech, prerequisites)
     end
 end
 
 function util.tech_add_prerequisites(tech_name, prerequisites)
     local tech = data.raw["technology"][tech_name]
-    if not tech then return end
-    if not prerequisites then return end
-    for _,name in pairs(prerequisites) do
-        if not util.table_contains(tech.prerequisites, name) then 
-            table.insert(tech.prerequisites, name)
-        end
+    if tech then
+        util.tech_add_prerequisites_sub(tech, prerequisites)
     end
 end
 
 function util.tech_add_ingredients(tech_name, ingredients)
     local tech = data.raw["technology"][tech_name]
-    if not tech then return end
-    if not ingredients then return end
-    for _,name in pairs(ingredients) do
-        if not util.table_contains(tech.unit.ingredients, {name, 1}) then
-            table.insert(tech.unit.ingredients, {name, 1})
-        end
+    if tech then
+        util.tech_add_ingredients_sub(tech, ingredients)
     end
 end
 
