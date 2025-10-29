@@ -17,3 +17,15 @@ if settings.startup["sei-biochamber-allow-space-recipes"].value then
 end
 
 data_util.add_additional_category_to_recipes("organic", organic_recipes)
+
+data_util.add_recipes_to_recipe_productivity("plastic-bar", {
+    "bioplastic",
+})
+
+data_util.add_recipes_to_recipe_productivity("sulfur", {
+    "biosulfur",
+})
+
+data_util.add_recipes_to_recipe_productivity("lubricant", {
+    "biolubricant",
+})
