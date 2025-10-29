@@ -1,63 +1,44 @@
 data:extend({
     {
-        type = "item-group",
-        name = "science",
-        icon = "__space-age__/graphics/technology/research-productivity.png",
-        icon_size = 256,
-        order = "z[science]"
+        type = "item-subgroup",
+        name = "speed-module",
+        group = "production",
+        order = "g[module]-a[speed]"
     },
     {
         type = "item-subgroup",
-        name = "basic-science-pack",
-        group = "science",
-        order = "a[basic-science-pack]"
+        name = "stationkeeping-module",
+        group = "production",
+        order = "g[module]-b[stationkeeping]"
     },
     {
         type = "item-subgroup",
-        name = "intermediate-science-pack",
-        group = "science",
-        order = "b[intermediate-science-pack]"
+        name = "efficiency-module",
+        group = "production",
+        order = "g[module]-c[efficiency]"
     },
     {
         type = "item-subgroup",
-        name = "tiberium-simple-science",
-        group = "science",
-        order = "d[tiberium-science]-a[simple]"
+        name = "overclock-module",
+        group = "production",
+        order = "g[module]-d[overclock]"
     },
     {
         type = "item-subgroup",
-        name = "tiberium-mixed-science",
-        group = "science",
-        order = "d[tiberium-science]-b[mixed]"
+        name = "productivity-module",
+        group = "production",
+        order = "g[module]-e[productivity]"
     },
     {
         type = "item-subgroup",
-        name = "advanced-science-pack",
-        group = "science",
-        order = "e[advanced-science-pack]"
+        name = "degradation-module",
+        group = "production",
+        order = "g[module]-f[degradation]"
     },
     {
         type = "item-subgroup",
-        name = "metal-and-stars-science-pack",
-        group = "science",
-        order = "f[metal-and-stars-science-pack]"
-    },
-    {
-        type = "item-subgroup",
-        name = "dea-dia-science-pack",
-        group = "science",
-        order = "g[dea-dia-science-pack]"
-    },
-    {
-        type = "item-subgroup",
-        name = "promethium-science-pack",
-        group = "science",
-        order = "h[promethium-science-pack]"
-    },
-    {
-        type = "item-subgroup",
-        name = "science-pack",
-        group = "science",
-        order = "z[science-pack]"
+        name = "quality-module",
+        group = "production",
+        order = "g[module]-g[quality]"
     },
 })
