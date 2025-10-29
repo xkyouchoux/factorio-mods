@@ -1,5 +1,3 @@
-require("prototypes.um-standalone-space-age-lib-final-fixes")
-
 local data_util = require("__sei-library__.data_util")
 
 local split = data_util.string_split(spoilage_string or "", ',')
@@ -13,4 +11,4 @@ for _,v in pairs(split) do
     end
 end
 
-require("prototypes.spoilage-final-fixes")
+require("prototypes.spoilage-updates")
