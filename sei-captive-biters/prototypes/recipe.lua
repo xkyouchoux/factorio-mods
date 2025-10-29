@@ -73,16 +73,16 @@ data:extend({
 })
 
 data_util.make_recipe({
-    name = data_util.mod_prefix .. "bio-sludge-from-biter-egg",
+    name = "se-bio-sludge-from-biter-egg",
     ingredients = {
         { type = "item", name = "biter-egg", amount = 1},
-        { type = "fluid", name = data_util.mod_prefix .. "space-water", amount = 10 },
+        { type = "fluid", name = "se-space-water", amount = 10 },
     },
     results = {
-        { type = "fluid", name = data_util.mod_prefix .. "bio-sludge", amount = 10 },
+        { type = "fluid", name = "se-bio-sludge", amount = 10 },
     },
     icons = {
-        { icon = data.raw.fluid[data_util.mod_prefix .. "bio-sludge"].icon, scale = 0.5, icon_size = 64  },
+        { icon = data.raw.fluid["se-bio-sludge"].icon, scale = 0.5, icon_size = 64  },
         { icon = data.raw.item["biter-egg"].icon, scale = 0.375, icon_size = 64  },
     },
     crafting_machine_tint = require("__space-exploration__.prototypes.recipe-tints").bio_sludge_tint,
@@ -96,18 +96,18 @@ data_util.make_recipe({
 })
 
 data_util.make_recipe({
-    name = data_util.mod_prefix .. "nutrient-gel-biter-egg",
-    localised_name = {"fluid-name."..data_util.mod_prefix.."nutrient-gel"},
+    name = "se-nutrient-gel-biter-egg",
+    localised_name = {"fluid-name.se-nutrient-gel"},
     ingredients = {
         { type = "item", name = "biter-egg", amount = 10},
-        { type = "fluid", name = data_util.mod_prefix .. "chemical-gel", amount = 5},
-        { type = "fluid", name = data_util.mod_prefix .. "bio-sludge", amount = 10},
-        { type = "fluid", name = data_util.mod_prefix .. "space-water", amount = 25},
+        { type = "fluid", name = "se-chemical-gel", amount = 5},
+        { type = "fluid", name = "se-bio-sludge", amount = 10},
+        { type = "fluid", name = "se-space-water", amount = 25},
     },
     results = {
-        { type = "fluid", name = data_util.mod_prefix .. "nutrient-gel", amount = 50},
+        { type = "fluid", name = "se-nutrient-gel", amount = 50},
     },
-    icons = data_util.sub_icons(data.raw.fluid[data_util.mod_prefix .. "nutrient-gel"].icon,
+    icons = data_util.sub_icons(data.raw.fluid["se-nutrient-gel"].icon,
                                 data.raw.item["biter-egg"].icon),
     crafting_machine_tint = require("__space-exploration__.prototypes.recipe-tints").nutrient_tint,
     energy_required = 10,

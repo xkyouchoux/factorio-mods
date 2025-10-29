@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.13
+Date: 29 October 2025
+  Changes:
+    - Bumped required version of sei-library to 1.0.13
+    - Added support for more productivity technologies
+      Note: this mod does not add productivity techs, only adds to them if present.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.12
 Date: 25 October 2025
   Bugfixes:
