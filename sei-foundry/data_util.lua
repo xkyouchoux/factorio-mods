@@ -15,6 +15,7 @@ function result.create_casting_recipe(params)
     local item = data.raw["item"][params.item or name]
     local recipe = data.raw["recipe"][params.recipe or name]
     if not (item or recipe or params.icons) then return end
+    result.add_recipes_to_recipe_productivity(recipe.name, {"casting-"..name})
     local icon = params.icon or item.icon
     return {
         type = "recipe",
