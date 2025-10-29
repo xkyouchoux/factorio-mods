@@ -23,8 +23,18 @@ function util.conditional_modify(params)
     end
 end
 
+function util.tech_has_ingredient(tech_name, ingredient_name)
+    local tech = data.raw["technology"][tech_name]
+    if tech and tech.unit and tech.unit.ingredients then
+        for _,ingredient in pairs(tech.unit.ingredients) do
+            if ingredient[1] == ingredient_name then return true end
+        end
+    end
+    return false
+end
+
 function util.tech_add_prerequisites_sub(tech, prerequisites)
-    tech.prerequisites = table.prerequisites or {}
+    if not tech.prerequisites then tech.prerequisites = {} end
     for _,name in pairs(prerequisites) do
         if not util.table_contains(tech.prerequisites, name) then
             table.insert(tech.prerequisites, name)
@@ -33,8 +43,6 @@ function util.tech_add_prerequisites_sub(tech, prerequisites)
 end
 
 function util.tech_add_ingredients_sub(tech, ingredients)
-    tech.unit = tech.unit or {}
-    tech.unit.ingredients = tech.unit.ingredients or {}
     for _,name in pairs(ingredients) do
         if not util.table_contains(tech.unit.ingredients, {name, 1}) then
             table.insert(tech.unit.ingredients, {name, 1})

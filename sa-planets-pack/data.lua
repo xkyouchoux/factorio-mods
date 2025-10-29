@@ -1,10 +1,9 @@
 local data_util = require("__sa-planets-pack__.data_util")
 
-data.raw["tool"]["cerysian-science-pack"].order = "j"
-
 data.raw["space-connection"]["dea-dia-edge"].from = "asteroid-belt-outer-edge"
 
 data_util.tech_add_ingredients_with_prerequisites("space-discovery-asteroid-belt", {"interstellar-science-pack"})
+data_util.tech_add_ingredients("planet-discovery-cubium", {"interstellar-science-pack"})
 
 local interstellar_planets = {
     "planet-discovery-maraxsis",
