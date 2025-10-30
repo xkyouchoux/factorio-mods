@@ -1,2 +1,2 @@
-require("prototypes.shared.modules")
-require("prototypes.shared.science-packs")
+require("prototypes.final-fixes.modules")
+require("prototypes.final-fixes.science-packs")

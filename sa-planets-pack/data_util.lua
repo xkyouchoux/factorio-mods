@@ -1,8 +1,8 @@
 local util = {}
 
-function util.table_contains(table, value)
-    if not table then return false end
-    for _,v in pairs(table) do
+function util.table_contains(_table, value)
+    if not _table then return false end
+    for _,v in pairs(_table) do
         if v == value then return true end
     end
     return false
@@ -12,12 +12,24 @@ function util.conditional_modify(params)
     if not params then return end
     if not (params.type and params.name) then return end
     
-    local type = data.raw[params.type]
-    if type then
-        local prototype = type[params.name]
+    if data.raw[params.type] then
+        prototype = data.raw[params.type][params.name]
         if prototype then
             for k,v in pairs(params) do
                 prototype[k] = v
+            end
+        end
+    end
+end
+
+function util.tech_remove_prerequisites(tech_name, prerequisites)
+    local tech = data.raw["technology"][tech_name]
+    if tech and tech.prerequisites then
+        for _,v in pairs(prerequisites) do
+            for i = #tech.prerequisites, 1, -1 do
+                if tech.prerequisites[i] == v then
+                    table.remove(tech.prerequisites, i)
+                end
             end
         end
     end

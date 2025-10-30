@@ -43,8 +43,8 @@ local modules = {
     {
         type = "recipe",
         name = "stationkeeping-module",
-        order = nil,
-        subgroup = nil
+        order = "a[stationkeeping-module-1]",
+        subgroup = "stationkeeping-module"
     },
     {
         type = "module",
@@ -200,6 +200,35 @@ local modules = {
         order = "d[quality-module-4-S]",
         subgroup = "quality-module"
     },
+
+    {
+        type = "technology",
+        name = "speed-module-4-S",
+        icons = {{icon = "__secretas__/graphics/technology/speed-module-4-tech.png", icon_size = 256}},
+        prerequisites = {"golden-science-pack", "speed-module-3"},
+        upgrade = true,
+    },
+    {
+        type = "technology",
+        name = "productivity-module-4-S",
+        icons = {{icon = "__secretas__/graphics/technology/productivity-module-4-tech.png", icon_size = 256}},
+        prerequisites = {"golden-science-pack", "productivity-module-3"},
+        upgrade = true,
+    },
+    {
+        type = "technology",
+        name = "efficiency-module-4-S",
+        icons = {{icon = "__secretas__/graphics/technology/efficiency-module-4-tech.png", icon_size = 256}},
+        prerequisites = {"golden-science-pack", "efficiency-module-3"},
+        upgrade = true,
+    },
+    {
+        type = "technology",
+        name = "quality-module-4-S",
+        icons = {{icon = "__secretas__/graphics/technology/quality-module-4-tech.png", icon_size = 256}},
+        prerequisites = {"golden-science-pack", "quality-module-3"},
+        upgrade = true,
+    },
 }
 
 for _,v in pairs(modules) do
@@ -207,3 +236,30 @@ for _,v in pairs(modules) do
         data_util.conditional_modify(v)
     end
 end
+
+local speed_module_4 = table.deepcopy(data.raw["technology"]["speed-module-4-S"])
+speed_module_4.name = "speed-module-4"
+data.raw["technology"]["speed-module-4-S"] = nil
+
+local efficiency_module_4 = table.deepcopy(data.raw["technology"]["efficiency-module-4-S"])
+efficiency_module_4.name = "efficiency-module-4"
+data.raw["technology"]["efficiency-module-4-S"] = nil
+
+local productivity_module_4 = table.deepcopy(data.raw["technology"]["productivity-module-4-S"])
+productivity_module_4.name = "productivity-module-4"
+data.raw["technology"]["productivity-module-4-S"] = nil
+
+local quality_module_4 = table.deepcopy(data.raw["technology"]["quality-module-4-S"])
+quality_module_4.name = "quality-module-4"
+data.raw["technology"]["quality-module-4-S"] = nil
+
+data:extend({speed_module_4, efficiency_module_4, productivity_module_4, quality_module_4})
+
+data_util.tech_remove_prerequisites("stationkeeping-module-4", {"efficiency-module-4-S", "speed-module-4-S"})
+
+data.raw["technology"]["stationkeeping-module"].upgrade = true
+data.raw["technology"]["stationkeeping-module-2"].upgrade = true
+data.raw["technology"]["stationkeeping-module-3"].upgrade = true
+data.raw["technology"]["stationkeeping-module-4"].upgrade = true
+
+data.raw["technology"]["rubia-efficiency-module4"].hidden = true
