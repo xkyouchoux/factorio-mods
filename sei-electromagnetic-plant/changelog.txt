@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 31 October 2025
+  Bugfixes:
+    - Fixed superconductive cable recipe giving more thermofluid than it takes
+---------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: 24 October 2025
   Changes:

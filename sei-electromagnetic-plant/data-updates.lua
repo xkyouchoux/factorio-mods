@@ -106,3 +106,7 @@ if settings.startup["sei-electromagnetic-plant-allow-space-recipes"].value then
 end
 
 data_util.add_additional_category_to_recipes("electromagnetics", electromagnetics_recipes)
+
+for _,result in pairs(data.raw["recipe"]["se-superconductive-cable"].results) do
+    if result.name == "se-space-coolant-warm" then result.ignored_by_productivity = result.amount end
+end
