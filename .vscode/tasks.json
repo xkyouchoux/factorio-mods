@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Package Mod: se-ssa-i",
+            "label": "Package Mod: SESA Buildings",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"se-ssa-i\"",
             "problemMatcher": [],
@@ -13,16 +13,7 @@
             }
         },
         {
-            "label": "Package Mod: k2se-misc-fixes",
-            "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"k2se-misc-fixes\"",
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-            }
-        },
-        {
-            "label": "Package Mod: sei-stack-inserters",
+            "label": "Package Mod: Stack Inserters",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-stack-inserters\"",
             "problemMatcher": [],
@@ -31,7 +22,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-turbo-belts",
+            "label": "Package Mod: Turbo Belts",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-turbo-belts\"",
             "problemMatcher": [],
@@ -40,7 +31,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-miner-resource-drain",
+            "label": "Package Mod: Miner Resource Drain",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-miner-resource-drain\"",
             "problemMatcher": [],
@@ -49,16 +40,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-spoilage",
-            "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-spoilage\"",
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-            }
-        },
-        {
-            "label": "Package Mod: sei-library",
+            "label": "Package Mod: Library",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-library\"",
             "problemMatcher": [],
@@ -67,7 +49,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-cryogenic-plant",
+            "label": "Package Mod: Cryogenic Plant",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-cryogenic-plant\"",
             "problemMatcher": [],
@@ -76,7 +58,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-electromagnetic-plant",
+            "label": "Package Mod: Electromagnetic Plant",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-electromagnetic-plant\"",
             "problemMatcher": [],
@@ -85,7 +67,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-foundry",
+            "label": "Package Mod: Foundry",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-foundry\"",
             "problemMatcher": [],
@@ -94,7 +76,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-biochamber",
+            "label": "Package Mod: Biochamber",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-biochamber\"",
             "problemMatcher": [],
@@ -103,7 +85,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-captive-biters",
+            "label": "Package Mod: Captive Biters",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-captive-biters\"",
             "problemMatcher": [],
@@ -112,7 +94,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-agricultural-tower",
+            "label": "Package Mod: Agricultural Tower",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-agricultural-tower\"",
             "problemMatcher": [],
@@ -121,7 +103,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-gleba-fruits",
+            "label": "Package Mod: Gleba Fruits",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-gleba-fruits\"",
             "problemMatcher": [],
@@ -130,7 +112,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-tesla-turret",
+            "label": "Package Mod: Tesla Turret",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-tesla-turret\"",
             "problemMatcher": [],
@@ -139,7 +121,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-heating-tower",
+            "label": "Package Mod: Heating Tower",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-heating-tower\"",
             "problemMatcher": [],
@@ -148,7 +130,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-rocket-turret",
+            "label": "Package Mod: Rocket Turret",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-rocket-turret\"",
             "problemMatcher": [],
@@ -157,7 +139,7 @@
             }
         },
         {
-            "label": "Package Mod: sei-fusion-reactor",
+            "label": "Package Mod: Fusion Reactor",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-fusion-reactor\"",
             "problemMatcher": [],
@@ -166,9 +148,18 @@
             }
         },
         {
-            "label": "Package Mod: sa-planets-pack",
+            "label": "Package Mod: Planets Pack",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sa-planets-pack\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
+        {
+            "label": "Package Mod: Krastorio:Flow Control Bridge",
+            "type": "shell",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"k2-flow-control-bridge\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

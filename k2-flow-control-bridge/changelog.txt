@@ -1,0 +1,30 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 30 October 2025
+  Features:
+    - Updated for Factorio 2.0
+    - Added support for Krastorio2 Spaced Out
+  Graphics:
+    - Fixed pipe covers being iron pipe covers
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 15 October 2023
+  Changes:
+    - Fixed junction health to match steel pipe health
+    - Added support for the standalone steel pipes mod
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 1 October 2023
+  Changes:
+    - Steel pipe junctions, elbows, and straights will now match steel pipes flow rate
+    - Connection arrows should be properly hidden/shown when enabled/disabled
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 30 September 2023
+  Changes:
+    - Locale fixes
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 30 September 2023
+  Changes:
+    - Initial Release
