@@ -61,10 +61,4 @@ for _,v in pairs(golden_science_pack_techs) do
     data_util.tech_add_prerequisites(v, {"golden-science-pack"})
 end
 
-data_util.tech_add_ingredients_with_prerequisites("planet-discovery-mirandus", {"interstellar-science-pack"})
-data_util.tech_add_prerequisites("planet-discovery-mirandus", {"rocket-turret"})
-
-data_util.tech_add_ingredients_with_prerequisites("planet-discovery-nix", {"interstellar-science-pack"})
-data_util.tech_add_prerequisites("planet-discovery-nix", {"rocket-turret"})
-
 data_util.tech_add_ingredients_with_prerequisites("slp-solar-system-sun2", {"interstellar-science-pack"})
