@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Date: 1 November 2025
+  Changes:
+    - Removed incompatibility with bzfoundry2, actually. Name changes to 'Casting Foundry'
+      This works by changing internal foundry names to have 'sei-' prefix only if bzfoundry2 is installed.
+      You can add this mod to a save with bzfoundry2 fine, but you cannot add bzfoundry2 to a save with
+      this mod installed, without issues. You will loose all placed foundrys and the tech will have to be
+      re-researched.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.14
 Date: 29 October 2025
   Changes:
