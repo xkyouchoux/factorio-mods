@@ -1,6 +1,6 @@
 local Util = {}
 
-Util.nil = "_CONDITIONAL_MODIFY_NIL_"
+Util.NIL = "_CONDITIONAL_MODIFY_NIL_"
 
 function Util.table_contains(_table, value)
     if not _table then return false end
@@ -18,7 +18,7 @@ function Util.conditional_modify(params)
         prototype = data.raw[params.type][params.name]
         if prototype then
             for k,v in pairs(params) do
-                if v == Util.nil then
+                if v == Util.NIL then
                     prototype[k] = nil
                 else
                     prototype[k] = v

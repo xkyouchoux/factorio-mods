@@ -47,7 +47,7 @@ local modules = {
     {
         type = "recipe",
         name = "stationkeeping-module",
-        subgroup = data_util.nil,
+        subgroup = data_util.NIL,
     },
     {
         type = "module",
