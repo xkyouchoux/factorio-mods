@@ -1,6 +1,8 @@
-local util = {}
+local Util = {}
 
-function util.table_contains(_table, value)
+Util.nil = "_CONDITIONAL_MODIFY_NIL_"
+
+function Util.table_contains(_table, value)
     if not _table then return false end
     for _,v in pairs(_table) do
         if v == value then return true end
@@ -8,7 +10,7 @@ function util.table_contains(_table, value)
     return false
 end
 
-function util.conditional_modify(params)
+function Util.conditional_modify(params)
     if not params then return end
     if not (params.type and params.name) then return end
     
@@ -16,13 +18,17 @@ function util.conditional_modify(params)
         prototype = data.raw[params.type][params.name]
         if prototype then
             for k,v in pairs(params) do
-                prototype[k] = v
+                if v == Util.nil then
+                    prototype[k] = nil
+                else
+                    prototype[k] = v
+                end
             end
         end
     end
 end
 
-function util.tech_remove_prerequisites(tech_name, prerequisites)
+function Util.tech_remove_prerequisites(tech_name, prerequisites)
     local tech = data.raw["technology"][tech_name]
     if tech and tech.prerequisites then
         for _,v in pairs(prerequisites) do
@@ -35,7 +41,7 @@ function util.tech_remove_prerequisites(tech_name, prerequisites)
     end
 end
 
-function util.tech_has_ingredient(tech_name, ingredient_name)
+function Util.tech_has_ingredient(tech_name, ingredient_name)
     local tech = data.raw["technology"][tech_name]
     if tech and tech.unit and tech.unit.ingredients then
         for _,ingredient in pairs(tech.unit.ingredients) do
@@ -45,49 +51,49 @@ function util.tech_has_ingredient(tech_name, ingredient_name)
     return false
 end
 
-function util.tech_add_prerequisites_sub(tech, prerequisites)
+function Util.tech_add_prerequisites_sub(tech, prerequisites)
     if not tech.prerequisites then tech.prerequisites = {} end
     for _,name in pairs(prerequisites) do
-        if not util.table_contains(tech.prerequisites, name) then
+        if not Util.table_contains(tech.prerequisites, name) then
             table.insert(tech.prerequisites, name)
         end
     end
 end
 
-function util.tech_add_ingredients_sub(tech, ingredients)
+function Util.tech_add_ingredients_sub(tech, ingredients)
     for _,name in pairs(ingredients) do
-        if not util.table_contains(tech.unit.ingredients, {name, 1}) then
+        if not Util.table_contains(tech.unit.ingredients, {name, 1}) then
             table.insert(tech.unit.ingredients, {name, 1})
         end
     end
 end
 
-function util.tech_add_ingredients_with_prerequisites(tech_name, ingredients, transform)
+function Util.tech_add_ingredients_with_prerequisites(tech_name, ingredients, transform)
     local tech = data.raw["technology"][tech_name]
     if tech then
-        util.tech_add_ingredients_sub(tech, ingredients)
+        Util.tech_add_ingredients_sub(tech, ingredients)
         local prerequisites = ingredients
         if transform then
             for k,v in pairs(prerequisites) do
                 if transform[v] then prerequisites[k] = transform[v] end
             end
         end
-        util.tech_add_prerequisites_sub(tech, prerequisites)
+        Util.tech_add_prerequisites_sub(tech, prerequisites)
     end
 end
 
-function util.tech_add_prerequisites(tech_name, prerequisites)
+function Util.tech_add_prerequisites(tech_name, prerequisites)
     local tech = data.raw["technology"][tech_name]
     if tech then
-        util.tech_add_prerequisites_sub(tech, prerequisites)
+        Util.tech_add_prerequisites_sub(tech, prerequisites)
     end
 end
 
-function util.tech_add_ingredients(tech_name, ingredients)
+function Util.tech_add_ingredients(tech_name, ingredients)
     local tech = data.raw["technology"][tech_name]
     if tech then
-        util.tech_add_ingredients_sub(tech, ingredients)
+        Util.tech_add_ingredients_sub(tech, ingredients)
     end
 end
 
-return util
+return Util

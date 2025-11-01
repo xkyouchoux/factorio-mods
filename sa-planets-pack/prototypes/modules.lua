@@ -45,6 +45,11 @@ local modules = {
         subgroup = "stationkeeping-module"
     },
     {
+        type = "recipe",
+        name = "stationkeeping-module",
+        subgroup = data_util.nil,
+    },
+    {
         type = "module",
         name = "stationkeeping-module-2",
         icon = "__sa-planets-pack__/graphics/icons/stationkeeping-module-2.png",
@@ -224,15 +229,5 @@ for _,v in pairs(modules) do
     end
 end
 
-data.raw["module"]["speed-module-4-S"].icon = "__sa-planets-pack__/graphics/icons/speed-module-4.png"
-
-data.raw["module"]["efficiency-module-4-S"].icon = "__sa-planets-pack__/graphics/icons/efficiency-module-4.png"
-
-data.raw["module"]["productivity-module-4-S"].icon = "__sa-planets-pack__/graphics/icons/productivity-module-4.png"
-
-data.raw["module"]["quality-module-4-S"].icon = "__sa-planets-pack__/graphics/icons/quality-module-4.png"
-
 data.raw["recipe"]["rubia-efficiency-module4"] = nil
 data.raw["module"]["rubia-efficiency-module4"] = nil
-
-data.raw["recipe"]["stationkeeping-module"].subgroup = nil
