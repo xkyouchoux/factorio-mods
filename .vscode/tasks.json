@@ -148,15 +148,6 @@
             }
         },
         {
-            "label": "Package Mod: Planets Pack",
-            "type": "shell",
-            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sa-planets-pack\"",
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-            }
-        },
-        {
             "label": "Package Mod: Krastorio:Flow Control Bridge",
             "type": "shell",
             "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"k2-flow-control-bridge\"",
