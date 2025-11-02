@@ -4,9 +4,8 @@ data:extend({
     {
         type = "module",
         name = "overclock-module-4",
-        localised_description = {"item-description.overclock-module"},
         icon = "__sa-planets-pack__/graphics/icons/overclock-module-4.png",
-        subgroup = "overclock-module",
+        subgroup = "module",
         color_hint = { text = "P" },
         category = "overclock",
         tier = 4,
