@@ -1,0 +1,16 @@
+{
+  "name": "sa-paracelsin-extra-storage-tanks",
+  "title": "Paracelsin Extra Storage Tanks",
+  "version": "1.0.0",
+  "factorio_version": "2.0",
+  "author": "xkyouchoux",
+  "description": "Adds 4 zinc storage tanks that do not freeze. The capacities of the tanks are double the steel counter-part",
+  "dependencies": [
+    "base >= 2.0.7",
+    "Paracelsin",
+    "zithorian-extra-storage-tanks-port"
+  ]
+
+}
+
+

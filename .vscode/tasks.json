@@ -156,5 +156,14 @@
                 "kind": "build",
             }
         },
+        {
+            "label": "Package Mod: Paracelsin Extra Storage Tanks",
+            "type": "shell",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sa-paracelsin-extra-storage-tanks\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
     ]
 }
