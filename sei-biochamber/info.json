@@ -1,6 +1,6 @@
 {
   "name": "sei-biochamber",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "title": "Space Exploration Integration: Biochamber",
   "author": "xkyouchoux",
   "description": "Adds the biochamber and nutrients into space exploration.",
