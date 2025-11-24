@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 24 November 2025
+  Bugfixes:
+    - Fixed migrations when cryogenic plant is not required for progression
+---------------------------------------------------------------------------------------------------
 Version: 1.0.9
 Date: 24 November 2025
   Features:
