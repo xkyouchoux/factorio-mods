@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 03 December 2025
+  Balancing:
+    - Adjusted position of fusion reactor tech to require energy science 2 and material science 1
+    - Adjusted fusion reactor, fusion generator, and fusion fuel cell recipes
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 03 December 2025
   Balancing:

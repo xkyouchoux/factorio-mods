@@ -25,7 +25,7 @@ data:extend({
                 recipe = "flash-coolant-cold"
             }
         },
-        prerequisites = {"se-holmium-solenoid", "cryogenic-plant"},
+        prerequisites = {"se-holmium-solenoid", "se-heavy-girder", "cryogenic-plant"},
         unit =
         {
             count = 500,
@@ -37,6 +37,7 @@ data:extend({
                 {"space-science-pack", 1},
                 {"utility-science-pack", 1},
                 {"production-science-pack", 1},
+                {"se-material-science-pack-1", 1},
                 {"se-energy-science-pack-2", 1},
             },
             time = 60

@@ -53,7 +53,7 @@ data:extend({
         ingredients =
         {
             {type = "item", name = "refined-concrete", amount = 400},
-            {type = "item", name = "steel-plate", amount = 400},
+            {type = "item", name = "se-heavy-girder", amount = 200},
             {type = "item", name = "low-density-structure", amount = 200},
             {type = "item", name = "se-heat-shielding", amount = 200},
             {type = "item", name = "se-holmium-solenoid", amount = 200},
@@ -70,7 +70,7 @@ data:extend({
         ingredients =
         {
             {type = "item", name = "refined-concrete", amount = 100},
-            {type = "item", name = "steel-plate", amount = 100},
+            {type = "item", name = "se-heavy-girder", amount = 50},
             {type = "item", name = "low-density-structure", amount = 50},
             {type = "item", name = "se-heat-shielding", amount = 50},
             {type = "item", name = "se-holmium-solenoid", amount = 50},
