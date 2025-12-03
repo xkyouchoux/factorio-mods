@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 03 December 2025
+  Balancing:
+    - Adjusted position of fusion reactor tech to require energy science 2
+    - Adjusted fusion reactor, fusion generator, and fusion fuel cell recipes
+    - Adjusted power output of fusion generators from 50MW back to 40MW
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 26 October 2025
   Balancing:

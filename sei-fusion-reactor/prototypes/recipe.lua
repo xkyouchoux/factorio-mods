@@ -12,7 +12,7 @@ data:extend({
         energy_required = 10,
         ingredients =
         {
-            {type = "item", name = "se-superconductive-cable", amount = 1},
+            {type = "item", name = "se-holmium-cable", amount = 1},
             {type = "item", name = "se-holmium-plate", amount = 1},
             {type = "fluid", name = "se-cryonite-slush", amount = 10}
         },
@@ -53,11 +53,11 @@ data:extend({
         ingredients =
         {
             {type = "item", name = "refined-concrete", amount = 400},
-            {type = "item", name = "se-heavy-girder", amount = 200},
+            {type = "item", name = "steel-plate", amount = 400},
             {type = "item", name = "low-density-structure", amount = 200},
             {type = "item", name = "se-heat-shielding", amount = 200},
-            {type = "item", name = "se-superconductive-cable", amount = 200},
-            {type = "item", name = "se-quantum-processor", amount = 100},
+            {type = "item", name = "se-holmium-solenoid", amount = 200},
+            {type = "item", name = "processing-unit", amount = 100},
         },
         results = {{type="item", name="fusion-reactor", amount=1}},
         requester_paste_multiplier = 1,
@@ -70,11 +70,11 @@ data:extend({
         ingredients =
         {
             {type = "item", name = "refined-concrete", amount = 100},
-            {type = "item", name = "se-heavy-girder", amount = 50},
+            {type = "item", name = "steel-plate", amount = 100},
             {type = "item", name = "low-density-structure", amount = 50},
             {type = "item", name = "se-heat-shielding", amount = 50},
-            {type = "item", name = "se-superconductive-cable", amount = 50},
             {type = "item", name = "se-holmium-solenoid", amount = 50},
+            {type = "item", name = "electric-engine-unit", amount = 50},
         },
         results = {{type="item", name="fusion-generator", amount=1}},
         requester_paste_multiplier = 1,
