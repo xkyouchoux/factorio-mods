@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 05 December 2025
+  Balancing:
+    - Adjusted flash thermofluid cooling recipe to take 40 hot thermofluid and produce 20 hot thermofluid and 16 cold thermofluid.
+      Recipe time is adjusted to produce 4/s of cold thermofluid to match a single fusion reactor.
+      This removes the need for cryonite slush at the cost of a little more complex fluid handling.
+      Now only needs fusion cells and thermofluid shipments to run.
+    - [hd-plasma-duct] fixed plasma ducts could not be placed on space tiles
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 03 December 2025
   Balancing:
