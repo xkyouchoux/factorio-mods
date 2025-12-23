@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 23 December 2025
+  Bugfixes:
+    - Added hidden dependency to space-exploration-postprocessing so this loads after. 
+      To fix efficiency being capped at 1 in some cases.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 4 November 2025
   Locale:
