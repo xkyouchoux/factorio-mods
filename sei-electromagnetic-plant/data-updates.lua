@@ -90,6 +90,12 @@ local electromagnetics_recipes = {
     "kr-energy-control-unit",
     "kr-advanced-solar-panel",
     "kr-ai-core",
+
+    "space-locomotive",
+    "space-cargo-wagon",
+    "space-fluid-wagon",
+    "space-train-battery-charging-station",
+    "space-train-battery-pack"
 }
 
 if settings.startup["sei-electromagnetic-plant-allow-space-recipes"].value then
