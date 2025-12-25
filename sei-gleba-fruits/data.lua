@@ -6,6 +6,7 @@ require("prototypes.technology")
 require("prototypes.spoilage")
 
 require("prototypes.compat.sei-stack-inserters")
+require("prototypes.compat.sei-electromagnetic-plant")
 
 se_delivery_cannon_recipes["yumako-seed"] = {name = "yumako-seed"}
 se_delivery_cannon_recipes["yumako"] = {name = "yumako", type = "capsule"}

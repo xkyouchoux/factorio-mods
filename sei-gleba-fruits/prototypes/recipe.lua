@@ -132,7 +132,7 @@ data:extend({
         localised_name = {"item-name.flying-robot-frame"},
         icons = data_util.sub_icons(data.raw["item"]["flying-robot-frame"].icon, data.raw["item"]["carbon-fiber"].icon),
         subgroup = data.raw["item"]["flying-robot-frame"].subgroup,
-        order = data.raw["item"]["flying-robot-frame"].order,
+        order = data.raw["item"]["flying-robot-frame"].order .. "-alt",
         enabled = false,
         energy_required = 10,
         auto_recycle = false,

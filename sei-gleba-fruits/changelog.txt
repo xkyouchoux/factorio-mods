@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.13
+Date: 25 December 2025
+  Changes:
+    - Carbon fiber robot frames can be made in electromagnetic plant if installed.
+    - Adjusted carbon fiber robot frame recipe order
+---------------------------------------------------------------------------------------------------
 Version: 0.1.12
 Date: 29 October 2025
   Changes:
