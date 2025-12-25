@@ -33,20 +33,3 @@ if data.raw.technology["aai-turbo-loader"] then
         time = 15
     }
 end
-
-if mods["aai-loaders-sane"] then
-
-    local turbo_recipe = data.raw["recipe"]["aai-turbo-loader"]
-
-    turbo_recipe.ingredients = {
-        {type = "item", name = "aai-express-loader", amount = 1},
-        {type = "item", name = "processing-unit", amount = 1},
-        {type = "item", name = "se-iridium-plate", amount = 2},
-        {type = "item", name = "electric-engine-unit", amount = 1},
-        {type = "fluid", name = "lubricant", amount = 40}
-    }
-
-    turbo_recipe.energy_required = 2
-    
-    table.insert(data.raw["technology"]["turbo-transport-belt"].effects, {type="unlock-recipe", recipe=turbo_recipe.name})
-end
