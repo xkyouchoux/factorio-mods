@@ -1,10 +1,10 @@
-local zinc_tank_1x1 = table.deepcopy(data.raw["storage-tank"]["fluid-tank-1x1"])
-local zinc_tank_2x2 = table.deepcopy(data.raw["storage-tank"]["fluid-tank-2x2"])
-local zinc_tank_3x4 = table.deepcopy(data.raw["storage-tank"]["fluid-tank-3x4"])
-local zinc_tank_5x5 = table.deepcopy(data.raw["storage-tank"]["fluid-tank-5x5"])
+local zinc_tank_1x1 = table.deepcopy(data.raw["storage-tank"]["zith-storage-tank-1x1"])
+local zinc_tank_2x2 = table.deepcopy(data.raw["storage-tank"]["zith-storage-tank-2x2"])
+local zinc_tank_3x4 = table.deepcopy(data.raw["storage-tank"]["zith-storage-tank-3x4"])
+local zinc_tank_5x5 = table.deepcopy(data.raw["storage-tank"]["zith-storage-tank-5x5"])
 
 local function update_tank_entity(storage_tank_entity, locale_ext) 
-    storage_tank_entity.name = "zinc-"..storage_tank_entity.name
+    storage_tank_entity.name = "zinc-fluid-tank-"..locale_ext
     storage_tank_entity.localised_description = data.raw["storage-tank"]["zinc-storage-tank"].localised_description
     storage_tank_entity.minable.result = storage_tank_entity.name
     storage_tank_entity.max_health = storage_tank_entity.max_health * 2
@@ -26,13 +26,13 @@ update_tank_entity(zinc_tank_2x2, "2x2")
 update_tank_entity(zinc_tank_3x4, "3x4")
 update_tank_entity(zinc_tank_5x5, "5x5")
 
-local zinc_tank_1x1_item = table.deepcopy(data.raw["item"]["fluid-tank-1x1"])
-local zinc_tank_2x2_item = table.deepcopy(data.raw["item"]["fluid-tank-2x2"])
-local zinc_tank_3x4_item = table.deepcopy(data.raw["item"]["fluid-tank-3x4"])
-local zinc_tank_5x5_item = table.deepcopy(data.raw["item"]["fluid-tank-5x5"])
+local zinc_tank_1x1_item = table.deepcopy(data.raw["item"]["zith-storage-tank-1x1"])
+local zinc_tank_2x2_item = table.deepcopy(data.raw["item"]["zith-storage-tank-2x2"])
+local zinc_tank_3x4_item = table.deepcopy(data.raw["item"]["zith-storage-tank-3x4"])
+local zinc_tank_5x5_item = table.deepcopy(data.raw["item"]["zith-storage-tank-5x5"])
 
 local function update_storage_tank_item(storage_tank_item, locale_ext)
-    storage_tank_item.name = "zinc-"..storage_tank_item.name
+    storage_tank_item.name = "zinc-fluid-tank-"..locale_ext
     storage_tank_item.localised_description = data.raw["item"]["zinc-storage-tank"].localised_description
     storage_tank_item.icons = {
         {
