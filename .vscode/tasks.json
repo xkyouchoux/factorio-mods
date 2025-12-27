@@ -165,5 +165,14 @@
                 "kind": "build",
             }
         },
+        {
+            "label": "Package Mod: k2se pack",
+            "type": "shell",
+            "command": "python fpackage.py \"%FACTORIO_LOCATION%\\mods\" \"sei-k2se\"",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
     ]
 }
