@@ -63,7 +63,7 @@ data:extend({
         type = "ammo",
         name = "capture-robot-rocket",
         icon = path_util.space_age_path.."graphics/icons/capture-bot.png",
-        ammo_category = "rocket",
+        ammo_category = "capture-rocket",
         ammo_type =
         {
         action =

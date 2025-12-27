@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.14
+Date: 27 December 2025
+  Features:
+    - The capture rocket can now be used from other rocket launchers and rocket turrets.
+      Currently only supports vanilla rocket launcher, spidertron, krastorio2 heavy rocket launcher and rocket turret, and the rocket turret
+---------------------------------------------------------------------------------------------------
 Version: 0.1.13
 Date: 29 October 2025
   Changes:
