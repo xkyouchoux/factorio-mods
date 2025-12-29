@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 28 December 2025
+  Changes:
+    - [k2] Electronic compents with lithium can be made in electromagnetic plant now
+---------------------------------------------------------------------------------------------------
 Version: 1.0.9
 Date: 25 December 2025
   Features:

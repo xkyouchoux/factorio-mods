@@ -89,6 +89,7 @@ local electromagnetics_recipes = {
     "kr-electronic-components",
     "kr-energy-control-unit",
     "kr-advanced-solar-panel",
+    "kr-electronic-components-with-lithium",
     "kr-ai-core",
 
     "space-locomotive",
