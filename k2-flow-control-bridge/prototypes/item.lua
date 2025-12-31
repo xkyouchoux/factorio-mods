@@ -1,3 +1,9 @@
+local pipe_subgroup="energy-pipe-distribution"
+
+if settings.startup["flow-control-new-group"].value then--Matches Steel Pipes Into Flow Control Subgroup
+  pipe_subgroup="pipe-distribution"
+end
+
 data:extend({
 
   {
@@ -7,7 +13,7 @@ data:extend({
     icon_size=64,
     place_result="steel-pipe-elbow",
     stack_size=50,
-    subgroup="energy-pipe-distribution",
+    subgroup=pipe_subgroup,
     order="b[pipe]-a[pipe]j",
   },
 
@@ -18,7 +24,7 @@ data:extend({
     icon_size=64,
     place_result="steel-pipe-straight",
     stack_size=50,
-    subgroup="energy-pipe-distribution",
+    subgroup=pipe_subgroup,
     order="b[pipe]-a[pipe]k",
   },
 
@@ -29,7 +35,7 @@ data:extend({
     icon_size=64,
     place_result="steel-pipe-t-junction",
     stack_size=50,
-    subgroup="energy-pipe-distribution",
+    subgroup=pipe_subgroup,
     order="b[pipe]-a[pipe]i",
   },
     
