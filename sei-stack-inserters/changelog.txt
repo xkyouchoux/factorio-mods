@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 11 January 2026
+  Features:
+    - Added mod setting to make loaders output without full stack
+  Bugfixes:
+    - Fixed mod setting to disable aai loader stacking was always hidden.
+    - Fixed when aai loaders would ignore the mod setting to disable stacking.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 24 October 2025
   Changes:

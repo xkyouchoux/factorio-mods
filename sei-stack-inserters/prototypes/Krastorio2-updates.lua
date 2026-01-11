@@ -7,7 +7,7 @@ if settings.startup["sei-add-stacking-to-kr-loaders"].value then
         if k:find("kr-") == 1 then
             v.max_belt_stack_size = data.raw["inserter"]["stack-inserter"].max_belt_stack_size
             v.adjustable_belt_stack_size = true
-            v.wait_for_full_stack = true
+            v.wait_for_full_stack = settings.startup["sei-loaders-wait-for-full-stack"].value
         end
     end
 end

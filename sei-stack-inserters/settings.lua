@@ -47,6 +47,14 @@ data:extend({
     },
     {
         type = "bool-setting",
+        name = "sei-loaders-wait-for-full-stack",
+        setting_type = "startup",
+        default_value = true,
+        order = "b-c",
+        hidden = true,
+    },
+    {
+        type = "bool-setting",
         name = "sei-add-stacking-to-kr-inserters",
         setting_type = "startup",
         default_value = true,
