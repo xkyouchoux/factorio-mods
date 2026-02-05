@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 4 February 2026
+  Locale:
+    - Added ru locale
+      thanks Eldrinn-Elantey
+  Changes:
+    - Changes recipe order to be grouped with flow controls subgroup is enabled in the mod options
+      thanks Eldrinn-Elantey
+---------------------------------------------------------------------------------------------------
 Version: 2.0.0
 Date: 30 October 2025
   Features:
